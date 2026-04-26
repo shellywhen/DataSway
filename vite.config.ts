@@ -8,7 +8,7 @@ import fs from 'fs'
 const WRONG_CODE = `import { bpfrpt_proptype_WindowScroller } from "../WindowScroller.js";`;
 
 /** GitHub project Pages URL: https://<user>.github.io/<repo>/ — must match the repo name (case-sensitive path). */
-const GITHUB_PAGES_BASE = '/datasway/'
+const GITHUB_PAGES_BASE = '/DataSway/'
 
 function copyIndexTo404() {
   return {
