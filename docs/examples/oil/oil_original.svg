@@ -1,0 +1,593 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 2000 939" enable-background="new 0 0 2000 939" xml:space="preserve" preserveAspectRatio="none">
+
+    <g id="bg">
+        <image class="hidden-md-down" overflow="visible" width="2000" height="873"
+            xlink:href="https://fingfx.thomsonreuters.com/gfx/rngs/OIL-SPILLS/010060SL1GQ/images/chartnew.jpg">
+        </image>
+
+        <image class="hidden-lg-up" overflow="visible" width="2000" height="873"
+            xlink:href="https://fingfx.thomsonreuters.com/gfx/rngs/OIL-SPILLS/010060SL1GQ/images/chartnewsm.jpg">
+        </image>
+    </g>
+
+    <g id="rects" fill="#fff">
+        <g id="longrects">
+            <rect class="rectl" x="504" y="3" width="26" height="688" data-svg-origin="504 3"
+                transform="matrix(1,0,0,1,0,617.51118912)"></rect>
+            <rect class="rectxl" x="975" y="3" width="31" height="768" data-svg-origin="975 3"
+                transform="matrix(1,0,0,1,0,731.541877248)"></rect>
+            <rect class="rectxl" x="561" y="3" width="45" height="793" data-svg-origin="561 3"
+                transform="matrix(1,0,0,1,0,730.9570994879999)"></rect>
+            <rect class="rectl" x="694" y="3" width="43" height="480" data-svg-origin="694 3"
+                transform="matrix(1,0,0,1,0,616.93347072)"></rect>
+        </g>
+        <g id="mirects">
+            <rect class="rectm" x="885" y="3" width="43" height="399" data-svg-origin="885 3"
+                transform="matrix(1,0,0,1,0,383.09145599999994)"></rect>
+            <rect class="rectm" x="99" y="3" width="43" height="399" data-svg-origin="98.99999237060547 3"
+                transform="matrix(1,0,0,1,0,382.843836)"></rect>
+            <rect class="rectm" x="307" y="3" width="34" height="399" data-svg-origin="307 3"
+                transform="matrix(1,0,0,1,0,382.59441599999997)"></rect>
+            <rect class="rectm" x="1938" y="3" width="33" height="421" data-svg-origin="1938 3"
+                transform="matrix(1,0,0,1,0,382.343196)"></rect>
+        </g>
+        <g id="shortrect">
+            <rect class="rects" x="1078" y="3" width="33" height="279" data-svg-origin="1078 3"
+                transform="matrix(1,0,0,1,0,299.500608)"></rect>
+            <rect class="rects" x="1151" y="3" width="33" height="279" data-svg-origin="1151 3"
+                transform="matrix(1,0,0,1,0,299.39788799999997)"></rect>
+            <rect class="rects" x="928" y="3" width="26" height="279" data-svg-origin="928 3"
+                transform="matrix(1,0,0,1,0,299.285568)"></rect>
+            <rect class="rects" x="1264" y="3" width="33" height="279" data-svg-origin="1263.9998779296875 3"
+                transform="matrix(1,0,0,1,0,299.163648)"></rect>
+            <rect class="rects" x="394" y="3" width="30" height="279" data-svg-origin="394 3"
+                transform="matrix(1,0,0,1,0,299.032128)"></rect>
+            <rect class="rects" x="205" y="3" width="35" height="279" data-svg-origin="205 3"
+                transform="matrix(1,0,0,1,0,298.891008)"></rect>
+            <rect class="rects" x="444" y="3" width="44" height="294" data-svg-origin="444 3"
+                transform="matrix(1,0,0,1,0,298.74028799999996)"></rect>
+            <rect class="rects" x="533" y="3" width="28.5" height="294" data-svg-origin="533 3"
+                transform="matrix(1,0,0,1,0,298.579968)"></rect>
+            <rect class="rects" x="1014" y="3" width="47" height="279" data-svg-origin="1014 3"
+                transform="matrix(1,0,0,1,0,298.41004799999996)"></rect>
+            <rect class="rects" x="394" y="3" width="24" height="279" data-svg-origin="394 3"
+                transform="matrix(1,0,0,1,0,298.230528)"></rect>
+            <rect class="rects" x="784" y="3" width="24" height="210" data-svg-origin="784 3"
+                transform="matrix(1,0,0,1,0,298.041408)"></rect>
+            <rect class="rects" x="1384" y="3" width="47" height="219" data-svg-origin="1383.9998779296875 3"
+                transform="matrix(1,0,0,1,0,297.842688)"></rect>
+            <rect class="rects" x="281" y="3" width="30" height="92" data-svg-origin="281 3"
+                transform="matrix(1,0,0,1,0,297.634368)"></rect>
+            <rect class="rects" x="367" y="3" width="30" height="147" data-svg-origin="367 3"
+                transform="matrix(1,0,0,1,0,297.416448)"></rect>
+        </g>
+        <g id="shortestrect">
+            <rect class="rectxs" x="1296" y="3" width="68" height="82" data-svg-origin="1296 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1771" y="3" width="168" height="79" data-svg-origin="1771 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1061" y="3" width="18" height="79" data-svg-origin="1061 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1111" y="3" width="40" height="79" data-svg-origin="1111 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1183" y="3" width="40" height="79" data-svg-origin="1183 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="53" y="3" width="37" height="79" data-svg-origin="53 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="242" y="3" width="31" height="79" data-svg-origin="242 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="954" y="3" width="21" height="79" data-svg-origin="954 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="851" y="3" width="34" height="79" data-svg-origin="851 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1460" y="3" width="37" height="79" data-svg-origin="1460 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1664" y="3" width="37" height="79" data-svg-origin="1663.9998779296875 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1533" y="3" width="34" height="79" data-svg-origin="1533 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="166" y="3" width="37" height="79" data-svg-origin="166 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="345" y="3" width="37" height="79" data-svg-origin="345 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="420" y="3" width="24" height="79" data-svg-origin="420 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1576" y="3" width="37" height="79" data-svg-origin="1576 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1505" y="3" width="28" height="79" data-svg-origin="1505 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1723" y="3" width="37" height="79" data-svg-origin="1723 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1419" y="3" width="68" height="82" data-svg-origin="1418.9998779296875 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="427" y="3" width="17" height="79" data-svg-origin="427 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="413" y="3" width="17" height="45" data-svg-origin="413 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+            <rect class="rectxs" x="1576" y="3" width="37" height="79" data-svg-origin="1576 3"
+                transform="matrix(1,0,0,1,0,80)"></rect>
+        </g>
+    </g>
+
+
+    <g id="drops">
+        <g id="drop1" data-svg-origin="225.29998779296875 -36.900001525878906" transform="matrix(1,0,0,1,0,232)">
+            <path
+                d="M230.4-36.9c0,0-3.5,26.7-4.3,29.3s-1.6,8.8,0.8,9.5c2.3,0.6,5-1.2,5.5-3.7c1.6-7.7-1.8-20.5-1.8-20.5L230.4-36.9z">
+            </path>
+        </g>
+        <g id="drop2" data-svg-origin="323.5 -56.5" transform="matrix(1,0,0,1,0,350)">
+            <g>
+                <path
+                    d="M323.5-9.1V-4c0,2.2,2.2,4,5,4l0,0c2.8,0,5-1.8,5-4v-5.1c0-2.2-2.2-42-5-42v-5.4C325.8-56.5,323.5-11.3,323.5-9.1z">
+                </path>
+                <ellipse fill="#FFFFFF" cx="326.1" cy="-5.6" rx="1.7" ry="2.2"></ellipse>
+            </g>
+        </g>
+        <g id="drop3" data-svg-origin="512.2341918945312 -34.5" transform="matrix(1,0,0,1,0,635.1184489256199)">
+            <g>
+                <path d="M516.3-34.5c0,0,9.5,24.9,6.3,31.1s-12,2.4-10.1-5.3C514.4-16.3,515.6-24.5,516.3-34.5z"></path>
+                <ellipse fill="#FFFFFF" cx="515.8" cy="-5.5" rx="1.5" ry="2.5"></ellipse>
+            </g>
+        </g>
+        <g id="drop4" data-svg-origin="560.834228515625 -34.5" transform="matrix(1,0,0,1,0,749.8312924943414)">
+            <g>
+                <path d="M564.9-34.5c0,0,9.5,24.9,6.3,31.1c-3.2,6.2-12,2.4-10.1-5.3C563-16.3,564.3-24.5,564.9-34.5z">
+                </path>
+                <ellipse fill="#FFFFFF" cx="564.5" cy="-5.5" rx="1.5" ry="2.5"></ellipse>
+            </g>
+        </g>
+        <g id="drop5" data-svg-origin="707.4000244140625 -56.60000228881836" transform="matrix(1,0,0,1,0,473)">
+            <g>
+                <path
+                    d="M716.4-9v5.1c0,2.2-2,4-4.5,4l0,0c-2.5,0-4.5-1.8-4.5-4V-9c0-2.2,2-42.2,4.5-42.2v-5.4C714.4-56.6,716.4-11.2,716.4-9z">
+                </path>
+                <ellipse fill="#FFFFFF" cx="711.1" cy="-5.9" rx="1.9" ry="2.7"></ellipse>
+            </g>
+        </g>
+        <g id="drop6" data-svg-origin="897.84619140625 -32.400001525878906"
+            transform="matrix(1,0,0,1,0,382.44880355555557)">
+            <path d="M899.9-31.2c0,0-5.9,28.4,2.3,28.8s0-30,0-30"></path>
+        </g>
+        <g id="drop7" data-svg-origin="987.5999755859375 -65.4000015258789"
+            transform="matrix(1,0,0,1,0,743.9856055966686)">
+            <g>
+                <path d="M998.6-13.3v5.6c0,2.4-2.5,4.4-5.5,4.4l0,0c-3,0-5.5-2-5.5-4.4v-5.6c0-2.4,2.5-46.2,5.5-46.2v-5.9
+				C996.1-65.4,998.6-15.7,998.6-13.3z"></path>
+                <ellipse fill="#FFFFFF" cx="990.2" cy="-9.4" rx="1.9" ry="2.5"></ellipse>
+            </g>
+        </g>
+        <g id="drop8" data-svg-origin="1090.300048828125 -59.000003814697266" transform="matrix(1,0,0,1,0,276)">
+            <path d="M1098.3-7.4v5.5c0,2.4-1.8,4.4-4,4.4l0,0c-2.2,0-4-2-4-4.4v-5.5c0-2.4,1.8-45.7,4-45.7v-5.9
+			C1096.5-58.9,1098.3-9.8,1098.3-7.4z"></path>
+        </g>
+        <g id="drop9" data-svg-origin="1274.63427734375 -35" transform="matrix(1,0,0,1,0,173)">
+            <g>
+                <path d="M1278.7-35c0,0,9.5,24.9,6.3,31.1c-3.2,6.2-12,2.4-10.1-5.3S1278.1-25,1278.7-35z"></path>
+                <ellipse fill="#FFFFFF" cx="1278.3" cy="-6" rx="1.5" ry="2.5"></ellipse>
+            </g>
+        </g>
+        <g id="drop10" data-svg-origin="1950.4000244140625 -45.300228118896484"
+            transform="matrix(1,0,0,1,0,404.139652345679)">
+            <g>
+                <path d="M1958.4-10.7V-7c0,1.6-1.8,2.9-4,2.9l0,0c-2.2,0-4-1.3-4-2.9v-3.7c0-1.6,1.8-30.7,4-30.7v-3.9
+				C1956.6-45.4,1958.4-12.3,1958.4-10.7z"></path>
+                <ellipse fill="#FFFFFF" cx="1953.1" cy="-9.4" rx="1.5" ry="2.7"></ellipse>
+            </g>
+        </g>
+    </g>
+
+
+    <g id="sixtys">
+        <g id="esso" class="barsforhover" title=""
+            data-original-title="<p>9/23/1965</p><p><b>Esso Wandsworth</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="61.5" opacity="0" fill="#FFFFFF" width="12" height="23.7"></rect>
+        </g>
+        <g id="torrey" class="barsforhover" title=""
+            data-original-title="<p>3/18/1967</p><p><b>Torrey Canyon</b></p><p><b>121,000 tonnes</b></p>">
+            <rect x="114.5" opacity="0" fill="#FFFFFF" width="12" height="360.3"></rect>
+        </g>
+        <g id="spyros" class="barsforhover" title=""
+            data-original-title="<p>11/1/1968</p><p><b>Spyros Lemnos</b></p><p><b>15,000 tonnes</b></p>">
+            <rect x="173" opacity="0" fill="#FFFFFF" width="12" height="54"></rect>
+        </g>
+        <g id="julius" class="barsforhover" title=""
+            data-original-title="<p>2/11/1969</p><p><b>Julius Schindler</b></p><p><b>9,000 tonnes</b></p>">
+            <rect x="184" y="2" opacity="0" fill="#FFFFFF" width="12" height="31"></rect>
+        </g>
+    </g>
+    <g id="seventys">
+        <g id="bacruz" class="barsforhover" title=""
+            data-original-title="<p>1/14/1970</p><p><b>Al Bacruz</b></p><p><b>20,400 tonnes</b></p>">
+            <rect x="218" y="2" opacity="0" fill="#FFFFFF" width="8" height="61"></rect>
+        </g>
+        <g id="othello" class="barsforhover" title=""
+            data-original-title="<p>3/20/1970</p><p><b>Othello</b></p><p><b>80,000 tonnes</b></p>">
+            <rect x="226" y="2" opacity="0" fill="#FFFFFF" width="6" height="234"></rect>
+        </g>
+        <g id="polycommander" class="barsforhover" title=""
+            data-original-title="<p>5/5/1970</p><p><b>Polycommander</b></p><p><b>15,000 tonnes</b></p>">
+            <rect x="232" y="1" opacity="0" fill="#FFFFFF" width="5" height="48"></rect>
+        </g>
+        <g id="anastasia" class="barsforhover" title=""
+            data-original-title="<p>10/7/1970</p><p><b>Anastasia J.L.</b></p><p><b>18,500 tonnes</b></p>">
+            <polygon opacity="0" fill="#FFFFFF" points="249,19 249,1 246,2 246,59 251,59 251,19 		"></polygon>
+        </g>
+        <g id="glory" class="barsforhover" title=""
+            data-original-title="<p>10/23/1970</p><p><b>Pacific Glory</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="249" y="1" opacity="0" fill="#FFFFFF" width="5" height="19"></rect>
+        </g>
+        <g id="goldendrake" class="barsforhover" title=""
+            data-original-title="<p>1/28/1972</p><p><b>Golden Drake</b></p><p><b>31,000 tonnes</b></p>">
+            <rect x="290" y="1" opacity="0" fill="#FFFFFF" width="14" height="94"></rect>
+        </g>
+        <g id="seastar" class="barsforhover" title=""
+            data-original-title="<p>12/19/1972</p><p><b>Sea Star</b></p><p><b>115,000 tonnes</b></p>">
+            <rect x="324" y="1" opacity="0" fill="#FFFFFF" width="9" height="347"></rect>
+        </g>
+        <g id="dona" class="barsforhover" title=""
+            data-original-title="<p>8/5/1973</p><p><b>Dona Marika</b></p><p><b>3,000 tonnes</b></p>">
+            <rect x="348" y="2" opacity="0" fill="#FFFFFF" width="7" height="12"></rect>
+        </g>
+        <g id="patricia" class="barsforhover" title=""
+            data-original-title="<p>11/5/1973</p><p><b>Golar Patricia</b></p><p><b>10,000 tonnes</b></p>">
+            <rect x="355" y="2" opacity="0" fill="#FFFFFF" width="8" height="28"></rect>
+        </g>
+        <g id="breeze" class="barsforhover" title=""
+            data-original-title="<p>12/6/1973</p><p><b>Splendid Breeze</b></p><p><b>2,000 tonnes</b></p>">
+            <rect x="360" y="2" opacity="0" fill="#FFFFFF" width="7" height="9"></rect>
+        </g>
+        <g id="metula" class="barsforhover" title=""
+            data-original-title="<p>8/9/1974</p><p><b>Metula</b></p><p><b>50,000 tonnes</b></p>">
+            <rect x="382" y="2" opacity="0" fill="#FFFFFF" width="12" height="148"></rect>
+        </g>
+        <g id="leader" class="barsforhover" title=""
+            data-original-title="<p>10/22/1974</p><p><b>Universe Leader</b></p><p><b>2,600 tonnes</b></p>">
+            <rect x="391" y="2" opacity="0" fill="#FFFFFF" width="7" height="11"></rect>
+        </g>
+        <g id="jakob" class="barsforhover" title=""
+            data-original-title="<p>1/29/1975</p><p><b>Jakob Maersk</b></p><p><b>84,000 tonnes</b></p>">
+            <rect x="401" y="2" opacity="0" fill="#FFFFFF" width="7" height="248"></rect>
+        </g>
+        <g id="annemarie" class="barsforhover" title=""
+            data-original-title="<p>7/14/1975</p><p><b>Princess Anne Marie</b></p><p><b>14,800 tonnes</b></p>">
+            <rect x="416" opacity="0" fill="#FFFFFF" width="11" height="46"></rect>
+        </g>
+        <g id="olympic" class="barsforhover" title=""
+            data-original-title="<p>11/12/1975</p><p><b>Olympic Alliance</b></p><p><b>10,000 tonnes</b></p>">
+            <rect x="430" y="2" opacity="0" fill="#FFFFFF" width="6" height="31"></rect>
+        </g>
+        <g id="urquiola" class="barsforhover" title=""
+            data-original-title="<p>5/12/1976</p><p><b>Urquiola</b></p><p><b>101,000 tonnes</b></p>">
+            <rect x="447" y="2" opacity="0" fill="#FFFFFF" width="7" height="295"></rect>
+        </g>
+        <g id="boehlen" class="barsforhover" title=""
+            data-original-title="<p>10/15/1976</p><p><b>Boehlen</b></p><p><b>7,000 tonnes</b></p>">
+            <rect x="463" y="2" opacity="0" fill="#FFFFFF" width="7" height="23"></rect>
+        </g>
+        <g id="merchant" class="barsforhover" title=""
+            data-original-title="<p>12/15/1976</p><p><b>Argo Merchant</b></p><p><b>28,000 tonnes</b></p>">
+            <rect x="467" opacity="0" fill="#FFFFFF" width="7" height="86"></rect>
+        </g>
+        <g id="irenes" class="barsforhover" title=""
+            data-original-title="<p>1/18/1977</p><p><b>Irenes Challenge</b></p><p><b>34,000 tonnes</b></p>">
+            <rect x="472" y="2" opacity="0" fill="#FFFFFF" width="5" height="101"></rect>
+        </g>
+        <g id="hawaiian" class="barsforhover" title=""
+            data-original-title="<p>2/23/1977</p><p><b>Hawaiian Patriot</b></p><p><b>50,000 tonnes</b></p>">
+            <rect x="477" y="1" opacity="0" fill="#FFFFFF" width="6" height="149"></rect>
+        </g>
+        <g id="amoco" class="barsforhover" title=""
+            data-original-title="<p>3/16/1978</p><p><b>Amoco Cadiz</b></p><p><b>227,000 tonnes</b></p>">
+            <rect x="511" y="2" opacity="0" fill="#FFFFFF" width="9" height="677"></rect>
+        </g>
+        <g id="eleni" class="barsforhover" title=""
+            data-original-title="<p>5/6/1978</p><p><b>Eleni V</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="520" y="1" opacity="0" fill="#FFFFFF" width="6" height="19"></rect>
+        </g>
+        <g id="bitas" class="barsforhover" title=""
+            data-original-title="<p>10/12/1978</p><p><b>Christos Bitas</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="535" y="2" opacity="0" fill="#FFFFFF" width="7" height="17"></rect>
+        </g>
+        <g id="patria" class="barsforhover" title=""
+            data-original-title="<p>12/31/1978</p><p><b>Andros Patria</b></p><p><b>60,000 tonnes</b></p>">
+            <polygon opacity="0" fill="#FFFFFF" points="546,119 546,2 542,2 542,179 546,179 546,177 550,177 550,119 		">
+            </polygon>
+        </g>
+        <g id="batelgeuse" class="barsforhover" title=""
+            data-original-title="<p>1/8/1979</p><p><b>Betelgeuse</b></p><p><b>40,000 tonnes</b></p>">
+            <rect x="546" y="2" opacity="0" fill="#FFFFFF" width="4" height="119"></rect>
+        </g>
+        <g id="kurdistan" class="barsforhover" title=""
+            data-original-title="<p>3/15/1979</p><p><b>Kurdistan</b></p><p><b>14,000 tonnes</b></p>">
+            <rect x="550" y="2" opacity="0" fill="#FFFFFF" width="7" height="44"></rect>
+        </g>
+        <g id="gino" class="barsforhover" title=""
+            data-original-title="<p>4/28/1979</p><p><b>Gino/Team Castor</b></p><p><b>32,000 tonnes</b></p>">
+            <rect x="553" opacity="0" fill="#FFFFFF" width="9" height="95"></rect>
+        </g>
+        <g id="atlantic" class="barsforhover" title=""
+            data-original-title="<p>7/19/1979</p><p><b>Atlantic Empress</b></p><p><b>276,000 tonnes</b></p>">
+            <rect x="562" y="2" opacity="0" fill="#FFFFFF" width="7" height="789"></rect>
+        </g>
+        <g id="independenta" class="barsforhover" title=""
+            data-original-title="<p>11/15/1979</p><p><b>Independenta</b></p><p><b>94,000 tonnes</b></p>">
+            <rect x="572" y="2" opacity="0" fill="#FFFFFF" width="12" height="278"></rect>
+        </g>
+    </g>
+    <g id="eightys">
+        <g id="serenade">
+            <rect x="584" y="2" opacity="0" fill="#FFFFFF" width="6" height="31"></rect>
+        </g>
+        <g id="tanio" class="barsforhover" title=""
+            data-original-title="<p>3/7/1980</p><p><b>Tanio</b></p><p><b>6,000 tonnes</b></p>">
+            <rect x="588" y="2" opacity="0" fill="#FFFFFF" width="5" height="22"></rect>
+        </g>
+        <g id="catillo" class="barsforhover" title=""
+            data-original-title="<p>8/6/1983</p><p><b>Castillo de Bellver</b></p><p><b>155,000 tonnes</b></p>">
+            <rect x="704" y="2" opacity="0" fill="#FFFFFF" width="11" height="473"></rect>
+        </g>
+        <g id="sivand" class="barsforhover" title=""
+            data-original-title="<p>9/29/1983</p><p><b>Sivand</b></p><p><b>6,000 tonnes</b></p>">
+            <rect x="715" y="2" opacity="0" fill="#FFFFFF" width="6" height="22"></rect>
+        </g>
+        <g id="nova" class="barsforhover" title=""
+            data-original-title="<p>12/6/1985</p><p><b>NOVA</b></p><p><b>70,000 tonnes</b></p>">
+            <rect x="790" y="1" opacity="0" fill="#FFFFFF" width="12" height="208"></rect>
+        </g>
+        <g id="amazzone" class="barsforhover" title=""
+            data-original-title="<p>1/30/1988</p><p><b>Amazzone</b></p><p><b>2,100 tonnes</b></p>">
+            <rect x="870" y="2" opacity="0" fill="#FFFFFF" width="7" height="9"></rect>
+        </g>
+        <g id="odeyssey" class="barsforhover" title=""
+            data-original-title="<p>11/10/1988</p><p><b>Odyssey</b></p><p><b>132,000 tonnes</b></p>">
+            <rect x="897" opacity="0" fill="#FFFFFF" width="9" height="386"></rect>
+        </g>
+        <g id="exxon" class="barsforhover" title=""
+            data-original-title="<p>3/24/1989</p><p><b>Exxon Valdez</b></p><p><b>38,500 tonnes</b></p>">
+            <rect x="911" y="2" opacity="0" fill="#FFFFFF" width="8" height="114"></rect>
+        </g>
+        <g id="khark" class="barsforhover" title=""
+            data-original-title="<p>12/19/1989</p><p><b>Khark 5</b></p><p><b>70,000 tonnes</b></p>">
+            <polygon opacity="0" fill="#FFFFFF" points="941,2 938,2 938,209 944,209 944,76 941,76 		"></polygon>
+        </g>
+        <g id="aragon" class="barsforhover" title=""
+            data-original-title="<p>12/29/1989</p><p><b>Aragon</b></p><p><b>25,000 tonnes</b></p>">
+            <rect x="942" y="2" opacity="0" fill="#FFFFFF" width="7" height="74"></rect>
+        </g>
+    </g>
+    <g id="ninetys">
+        <g id="hesperus" class="barsforhover" title=""
+            data-original-title="<p>8/6/1990</p><p><b>Sea Spirit/Hesperus</b></p><p><b>9,860 tonnes</b></p>">
+            <rect x="961" y="2" opacity="0" fill="#FFFFFF" width="7" height="33"></rect>
+        </g>
+        <g id="agip" class="barsforhover" title=""
+            data-original-title="<p>4/10/1991</p><p><b>Agip Abruzzo</b></p><p><b>2,000 tonnes</b></p>">
+            <rect x="986" y="2" opacity="0" fill="#FFFFFF" width="4" height="9"></rect>
+        </g>
+        <g id="haven" class="barsforhover" title=""
+            data-original-title="<p>4/11/1991</p><p><b>Haven</b></p><p><b>144,000 tonnes</b></p>">
+            <polygon opacity="0" fill="#FFFFFF" points="989,2 989,11 986,11 986,424 991,424 991,2 		"></polygon>
+        </g>
+        <g id="summer" class="barsforhover" title=""
+            data-original-title="<p>5/28/1991</p><p><b>ABT Summer</b></p><p><b>260,000 tonnes</b></p>">
+            <polygon opacity="0" fill="#FFFFFF" points="996,704 996,4 991,4 991,704 987,704 987,760 991,760 996,760 1002,760 1002,704 		
+			"></polygon>
+        </g>
+        <g id="kirki" class="barsforhover" title=""
+            data-original-title="<p>7/21/1991</p><p><b>Kirki</b></p><p><b>18,000 tonnes</b></p>">
+            <rect x="996" y="2" opacity="0" fill="#FFFFFF" width="7" height="55"></rect>
+        </g>
+        <g id="katina" class="barsforhover" title=""
+            data-original-title="<p>4/16/1992</p><p><b>Katina P</b></p><p><b>66,700 tonnes</b></p>">
+            <rect x="1021" y="2" opacity="0" fill="#FFFFFF" width="8" height="197"></rect>
+        </g>
+        <g id="aegean" class="barsforhover" title=""
+            data-original-title="<p>12/3/1992</p><p><b>Aegean Sea</b></p><p><b>67,000 tonnes</b></p>">
+            <rect x="1045" y="2" opacity="0" fill="#FFFFFF" width="4" height="197"></rect>
+        </g>
+        <g id="braer" class="barsforhover" title=""
+            data-original-title="<p>1/5/1993</p><p><b>Braer</b></p><p><b>84,500 tonnes</b></p>">
+            <rect x="1050" y="2" opacity="0" fill="#FFFFFF" width="6" height="248"></rect>
+        </g>
+        <g id="trent" class="barsforhover" title=""
+            data-original-title="<p>6/3/1993</p><p><b>British Trent</b></p><p><b>5,100 tonnes</b></p>">
+            <rect x="1063" y="2" opacity="0" fill="#FFFFFF" width="7" height="17"></rect>
+        </g>
+        <g id="lyria" class="barsforhover" title=""
+            data-original-title="<p>8/17/1993</p><p><b>Lyria</b></p><p><b>2,200 tonnes</b></p>">
+            <rect x="1070" y="2" opacity="0" fill="#FFFFFF" width="8" height="9"></rect>
+        </g>
+        <g id="nassia" class="barsforhover" title=""
+            data-original-title="<p>3/13/1994</p><p><b>Nassia</b></p><p><b>95,000 tonnes</b></p>">
+            <rect x="1090" y="2" opacity="0" fill="#FFFFFF" width="9" height="279"></rect>
+        </g>
+        <g id="cercal" class="barsforhover" title=""
+            data-original-title="<p>10/2/1994</p><p><b>Cercal</b></p><p><b>2,500 tonnes</b></p>">
+            <rect x="1111" y="1" opacity="0" fill="#FFFFFF" width="6" height="13"></rect>
+        </g>
+        <g id="mawlaya" class="barsforhover" title=""
+            data-original-title="<p>12/21/1994</p><p><b>New World/Ya Mawlaya</b></p><p><b>2,500 tonnes</b></p>">
+            <rect x="1119" y="1" opacity="0" fill="#FFFFFF" width="7" height="12"></rect>
+        </g>
+        <g id="prince" class="barsforhover" title=""
+            data-original-title="<p>7/23/1995</p><p><b>Sea Prince</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="1139" y="2" opacity="0" fill="#FFFFFF" width="8" height="17"></rect>
+        </g>
+        <g id="empress" class="barsforhover" title=""
+            data-original-title="<p>2/15/1996</p><p><b>Sea Empress</b></p><p><b>73,000 tonnes</b></p>">
+            <rect x="1160" y="2" opacity="0" fill="#FFFFFF" width="7" height="215"></rect>
+        </g>
+        <g id="nakhodka" class="barsforhover" title=""
+            data-original-title="<p>1/2/1997</p><p><b>Nakhodka</b></p><p><b>6,240 tonnes</b></p>">
+            <rect x="1192" y="1" opacity="0" fill="#FFFFFF" width="4" height="21"></rect>
+        </g>
+        <g id="fulmar" class="barsforhover" title=""
+            data-original-title="<p>1/18/1997</p><p><b>Bona Fulmar</b></p><p><b>7,000 tonnes</b></p>">
+            <rect x="1195" y="1" opacity="0" fill="#FFFFFF" width="3" height="23"></rect>
+        </g>
+        <g id="jorge" class="barsforhover" title=""
+            data-original-title="<p>2/8/1997</p><p><b>San Jorge</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="1198" y="1" opacity="0" fill="#FFFFFF" width="5" height="18"></rect>
+        </g>
+        <g id="thetis" class="barsforhover" title=""
+            data-original-title="<p>5/6/1999</p><p><b>Enalios Thetis</b></p><p><b>55,650 tonnes</b></p>">
+            <rect x="1276" y="1" opacity="0" fill="#FFFFFF" width="8" height="178"></rect>
+        </g>
+        <g id="erika" class="barsforhover" title=""
+            data-original-title="<p>12/12/1999</p><p><b>Erika</b></p><p><b>19,500 tonnes</b></p>">
+            <rect x="1298" y="2" opacity="0" fill="#FFFFFF" width="7" height="60"></rect>
+        </g>
+    </g>
+    <g id="twothousands">
+        <g id="natuna" class="barsforhover" title=""
+            data-original-title="<p>10/3/2000</p><p><b>Natuna Sea</b></p><p><b>7,000 tonnes</b></p>">
+            <rect x="1327" y="2" opacity="0" fill="#FFFFFF" width="7" height="22"></rect>
+        </g>
+        <g id="tern" class="barsforhover" title=""
+            data-original-title="<p>3/29/2001</p><p><b>Baltic Carrier/Tern</b></p><p><b>2,700 tonnes</b></p>">
+            <rect x="1345" y="2" opacity="0" fill="#FFFFFF" width="8" height="11"></rect>
+        </g>
+        <g id="limburg" class="barsforhover" title=""
+            data-original-title="<p>10/6/2002</p><p><b>Limburg</b></p><p><b>12,000 tonnes</b></p>">
+            <rect x="1400" y="2" opacity="0" fill="#FFFFFF" width="7" height="39"></rect>
+        </g>
+        <g id="prestige" class="barsforhover" title=""
+            data-original-title="<p>11/13/2002</p><p><b>Prestige</b></p><p><b>64,000 tonnes</b></p>">
+            <rect x="1403" y="2" opacity="0" fill="#FFFFFF" width="11" height="190"></rect>
+        </g>
+        <g id="tasman" class="barsforhover" title=""
+            data-original-title="<p>7/27/2003</p><p><b>Tasman Spirit</b></p><p><b>27,000 tonnes</b></p>">
+            <rect x="1428" y="1" opacity="0" fill="#FFFFFF" width="8" height="82"></rect>
+        </g>
+        <g id="samidoun" class="barsforhover" title=""
+            data-original-title="<p>12/14/2004</p><p><b>Al Samidoun</b></p><p><b>8,600 tonnes</b></p>">
+            <rect x="1478" y="1" opacity="0" fill="#FFFFFF" width="9" height="28"></rect>
+        </g>
+        <g id="tugen" class="barsforhover" title=""
+            data-original-title="<p>2/3/2006</p><p><b>Tugen</b></p><p><b>3,900 tonnes</b></p>">
+            <rect x="1519" y="1" opacity="0" fill="#FFFFFF" width="9" height="14"></rect>
+        </g>
+        <g id="artemis" class="barsforhover" title=""
+            data-original-title="<p>8/14/2006</p><p><b>Bright Artemis</b></p><p><b>4,500 tonnes</b></p>">
+            <rect x="1539" y="2" opacity="0" fill="#FFFFFF" width="7" height="15"></rect>
+        </g>
+        <g id="vanguard" class="barsforhover" title=""
+            data-original-title="<p>10/20/2006</p><p><b>Front Vanguard</b></p><p><b>6,000 tonnes</b></p>">
+            <rect x="1546" y="2" opacity="0" fill="#FFFFFF" width="6" height="20"></rect>
+        </g>
+        <g id="hebei" class="barsforhover" title=""
+            data-original-title="<p>12/7/2007</p><p><b>Hebei Spirit</b></p><p><b>10,000 tonnes</b></p>">
+            <rect x="1586" y="2" opacity="0" fill="#FFFFFF" width="8" height="32"></rect>
+        </g>
+    </g>
+    <g id="twentytens">
+        <g id="bunga" class="barsforhover" title=""
+            data-original-title="<p>5/25/2010</p><p><b>Bunga Kelana 3</b></p><p><b>6,000 tonnes</b></p>">
+            <rect x="1675" y="2" opacity="0" fill="#FFFFFF" width="7" height="20"></rect>
+        </g>
+        <g id="tycoon" class="barsforhover" title=""
+            data-original-title="<p>1/8/2012</p><p><b>Tycoon</b></p><p><b>11,100 tonnes</b></p>">
+            <rect x="1733" y="1" opacity="0" fill="#FFFFFF" width="8" height="36"></rect>
+        </g>
+        <g id="alyarmouk" class="barsforhover" title=""
+            data-original-title="<p>1/2/2015</p><p><b>Alyarmouk</b></p><p><b>4,500 tonnes</b></p>">
+            <rect x="1841" y="1" opacity="0" fill="#FFFFFF" width="7" height="16"></rect>
+        </g>
+        <g id="burgos" class="barsforhover" title=""
+            data-original-title="<p>9/24/2016</p><p><b>Burgos</b></p><p><b>5,500 tonnes</b></p>">
+            <rect x="1904" opacity="0" fill="#FFFFFF" width="7" height="21"></rect>
+        </g>
+        <g id="rama" class="barsforhover" title=""
+            data-original-title="<p>6/26/2017</p><p><b>Rama 2</b></p><p><b>5,000 tonnes</b></p>">
+            <rect x="1928" y="1" opacity="0" fill="#FFFFFF" width="8" height="20"></rect>
+        </g>
+        <g id="sanchi" class="barsforhover" title=""
+            data-original-title="<p>1/14/2018</p><p><b>Sanchi</b></p><p><b>137,000 tonnes</b></p>">
+            <rect x="1949" opacity="0" fill="#FFFFFF" width="11" height="402"></rect>
+        </g>
+    </g>
+
+
+
+    <g id="scales">
+        <line fill="none" stroke="#bbb" x1="2.6" y1="582.6" x2="10.6" y2="582.6"></line>
+        <line fill="none" stroke="#bbb" x1="2.6" y1="292.4" x2="10.6" y2="292.4"></line>
+        <text class="scaletxt" transform="matrix(1 0 0 1 15.5 297)">
+            <tspan x="0" y="0" fill="#bbb" font-family="Source Sans Pro" font-size="18">100,000</tspan>
+            <tspan x="0" y="18" fill="#bbb" font-family="Source Sans Pro" font-size="18">tonnes</tspan>
+        </text>
+        <text class="scaletxt" transform="matrix(1 0 0 1 15.5 587)" fill="#bbb" font-family="Source Sans Pro"
+            font-size="18">200,000</text>
+        <text class="scaletxt" transform="matrix(1 0 0 1 15.5 878.3333)" fill="#bbb" font-family="Source Sans Pro"
+            font-size="18">300,000</text>
+        <line fill="none" stroke="#bbb" x1="2.6" y1="872.9" x2="10.6" y2="872.9"></line>
+    </g>
+
+    <g id="annotations" opacity="0" style="opacity: 1;">
+        <g id="pointer">
+            <text class="scaletxt hidden-sm-down" transform="matrix(1 0 0 1 1431.4669 125.9998)" fill="#AAAAAA"
+                font-family="Source Sans Pro" font-weight="700" font-size="21">Major oil tanker spills</text>
+
+            <text class="scaletxt hidden-md-up" transform="matrix(1 0 0 1 1435 125.9998)" fill="#AAAAAA"
+                font-family="Source Sans Pro" font-weight="700" font-size="21">
+                <tspan x="0" y="0">Major oil</tspan>
+                <tspan x="0" y="23">tanker spills</tspan>
+            </text>
+            <g>
+                <g>
+                    <path fill="none" stroke="#AAAAAA" stroke-miterlimit="10"
+                        d="M1453.9,48.1c12.6,2.2,41.1,11.5,41.1,52.4"></path>
+                    <g>
+                        <polygon fill="#AAAAAA" points="1456.3,52.2 1455.2,48.4 1457.2,44.9 1448,47.5 				"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+
+        <g id="caseannotation">
+            <g id="summertxt" opacity="0">
+                <text class="charttxt" transform="matrix(1 0 0 1 870.7508 707.1836)">
+                    <tspan x="0" y="0" fill="#bbb" font-family="Source Sans Pro" font-weight="700" font-size="18">ABT
+                        Summer,</tspan>
+                    <tspan x="-13.1" y="21.6" fill="#bbb" font-family="Source Sans Pro" font-weight="700"
+                        font-size="18">260,000 tonnes</tspan>
+                    <tspan x="10" y="43.2" fill="#bbb" font-family="Source Sans Pro" font-size="18">May 28, 1991</tspan>
+                </text>
+            </g>
+            <g id="empresstxt" opacity="0">
+                <text class="charttxt" transform="matrix(1 0 0 1 413.9276 743.8713)">
+                    <tspan x="0" y="0" fill="#bbb" font-family="Source Sans Pro" font-weight="700" font-size="18">
+                        Atlantic Empress,</tspan>
+                    <tspan x="18.7" y="21.6" fill="#bbb" font-family="Source Sans Pro" font-weight="700" font-size="18">
+                        276,000 tonnes</tspan>
+                    <tspan x="40" y="43.2" fill="#bbb" font-family="Source Sans Pro" font-size="18">July 19, 1979
+                    </tspan>
+                </text>
+                <!-- 		<text class="charttxt" transform="matrix(1 0 0 1 456.6817 790.9999)" fill="#bbb" font-family="Source Sans Pro" font-size="18">July 19, 1979</text> -->
+            </g>
+            <g id="amocotxt" opacity="0" class="hidden-sm-down">
+                <text class="charttxt" transform="matrix(1 0 0 1 392.7971 621.3721)">
+                    <tspan x="0" y="0" fill="#bbb" font-family="Source Sans Pro" font-weight="700" font-size="18">Amoco
+                        Cadiz,</tspan>
+                    <tspan x="-14.1" y="21.6" fill="#bbb" font-family="Source Sans Pro" font-weight="700"
+                        font-size="18">227,000 tonnes</tspan>
+                </text>
+                <text class="charttxt" transform="matrix(1 0 0 1 387.6181 668.5006)" fill="#bbb"
+                    font-family="Source Sans Pro" font-size="18">March 16, 1978</text>
+            </g>
+            <g id="sanchitxt" opacity="0" style="opacity: 1;">
+                <text class="charttxt" transform="matrix(1 0 0 1 1870 352.4357)">
+                    <tspan x="0" y="0" fill="#bbb" font-family="Source Sans Pro" font-weight="700" font-size="18">
+                        Sanchi,</tspan>
+                    <tspan x="-58.7" y="21.6" fill="#bbb" font-family="Source Sans Pro" font-weight="700"
+                        font-size="18">136,000 tonnes</tspan>
+                    <tspan x="-60" y="43.2" fill="#bbb" font-family="Source Sans Pro" font-size="18">January 14, 2018
+                    </tspan>
+                </text>
+                <!-- 		<text class="charttxt" transform="matrix(1 0 0 1 1809.248 399.5643)" fill="#bbb" font-family="Source Sans Pro" font-size="18">January 14, 2018</text> -->
+            </g>
+        </g>
+    </g>
+</svg>

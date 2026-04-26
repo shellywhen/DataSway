@@ -1,0 +1,10 @@
+{
+    "svgFile": "hotel.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "hotel.png",
+    "source": "https://ieeexplore.ieee.org/abstract/document/9906974",
+    "title": "Compairson of Hotels",
+    "description": "Hotels",
+    "snippets": [],
+    "code": ""
+}

@@ -1,0 +1,10 @@
+{
+    "svgFile": "mushroom.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "mushroom.png",
+    "source": "https://ieeexplore.ieee.org/abstract/document/9906974",
+    "title": "mushroom",
+    "description": "scatter plots",
+    "snippets": [],
+    "code": ""
+}

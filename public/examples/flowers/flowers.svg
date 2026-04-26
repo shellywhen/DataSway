@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="103" height="78" viewBox="0 0 103 78" fill="none">
+    <g className="flower">
+        <path className="stem"
+            d="M85.2925 25.501L84.1149 29.0383L80.9976 32.2981L79.8893 34.9337L77.534 38.8872L79.1966 45.9617V52.6201L77.0491 55.6718L71.6458 59.3478L70.3989 62.2609L71.6458 66.6304L74.5553 71"
+            stroke="#59A14F" stroke-width="1.50152" stroke-linecap="round" stroke-linejoin="round" />
+        <g className="patels">
+            <ellipse className="patel" cx="6.64552" cy="1.65935" rx="6.64552" ry="1.65935"
+                transform="matrix(0.148038 -0.988982 0.988928 0.148396 84.1149 21.861)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="7.40792" cy="1.827" rx="7.40792" ry="1.827"
+                transform="matrix(0.709577 -0.704628 0.703753 0.710445 86.1816 21.6399)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="6.99421" cy="1.804" rx="6.99421" ry="1.804"
+                transform="matrix(0.987652 -0.156666 0.156289 0.987711 88.281 23.0389)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="4.43994" cy="1.16029" rx="4.43994" ry="1.16029"
+                transform="matrix(0.861601 -0.507587 0.506658 0.862147 87.2313 22.147)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="6.31491" cy="1.51213" rx="6.31491" ry="1.51213"
+                transform="matrix(0.893709 -0.448647 0.447763 0.894152 87.4399 22.4288)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="5.05306" cy="1.38291" rx="5.05306" ry="1.38291"
+                transform="matrix(0.948325 0.317302 -0.316599 0.94856 88.8856 25.1447)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="6.97542" cy="1.77741" rx="6.97542" ry="1.77741"
+                transform="matrix(0.89193 0.452174 -0.451287 0.892379 89.0442 25.3624)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="7.81988" cy="1.92491" rx="7.81988" ry="1.92491"
+                transform="matrix(0.584488 0.811402 -0.810718 0.585437 88.7471 26.962)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="5.50692" cy="1.36173" rx="5.50692" ry="1.36173"
+                transform="matrix(0.155965 0.987763 -0.987703 0.15634 87.0819 28.5529)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="3.13548" cy="0.767365" rx="3.13548" ry="0.767365"
+                transform="matrix(-0.144153 0.989555 -0.989505 -0.144501 85.3583 28.8)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="3.13484" cy="0.767524" rx="3.13484" ry="0.767524"
+                transform="matrix(-0.43261 0.901581 -0.901165 -0.433477 84.3313 28.6635)" fill="#ECAC31"
+                fill-opacity="0.35" />
+            <ellipse className="patel" cx="93.2589" cy="25.4318" rx="4.71054" ry="1.31781" fill="#37553E" fill-opacity="0.38" />
+            <ellipse className="patel" cx="93.2589" cy="25.4318" rx="4.71054" ry="1.31781" fill="#37553E" fill-opacity="0.38" />
+            <ellipse className="patel" cx="4.32246" cy="1.18813" rx="4.32246" ry="1.18813"
+                transform="matrix(0.60226 -0.7983 0.797585 0.603207 86.1931 21.8599)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="3.14564" cy="0.88176" rx="3.14564" ry="0.88176"
+                transform="matrix(0.815547 -0.578691 0.577742 0.816219 76.8463 30.2739)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="1.54775" cy="0.546281" rx="1.54775" ry="0.546281"
+                transform="matrix(0.886867 0.462024 -0.461129 0.887333 79.6311 21.8945)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="0.757343" cy="0.321983" rx="0.757343" ry="0.321983"
+                transform="matrix(-0.0393603 0.999225 -0.999221 -0.0394573 85.5106 28.7166)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="0.414208" cy="0.166668" rx="0.414208" ry="0.166668"
+                transform="matrix(-0.279793 0.96006 -0.959875 -0.280427 86.6062 21.4329)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="0.414074" cy="0.166721" rx="0.414074" ry="0.166721"
+                transform="matrix(-0.582379 0.812917 -0.812234 -0.583331 83.344 28.192)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="0.760663" cy="0.228497" rx="0.760663" ry="0.228497"
+                transform="matrix(-0.959911 0.280304 -0.279666 -0.960097 89.8594 24.1368)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="5.08949" cy="1.2814" rx="5.08949" ry="1.2814"
+                transform="matrix(0.296504 -0.955032 0.954824 0.297172 79.8777 37.9716)" fill="#37553E"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="4.26732" cy="1.23909" rx="4.26732" ry="1.23909"
+                transform="matrix(-0.461378 -0.887204 0.886737 -0.462274 89.6287 36.5768)" fill="#37553E"
+                fill-opacity="0.38" />
+        </g>
+        <ellipse className="pistill" cx="85.2926" cy="25.4317" rx="3.25582" ry="3.25983" fill="#FFF500" fill-opacity="0.3" />
+    </g>
+    <g className="flower">
+        <path className="stem"
+            d="M55.8182 19.4897V22.1253L54.2249 24.0673L51.5233 26.6336V29.2692L50.6227 31.2806L49.0295 33.1532L49.93 35.5808V37.8696L50.6227 40.0197L47.4362 44.3893V49.0363L46.5357 51.2557V55.9027L45.6351 58.0528V60.2723L43.834 62.6305L43.2106 64.6419V67"
+            stroke="#59A14F" stroke-width="1.50152" stroke-linecap="round" stroke-linejoin="round" />
+        <g className="patels">
+            <ellipse className="patel" cx="1.7833" cy="7.89099" rx="1.7833" ry="7.89099"
+                transform="matrix(0.805891 -0.592063 0.591114 0.806588 57.1804 24.1479)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="1.69144" cy="6.37161" rx="1.69144" ry="6.37161"
+                transform="matrix(0.880553 -0.473947 0.473041 0.881041 56.3724 24.2141)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="1.69263" cy="6.95924" rx="1.69263" ry="6.95924"
+                transform="matrix(-0.455845 -0.890059 0.889602 -0.456736 60.6864 18.7868)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="1.0346" cy="3.91287" rx="1.0346" ry="3.91287"
+                transform="matrix(-0.145764 -0.989319 0.989267 -0.146116 60.5533 19.5594)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="0.537077" cy="2.03269" rx="0.537077" ry="2.03269"
+                transform="matrix(-0.559981 -0.828505 0.827864 -0.560929 59.8834 17.042)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="1.29063" cy="5.08445" rx="1.29063" ry="5.08445"
+                transform="matrix(-0.698071 -0.716029 0.715167 -0.698953 59.9753 16.9618)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="0.558917" cy="1.97198" rx="0.558917" ry="1.97198"
+                transform="matrix(-0.698071 -0.716029 0.715167 -0.698954 50.2534 25.637)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="0.530322" cy="2.36123" rx="0.530322" ry="2.36123"
+                transform="matrix(-0.954955 -0.296752 0.296084 -0.955162 53.506 28.4081)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="1.29993" cy="5.55166" rx="1.29993" ry="5.55166"
+                transform="matrix(-0.95315 -0.302497 0.30182 -0.953365 58.5734 15.3947)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="2.1892" cy="8.60985" rx="2.1892" ry="8.60985"
+                transform="matrix(0.154609 -0.987976 0.987917 0.154981 34.1 18.026)" fill="#D67070"
+                fill-opacity="0.63" />
+            <ellipse className="patel" cx="3.55665" cy="0.829692" rx="3.55665" ry="0.829692"
+                transform="matrix(0.895392 -0.445279 0.444399 0.895829 59.4994 16.5026)" fill="#FFF500"
+                fill-opacity="0.3" />
+            <ellipse className="patel" cx="0.836298" cy="0.221276" rx="0.836298" ry="0.221276"
+                transform="matrix(0.999997 0.00225772 -0.00225215 0.999997 60.3911 19.1426)" fill="#FFF500"
+                fill-opacity="0.3" />
+            <ellipse className="patel" cx="1.98646" cy="8.0294" rx="1.98646" ry="8.0294"
+                transform="matrix(0.893571 0.448922 -0.448039 0.894014 63.4288 0)" fill="#2B2343" fill-opacity="0.38" />
+            <ellipse className="patel" cx="1.54974" cy="5.85295" rx="1.54974" ry="5.85295"
+                transform="matrix(0.306782 0.95178 -0.951558 0.307468 70.8262 12.8291)" fill="#2B2343"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="1.39866" cy="5.52167" rx="1.39866" ry="5.52167"
+                transform="matrix(1 0.000797996 -0.00079603 1 54.5482 23.8603)" fill="#2B2343" fill-opacity="0.38" />
+            <ellipse className="patel" cx="1.06061" cy="3.27089" rx="1.06061" ry="3.27089"
+                transform="matrix(0.995342 0.0964048 -0.0961695 0.995365 54.092 23.7205)" fill="#2B2343"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="0.657758" cy="2.36919" rx="0.657758" ry="2.36919"
+                transform="matrix(0.607621 -0.794227 0.793503 0.608567 59.1433 22.407)" fill="#2B2343"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="0.658042" cy="2.36816" rx="0.658042" ry="2.36816"
+                transform="matrix(0.135539 -0.990772 0.990727 0.135867 60.2517 20.724)" fill="#2B2343"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="1.55566" cy="6.34225" rx="1.55566" ry="6.34225"
+                transform="matrix(0.462517 0.88661 -0.886142 0.463414 51.024 19.9188)" fill="#2B2343"
+                fill-opacity="0.38" />
+            <ellipse className="patel" cx="1.01479" cy="4.6797" rx="1.01479" ry="4.6797"
+                transform="matrix(0.563795 0.825915 -0.825266 0.564744 51.7659 21.3623)" fill="#2B2343"
+                fill-opacity="0.38" />
+        </g>
+        <ellipse className="pistill" cx="55.8182" cy="19.2816" rx="4.572" ry="4.57764" fill="#1F6515" fill-opacity="0.46" />
+    </g>
+    <g className="flower">
+        <path className="stem"
+            d="M17.0411 31.5834L17.3182 34.6352L18.011 36.6466L19.7428 38.658L23.8299 49.6166L25.4924 51.9054V54.2636L23.8299 56.3443V59.0493L24.869 61.2687L26.67 63.4882L28.194 67.7884L31.5884 72.158L32.2811 74.5161L34.29 76.9437"
+            stroke="#59A14F" stroke-width="1.50152" stroke-linecap="round" stroke-linejoin="round" />
+        <ellipse className="patel" cx="28.4018" cy="31.2369" rx="8.17418" ry="2.01139" fill="#8BCDFF" fill-opacity="0.4" />
+        <g className="patels">
+            <ellipse className="patel" cx="8.17771" cy="2.01052" rx="8.17771" ry="2.01052"
+                transform="matrix(0.80571 -0.59231 0.591361 0.806407 0 41.2711)" fill="#8BCDFF" fill-opacity="0.4" />
+            <ellipse className="patel" cx="8.1833" cy="2.00914" rx="8.1833" ry="2.00914"
+                transform="matrix(-0.308691 -0.951162 0.950938 -0.309381 21.1235 50.4751)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="3.02127" cy="0.725252" rx="3.02127" ry="0.725252"
+                transform="matrix(-0.449701 -0.893179 0.892733 -0.450586 20.4512 39.9923)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="1.1964" cy="0.287614" rx="1.1964" ry="0.287614"
+                transform="matrix(-0.801905 -0.597452 0.596504 -0.80261 21.3152 34.8619)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="7.73717" cy="2.03788" rx="7.73717" ry="2.03788"
+                transform="matrix(0.897455 -0.441106 0.44023 0.897885 18.7612 27.8882)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="7.3841" cy="1.74938" rx="7.3841" ry="1.74938"
+                transform="matrix(0.816924 -0.576746 0.575796 0.817593 18.4111 27.7993)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="7.79878" cy="1.87389" rx="7.79878" ry="1.87389"
+                transform="matrix(0.700326 -0.713823 0.712958 0.701206 17.9424 27.8318)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="6.99296" cy="1.87353" rx="6.99296" ry="1.87353"
+                transform="matrix(0.576583 -0.817039 0.816368 0.577533 17.4178 27.7527)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="7.69525" cy="1.87298" rx="7.69525" ry="1.87298"
+                transform="matrix(0.310144 -0.95069 0.950464 0.310836 16.2098 27.5447)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="7.00079" cy="1.6649" rx="7.00079" ry="1.6649"
+                transform="matrix(0.987616 0.15689 -0.156513 0.987676 20.3274 30.1337)" fill="#8BCDFF"
+                fill-opacity="0.4" />
+            <ellipse className="patel" cx="16.9718" cy="39.143" rx="1.31618" ry="4.647" fill="#DC753B" fill-opacity="0.28" />
+            <ellipse className="patel" cx="0.48493" cy="2.35807" rx="0.48493" ry="2.35807"
+                transform="matrix(0.981513 0.191396 -0.190941 0.981602 15.8634 34.3573)" fill="#DC753B"
+                fill-opacity="0.28" />
+            <ellipse className="patel" cx="0.485508" cy="1.55216" rx="0.485508" ry="1.55216"
+                transform="matrix(-0.00854487 0.999963 -0.999963 -0.00856599 13.736 30.8211)" fill="#DC753B"
+                fill-opacity="0.28" />
+            <ellipse className="patel" cx="0.30844" cy="1.18006" rx="0.30844" ry="1.18006"
+                transform="matrix(0.979499 -0.20145 0.200974 0.979597 17.0708 34.5951)" fill="#DC753B"
+                fill-opacity="0.28" />
+            <ellipse className="patel" cx="1.31699" cy="4.7559" rx="1.31699" ry="4.7559"
+                transform="matrix(0.706228 -0.707984 0.707113 0.707101 18.2839 34.4651)" fill="#DC753B"
+                fill-opacity="0.28" />
+        </g>
+        <ellipse className="pistill" cx="16.9718" cy="31.2366" rx="3.25582" ry="3.25983" fill="#FFF500" fill-opacity="0.3" />
+    </g>
+</svg>

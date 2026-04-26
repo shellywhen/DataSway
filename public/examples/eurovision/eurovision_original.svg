@@ -1,0 +1,4512 @@
+<div
+  style="--theme-colour-background: #000; --theme-colour-text-primary: var(--theme-colour-white); --theme-colour-text-secondary: rgb(255 255 255 / 60%); --theme-colour-accent: #ef3c2a; --theme-colour-brand-logo: #ffffff; --theme-colour-brand-rules: rgb(255 255 255 / 25%); --theme-colour-brand-shadow: rgb(255 255 255 / 10%); --theme-colour-grey: #7b899d; --theme-colour-white: #fafafa; --theme-colour-yellow: #f7d349; --theme-colour-orange: #CE7023; --theme-colour-red: #F40681; --theme-colour-blue: #0A68C4; --theme-font-size-base: 1.375; --theme-font-family-serif: freight-book, serif; --theme-font-family-sans-serif: Knowledge, sans-serif; --theme-font-family-monospace: Menlo, Monaco, Consolas, &quot;Liberation Mono&quot;, &quot;Courier New&quot;, monospace; --theme-font-family-hed: var(--theme-font-family-sans-serif); --theme-font-family-subhed: var(--theme-font-family-sans-serif); --theme-font-family-body: var(--theme-font-family-sans-serif); --theme-font-family-note: var(--theme-font-family-sans-serif); --theme-animation-cubic: cubic-bezier(0.165, 0.84, 0.44, 1); display: contents;">
+  <svg width="100%" height="100%" class="svelte-1xkchjh">
+    <style>
+      @import"https://fonts.googleapis.com/css2?family=Leckerli+One&family=Sacramento&display=swap";
+
+      #g-ai-chart-box.svelte-v006vu.svelte-v006vu,
+      #g-ai-chart-box.svelte-v006vu .g-artboard.svelte-v006vu {
+        margin: 0 auto
+      }
+
+      #g-ai-chart-box.svelte-v006vu .g-aiImg.svelte-v006vu {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-ai-chart-xs.svelte-v006vu.svelte-v006vu,
+      #g-ai-chart-sm.svelte-v006vu.svelte-v006vu,
+      #g-ai-chart-md.svelte-v006vu.svelte-v006vu {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-faces-box.svelte-1bxzb78.svelte-1bxzb78,
+      #g-faces-box.svelte-1bxzb78 .g-artboard.svelte-1bxzb78 {
+        margin: 0 auto
+      }
+
+      #g-faces-box.svelte-1bxzb78 p.svelte-1bxzb78 {
+        margin: 0
+      }
+
+      #g-faces-box.svelte-1bxzb78 .g-aiAbs.svelte-1bxzb78 {
+        position: absolute
+      }
+
+      #g-faces-box.svelte-1bxzb78 .g-aiImg.svelte-1bxzb78 {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-faces-box.svelte-1bxzb78 .g-aiPointText p.svelte-1bxzb78 {
+        white-space: nowrap
+      }
+
+      #g-faces-xs.svelte-1bxzb78.svelte-1bxzb78 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-faces-xs.svelte-1bxzb78 p.svelte-1bxzb78 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 14px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-faces-xs.svelte-1bxzb78 .g-pstyle0.svelte-1bxzb78 {
+        font-weight: 700;
+        height: 17px;
+        text-align: center
+      }
+
+      #g-faces-xs.svelte-1bxzb78 .g-pstyle1.svelte-1bxzb78 {
+        height: 17px
+      }
+
+      #g-faces-xs.svelte-1bxzb78 .g-pstyle2.svelte-1bxzb78 {
+        height: 17px;
+        text-align: right
+      }
+
+      #g-faces-xs.svelte-1bxzb78 .g-pstyle3.svelte-1bxzb78 {
+        height: 17px;
+        text-align: center
+      }
+
+      #g-faces-sm.svelte-1bxzb78.svelte-1bxzb78 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-faces-sm.svelte-1bxzb78 p.svelte-1bxzb78 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 14px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-faces-sm.svelte-1bxzb78 .g-pstyle0.svelte-1bxzb78 {
+        font-weight: 700;
+        height: 17px;
+        text-align: center
+      }
+
+      #g-faces-sm.svelte-1bxzb78 .g-pstyle1.svelte-1bxzb78 {
+        height: 17px
+      }
+
+      #g-faces-sm.svelte-1bxzb78 .g-pstyle2.svelte-1bxzb78 {
+        height: 17px;
+        text-align: right
+      }
+
+      #g-faces-sm.svelte-1bxzb78 .g-pstyle3.svelte-1bxzb78 {
+        height: 17px;
+        text-align: center
+      }
+
+      #g-faces-md.svelte-1bxzb78.svelte-1bxzb78 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-faces-md.svelte-1bxzb78 p.svelte-1bxzb78 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 14px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-faces-md.svelte-1bxzb78 .g-pstyle0.svelte-1bxzb78 {
+        font-weight: 700;
+        height: 17px;
+        text-align: center
+      }
+
+      #g-faces-md.svelte-1bxzb78 .g-pstyle1.svelte-1bxzb78 {
+        height: 17px
+      }
+
+      #g-faces-md.svelte-1bxzb78 .g-pstyle2.svelte-1bxzb78 {
+        height: 17px;
+        text-align: right
+      }
+
+      #g-faces-md.svelte-1bxzb78 .g-pstyle3.svelte-1bxzb78 {
+        height: 17px;
+        text-align: center
+      }
+
+      #g-faces-lg.svelte-1bxzb78.svelte-1bxzb78 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-faces-lg.svelte-1bxzb78 p.svelte-1bxzb78 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-faces-lg.svelte-1bxzb78 .g-pstyle0.svelte-1bxzb78 {
+        font-weight: 700;
+        height: 19px;
+        text-align: center
+      }
+
+      #g-faces-lg.svelte-1bxzb78 .g-pstyle1.svelte-1bxzb78 {
+        height: 19px
+      }
+
+      #g-faces-lg.svelte-1bxzb78 .g-pstyle2.svelte-1bxzb78 {
+        height: 19px;
+        text-align: right
+      }
+
+      #g-faces-lg.svelte-1bxzb78 .g-pstyle3.svelte-1bxzb78 {
+        height: 19px;
+        text-align: center
+      }
+
+      #g-stage1-box.svelte-1b77h1i.svelte-1b77h1i,
+      #g-stage1-box.svelte-1b77h1i .g-artboard.svelte-1b77h1i {
+        margin: 0 auto
+      }
+
+      #g-stage1-box.svelte-1b77h1i p.svelte-1b77h1i {
+        margin: 0
+      }
+
+      #g-stage1-box.svelte-1b77h1i .g-aiAbs.svelte-1b77h1i {
+        position: absolute
+      }
+
+      #g-stage1-box.svelte-1b77h1i .g-aiImg.svelte-1b77h1i {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-stage1-box.svelte-1b77h1i .g-aiPointText p.svelte-1b77h1i {
+        white-space: nowrap
+      }
+
+      #g-stage1-xs.svelte-1b77h1i.svelte-1b77h1i {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage1-xs.svelte-1b77h1i p.svelte-1b77h1i {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 14px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage1-xs.svelte-1b77h1i .g-pstyle0.svelte-1b77h1i {
+        height: 14px;
+        text-align: center
+      }
+
+      #g-stage1-md.svelte-1b77h1i.svelte-1b77h1i {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage1-md.svelte-1b77h1i p.svelte-1b77h1i {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage1-md.svelte-1b77h1i .g-pstyle0.svelte-1b77h1i {
+        height: 19px;
+        text-align: center
+      }
+
+      #g-stage2-box.svelte-135xjb8.svelte-135xjb8,
+      #g-stage2-box.svelte-135xjb8 .g-artboard.svelte-135xjb8 {
+        margin: 0 auto
+      }
+
+      #g-stage2-box.svelte-135xjb8 p.svelte-135xjb8 {
+        margin: 0
+      }
+
+      #g-stage2-box.svelte-135xjb8 .g-aiAbs.svelte-135xjb8 {
+        position: absolute
+      }
+
+      #g-stage2-box.svelte-135xjb8 .g-aiImg.svelte-135xjb8 {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-stage2-box.svelte-135xjb8 .g-aiPointText p.svelte-135xjb8 {
+        white-space: nowrap
+      }
+
+      #g-stage2-xs.svelte-135xjb8.svelte-135xjb8 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage2-xs.svelte-135xjb8 p.svelte-135xjb8 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 14px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage2-xs.svelte-135xjb8 .g-pstyle0.svelte-135xjb8 {
+        height: 14px;
+        text-align: right
+      }
+
+      #g-stage2-xs.svelte-135xjb8 .g-pstyle1.svelte-135xjb8 {
+        height: 14px
+      }
+
+      #g-stage2-md.svelte-135xjb8.svelte-135xjb8 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage2-md.svelte-135xjb8 p.svelte-135xjb8 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage2-md.svelte-135xjb8 .g-pstyle0.svelte-135xjb8 {
+        height: 19px;
+        text-align: center
+      }
+
+      #g-stage2-md.svelte-135xjb8 .g-pstyle1.svelte-135xjb8 {
+        height: 19px
+      }
+
+      #g-stage3-box.svelte-1w577ql.svelte-1w577ql,
+      #g-stage3-box.svelte-1w577ql .g-artboard.svelte-1w577ql {
+        margin: 0 auto
+      }
+
+      #g-stage3-box.svelte-1w577ql p.svelte-1w577ql {
+        margin: 0
+      }
+
+      #g-stage3-box.svelte-1w577ql .g-aiAbs.svelte-1w577ql {
+        position: absolute
+      }
+
+      #g-stage3-box.svelte-1w577ql .g-aiImg.svelte-1w577ql {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-stage3-box.svelte-1w577ql .g-aiPointText p.svelte-1w577ql {
+        white-space: nowrap
+      }
+
+      #g-stage3-xs.svelte-1w577ql.svelte-1w577ql {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage3-xs.svelte-1w577ql p.svelte-1w577ql {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 14px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage3-xs.svelte-1w577ql .g-pstyle0.svelte-1w577ql {
+        line-height: 12px;
+        height: 12px;
+        text-align: center
+      }
+
+      #g-stage3-xs.svelte-1w577ql .g-pstyle1.svelte-1w577ql {
+        height: 14px;
+        text-align: center
+      }
+
+      #g-stage3-md.svelte-1w577ql.svelte-1w577ql {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage3-md.svelte-1w577ql p.svelte-1w577ql {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage3-md.svelte-1w577ql .g-pstyle0.svelte-1w577ql {
+        line-height: 17px;
+        height: 17px;
+        font-size: 14px;
+        text-align: center
+      }
+
+      #g-stage3-md.svelte-1w577ql .g-pstyle1.svelte-1w577ql {
+        height: 19px;
+        text-align: center
+      }
+
+      #g-stage4-box.svelte-7cng55.svelte-7cng55,
+      #g-stage4-box.svelte-7cng55 .g-artboard.svelte-7cng55 {
+        margin: 0 auto
+      }
+
+      #g-stage4-box.svelte-7cng55 p.svelte-7cng55 {
+        margin: 0
+      }
+
+      #g-stage4-box.svelte-7cng55 .g-aiAbs.svelte-7cng55 {
+        position: absolute
+      }
+
+      #g-stage4-box.svelte-7cng55 .g-aiImg.svelte-7cng55 {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-stage4-box.svelte-7cng55 .g-aiPointText p.svelte-7cng55 {
+        white-space: nowrap
+      }
+
+      #g-stage4-xs.svelte-7cng55.svelte-7cng55 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage4-xs.svelte-7cng55 p.svelte-7cng55 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 12px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage4-xs.svelte-7cng55 .g-pstyle0.svelte-7cng55 {
+        height: 12px;
+        text-align: center
+      }
+
+      #g-stage4-xs.svelte-7cng55 .g-pstyle1.svelte-7cng55 {
+        line-height: 14px;
+        height: 14px;
+        text-align: center
+      }
+
+      #g-stage4-md.svelte-7cng55.svelte-7cng55 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-stage4-md.svelte-7cng55 p.svelte-7cng55 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-stage4-md.svelte-7cng55 .g-pstyle0.svelte-7cng55 {
+        height: 19px;
+        text-align: center
+      }
+
+      .visually-hidden.svelte-cx8m1y.svelte-cx8m1y {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        white-space: nowrap !important;
+        border: 0 !important;
+        pointer-events: all
+      }
+
+      .wrapper.svelte-cx8m1y.svelte-cx8m1y,
+      h1.svelte-cx8m1y.svelte-cx8m1y {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+
+      .letter.svelte-cx8m1y.svelte-cx8m1y {
+        color: #fff;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0 .2rem;
+        font-weight: 300;
+        font-family: var(--theme-font-family-hed), sans-serif;
+        transform: translateZ(0)
+      }
+
+      .letter.svelte-cx8m1y.svelte-cx8m1y:not(.svg) {
+        text-shadow: 1px 1px 8px #ff7c88;
+        filter: drop-shadow(0px 0px 12px #ff7c88)
+      }
+
+      .flower-o.svelte-cx8m1y.svelte-cx8m1y {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none
+      }
+
+      .flower-o.svelte-cx8m1y svg.svelte-cx8m1y {
+        overflow: visible
+      }
+
+      .flower-o.svelte-cx8m1y svg path.svelte-cx8m1y {
+        transition: all .5s ease
+      }
+
+      .wrapper.svelte-1aaxqv0.svelte-1aaxqv0 {
+        width: 100%;
+        height: 100vh;
+        overflow: visible
+      }
+
+      .wrapper.svelte-1aaxqv0 svg.svelte-1aaxqv0 {
+        overflow: visible
+      }
+
+      path.move-path.svelte-1aaxqv0.svelte-1aaxqv0 {
+        opacity: 0;
+        stroke-width: 1
+      }
+
+      .wrapper.svelte-h0t0lt {
+        height: 250vh;
+        width: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover
+      }
+
+      @media (max-width: 400px) {
+        .wrapper.svelte-h0t0lt {
+          height: 230vh
+        }
+      }
+
+      .wrapper.svelte-1h52r4z {
+        opacity: 1;
+        z-index: 0;
+        width: 100%;
+        height: 200vh
+      }
+
+      svg.svelte-1h52r4z {
+        overflow: visible
+      }
+
+      #dek .body-text :first-child:first-letter {
+        font-weight: 300;
+        font-size: 4.6rem;
+        font-family: var(--theme-font-family-hed), sans-serif;
+        float: left;
+        line-height: .75;
+        margin: 0 .25rem 0 0
+      }
+
+      header.headline.svelte-1cdorb4 .article-metadata.svelte-1cdorb4 {
+        padding: .75rem 0;
+        font-family: var(--theme-font-family-note, "Knowledge", "Source Sans Pro", Arial, sans-serif);
+        color: var(--theme-colour-text-primary, #404040);
+        text-align: center
+      }
+
+      header.headline.svelte-1cdorb4 .article-metadata .byline-container.svelte-1cdorb4 {
+        margin-bottom: 2px
+      }
+
+      header.headline.svelte-1cdorb4 .article-metadata .byline.svelte-1cdorb4 a {
+        color: var(--theme-colour-text-primary, #404040);
+        text-decoration: none
+      }
+
+      header.headline.svelte-1cdorb4 .article-metadata .dateline-container.svelte-1cdorb4 {
+        text-transform: uppercase;
+        color: var(--theme-colour-grey, #666666);
+        font-size: .8rem;
+        line-height: 1.2rem;
+        letter-spacing: .2px;
+        margin-top: .5rem
+      }
+
+      .page1.svelte-1cdorb4.svelte-1cdorb4 {
+        height: 50vw;
+        min-height: 360px;
+        max-height: 630px;
+        z-index: 1;
+        margin: auto;
+        background-color: transparent;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end
+      }
+
+      .logo.svelte-1cdorb4.svelte-1cdorb4 {
+        width: 100%;
+        margin-top: -3rem
+      }
+
+      .falling-petals.svelte-1cdorb4.svelte-1cdorb4 {
+        overflow: visible;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 100 !important
+      }
+
+      .kicker.svelte-1cdorb4.svelte-1cdorb4 {
+        margin: auto;
+        text-align: center;
+        color: var(--theme-colour-text-primary);
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+        opacity: 1;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-size: 1.3rem
+      }
+
+      @media (max-width: 540px) {
+        .kicker.svelte-1cdorb4.svelte-1cdorb4 {
+          font-size: 1rem
+        }
+      }
+
+      .page2.svelte-1cdorb4.svelte-1cdorb4 {
+        background-color: transparent;
+        position: relative;
+        padding: 4rem 0 10rem;
+        z-index: 1
+      }
+
+      .page3.svelte-1cdorb4.svelte-1cdorb4 {
+        position: relative;
+        z-index: 0;
+        margin-top: -160vh;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        max-width: none
+      }
+
+      .interaction-petal-path.svelte-137k51c,
+      .interaction-feature-label.svelte-137k51c {
+        transition: all .5s var(--theme-animation-cubic);
+        font-size: 1rem
+      }
+
+      .interaction-petal-path.svelte-137k51c:focus,
+      .interaction-feature-label.svelte-137k51c:focus {
+        outline: none
+      }
+
+      .interaction-petal-path.svelte-137k51c {
+        cursor: pointer
+      }
+
+      .interaction-feature-label.svelte-137k51c {
+        text-transform: uppercase;
+        font-size: .75rem;
+        letter-spacing: 1px;
+        fill: var(--theme-colour-grey)
+      }
+
+      .interaction-arrow.svelte-137k51c {
+        fill: var(--theme-colour-grey)
+      }
+
+      .label.svelte-137k51c {
+        fill: var(--theme-colour-white);
+        font-weight: 300
+      }
+
+      text.svelte-137k51c {
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif)
+      }
+
+      .tooltip-wrapper.svelte-14tqwa8.svelte-14tqwa8 {
+        pointer-events: none;
+        min-width: 150px;
+        max-width: 200px;
+        transform: translate(-50%);
+        position: absolute;
+        text-align: center;
+        padding: 20px;
+        background-color: var(--theme-colour-background);
+        border-radius: 1rem;
+        filter: drop-shadow(0px 0px 8px #333);
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: var(--theme-animation-cubic)
+      }
+
+      .tooltip-wrapper.svelte-14tqwa8 p.svelte-14tqwa8 {
+        margin: 0 !important
+      }
+
+      .year.svelte-14tqwa8.svelte-14tqwa8,
+      .song.svelte-14tqwa8.svelte-14tqwa8 {
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+        letter-spacing: .5px;
+        font-weight: 300
+      }
+
+      .year.svelte-14tqwa8.svelte-14tqwa8,
+      .song.svelte-14tqwa8.svelte-14tqwa8 {
+        font-size: 1rem;
+        color: var(--theme-colour-white)
+      }
+
+      .song.svelte-14tqwa8 span.svelte-14tqwa8 {
+        font-weight: 500
+      }
+
+      .wrapper.svelte-1xkchjh.svelte-1xkchjh {
+        position: relative;
+        width: 100%;
+        height: 100vh
+      }
+
+      svg.svelte-1xkchjh.svelte-1xkchjh {
+        overflow: visible
+      }
+
+      svg.svelte-1xkchjh .svelte-1xkchjh:focus {
+        outline: none
+      }
+
+      .viz-petal-path.svelte-1xkchjh.svelte-1xkchjh,
+      .viz-petal-path-grey.svelte-1xkchjh.svelte-1xkchjh,
+      .flower-surrounding-circle.svelte-1xkchjh.svelte-1xkchjh {
+        transition: all .5s ease
+      }
+
+      circle.selected-song-circle.svelte-1xkchjh.svelte-1xkchjh {
+        stroke-dasharray: 4 5;
+        stroke-width: 1;
+        stroke: var(--theme-colour-grey);
+        fill: none;
+        fill-opacity: 1;
+        pointer-events: none
+      }
+
+      .audio-btn.svelte-qfth4e.svelte-qfth4e {
+        position: relative;
+        height: 15rem;
+        width: 15rem
+      }
+
+      .audio-btn.svelte-qfth4e .loader.svelte-qfth4e {
+        z-index: 2;
+        pointer-events: none;
+        touch-action: none;
+        position: absolute;
+        margin: auto;
+        left: 5rem;
+        top: 5rem;
+        width: 5rem;
+        height: 5rem;
+        padding: .5rem;
+        background-color: var(--theme-colour-background);
+        border-radius: 50%
+      }
+
+      .audio-btn.svelte-qfth4e button.svelte-qfth4e {
+        z-index: 1;
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid var(--theme-colour-grey);
+        transition: transform .1s ease;
+        background-color: var(--theme-colour-background)
+      }
+
+      .audio-btn.svelte-qfth4e button.winner.svelte-qfth4e {
+        border: 2px solid var(--theme-colour-yellow)
+      }
+
+      .audio-btn.svelte-qfth4e .icon.svelte-qfth4e {
+        z-index: 2;
+        pointer-events: none;
+        position: absolute;
+        margin: auto;
+        left: 5rem;
+        top: 5rem;
+        width: 5rem;
+        padding: 1rem;
+        height: auto;
+        border: 1px solid var(--theme-colour-grey);
+        background: radial-gradient(circle, rgb(26, 187, 83) 50%, rgba(3, 63, 21, .9) 75%);
+        border-radius: 50%;
+        box-shadow: 0 0 3px var(--theme-colour-background), 0 0 0 1px #033f15, inset .5rem .5rem 1rem #1abb53
+      }
+
+      .audio-btn.svelte-qfth4e .icon.winner.svelte-qfth4e {
+        border: 2px solid var(--theme-colour-yellow)
+      }
+
+      .audio-btn.svelte-qfth4e .icon.pressed {
+        box-shadow: inset 1px 1px 1px #033f15, 0 0 0 1px #033f15, inset -1px -1px 1px #1abb53, inset .5rem .5rem .75rem #1abb53, inset .5rem .5rem .5rem #033f15
+      }
+
+      .audio-btn.svelte-qfth4e .icon.pressed svg {
+        transform: scale3d(.95, .95, 1)
+      }
+
+      @property --a {}
+
+      .audio-btn.svelte-qfth4e .glow.svelte-qfth4e {
+        z-index: 2;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        transform: translateZ(0) scaleZ(1);
+        transition: all 1s ease;
+        filter: blur(var(--blur));
+        -webkit-backface-visibility: hidden;
+        --a: 120deg;
+        animation: svelte-qfth4e-animatedAngle 3s ease infinite alternate-reverse;
+        background: linear-gradient(var(--a), var(--theme-colour-white) 8.21%, var(--theme-colour-orange) 28.08%, var(--theme-colour-red) 58.07%, var(--theme-colour-blue) 96.15%)
+      }
+
+      .audio-btn.svelte-qfth4e .glow.isPlaying.svelte-qfth4e {
+        -webkit-animation: svelte-qfth4e-animatedAngle 3s ease infinite alternate-reverse, svelte-qfth4e-animatedScale calc(60s / var(--tempo) / var(--timeSign)) ease-in infinite alternate;
+        animation: svelte-qfth4e-animatedAngle 3s ease infinite alternate-reverse, svelte-qfth4e-animatedScale calc(60s / var(--tempo) / var(--timeSign)) ease-in infinite alternate
+      }
+
+      @-webkit-keyframes svelte-qfth4e-animatedScale {
+        0% {
+          transform: translateZ(0) scaleZ(1)
+        }
+
+        to {
+          transform: translateZ(0) scale3d(1.05, 1.05, 1.05)
+        }
+      }
+
+      @keyframes svelte-qfth4e-animatedScale {
+        0% {
+          transform: translateZ(0) scaleZ(1)
+        }
+
+        to {
+          transform: translateZ(0) scale3d(1.05, 1.05, 1.05)
+        }
+      }
+
+      @-webkit-keyframes svelte-qfth4e-animatedAngle {
+        0% {
+          --a: 120deg
+        }
+
+        to {
+          --a: 320deg
+        }
+      }
+
+      @keyframes svelte-qfth4e-animatedAngle {
+        0% {
+          --a: 120deg
+        }
+
+        to {
+          --a: 320deg
+        }
+      }
+
+      .wrapper.svelte-n5oavn.svelte-n5oavn {
+        height: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center
+      }
+
+      svg.svelte-n5oavn.svelte-n5oavn {
+        cursor: crosshair;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden
+      }
+
+      .rects.svelte-n5oavn.svelte-n5oavn {
+        pointer-events: none
+      }
+
+      rect.activeSong.svelte-n5oavn.svelte-n5oavn {
+        stroke-width: 1.5px;
+        stroke: var(--theme-colour-white)
+      }
+
+      rect.highlightedSong.svelte-n5oavn.svelte-n5oavn {
+        fill: none;
+        stroke-width: 1.5px;
+        stroke: var(--theme-colour-white)
+      }
+
+      rect.svelte-n5oavn.svelte-n5oavn:not(.activeSong) {
+        opacity: .75
+      }
+
+      .grid.svelte-n5oavn.svelte-n5oavn {
+        pointer-events: none
+      }
+
+      .info.svelte-n5oavn.svelte-n5oavn {
+        text-align: center;
+        font-weight: 300;
+        max-width: 350px;
+        font-size: 1.1rem;
+        line-height: 1.25;
+        margin: auto;
+        height: 5rem
+      }
+
+      .info.svelte-n5oavn img.svelte-n5oavn {
+        width: 1.5rem;
+        border: .75px solid var(--theme-colour-grey);
+        border-radius: 2px;
+        margin-top: -.25rem
+      }
+
+      .wrapper.svelte-1cva1lx {
+        width: 100%;
+        height: 200px
+      }
+
+      g.x-axis-container text,
+      g.y-axis-container text {
+        font-size: .65rem
+      }
+
+      .wrapper.svelte-r73fd8 {
+        width: 100%;
+        height: 200px
+      }
+
+      svg.svelte-r73fd8 {
+        overflow: visible
+      }
+
+      img.svelte-m68g82.svelte-m68g82 {
+        border: .75px solid var(--theme-colour-grey);
+        border-radius: 2px;
+        margin-top: -.25rem
+      }
+
+      .underlay.svelte-m68g82.svelte-m68g82 {
+        position: fixed;
+        transform: translateZ(0);
+        transition: opacity .5s ease;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 120;
+        background-color: #0000004d;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        opacity: 1
+      }
+
+      .underlay.hidden.svelte-m68g82.svelte-m68g82 {
+        opacity: 0;
+        pointer-events: none
+      }
+
+      .modal.svelte-m68g82.svelte-m68g82 {
+        overflow: visible;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--theme-colour-background);
+        border-top-left-radius: 3.5rem;
+        border-top-right-radius: 3.5rem;
+        filter: drop-shadow(0px 0px 12px #333);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+        width: 640px;
+        padding: 0 15px;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: var(--theme-animation-cubic);
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0) scaleZ(1);
+        z-index: 150
+      }
+
+      .modal.hidden.svelte-m68g82.svelte-m68g82 {
+        border-radius: 50%;
+        bottom: auto;
+        left: var(--x);
+        top: var(--y);
+        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+        pointer-events: none
+      }
+
+      @media (max-width: 640px) {
+        .modal.svelte-m68g82.svelte-m68g82 {
+          width: calc(100% - 1rem);
+          border-top-left-radius: 2.5rem;
+          border-top-right-radius: 2.5rem
+        }
+      }
+
+      .close.svelte-m68g82.svelte-m68g82 {
+        width: 2.5rem;
+        position: absolute;
+        top: 1.75rem;
+        right: 1.5rem;
+        cursor: pointer;
+        background: none;
+        border: none
+      }
+
+      @media (max-width: 640px) {
+        .close.svelte-m68g82.svelte-m68g82 {
+          top: 1.5rem;
+          right: 1.25rem
+        }
+      }
+
+      .info.svelte-m68g82.svelte-m68g82 {
+        color: var(--theme-colour-text-primary);
+        margin: 1.5rem auto;
+        max-height: calc(100vh - 20rem);
+        overflow-y: auto;
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif)
+      }
+
+      .info.svelte-m68g82 .song.svelte-m68g82 {
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 200;
+        max-width: 450px;
+        line-height: 1.25
+      }
+
+      .info.svelte-m68g82 .song span.svelte-m68g82 {
+        font-weight: 400;
+        letter-spacing: .5px
+      }
+
+      @media (max-width: 640px) {
+        .info.svelte-m68g82 .song.svelte-m68g82 {
+          font-size: 1.5rem
+        }
+      }
+
+      .info.svelte-m68g82 .country.svelte-m68g82 {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 200
+      }
+
+      .info.svelte-m68g82 .country span.svelte-m68g82 {
+        display: inline-block;
+        width: 1.5rem;
+        margin: 0 .25rem .25rem
+      }
+
+      .info.svelte-m68g82 .spotifyUrl.svelte-m68g82 {
+        text-align: center;
+        margin-top: 0rem;
+        font-size: .875rem
+      }
+
+      .info.svelte-m68g82 .spotifyUrl a.svelte-m68g82 {
+        text-decoration: none;
+        color: #1abb53
+      }
+
+      .info.svelte-m68g82 .spotifyUrl a span.svelte-m68g82 {
+        display: inline-block;
+        width: 1rem
+      }
+
+      .player.svelte-m68g82.svelte-m68g82 {
+        margin-top: -9rem
+      }
+
+      .visually-hidden.svelte-13gbjgx {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        white-space: nowrap !important;
+        border: 0 !important
+      }
+
+      .wrapper.svelte-og3ypl {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 0rem !important;
+        z-index: 100;
+        position: relative
+      }
+
+      .dimmer.svelte-og3ypl {
+        position: absolute;
+        z-index: 100 !important;
+        height: 100%;
+        top: 0;
+        pointer-events: none
+      }
+
+      .dimmer.left.svelte-og3ypl {
+        left: 0;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, .01) 0%, rgb(0, 0, 0) 50%)
+      }
+
+      .dimmer.right.svelte-og3ypl {
+        right: 0;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, .01) 0%, rgb(0, 0, 0) 50%)
+      }
+
+      div.graph-container.svelte-og3ypl {
+        width: 100%;
+        height: 100%;
+        margin: auto
+      }
+
+      svg {
+        transform-box: fill-box;
+        transform-origin: center
+      }
+
+      svg.flags-svg {
+        overflow: visible
+      }
+
+      .flag-image,
+      .flag-outline,
+      .country-name {
+        transform-box: fill-box;
+        transform-origin: center;
+        cursor: pointer
+      }
+
+      .flag-image:focus,
+      .flag-outline:focus,
+      .country-name:focus {
+        outline: none
+      }
+
+      g.country-name {
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 3px;
+        font-size: 2rem;
+        text-shadow: 0px 0px 6px var(--shadow-colour)
+      }
+
+      @media (max-width: 600px) {
+        g.country-name {
+          font-size: 1.4rem;
+          letter-spacing: 2.3px
+        }
+      }
+
+      .flag-image,
+      .flag-outline {
+        transition: x, y, transform;
+        transition-duration: .35s;
+        transition-timing-function: var(--theme-animation-cubic)
+      }
+
+      .winning-stars-g {
+        position: absolute;
+        height: auto;
+        top: 0;
+        left: 0;
+        transition: transform .35s var(--theme-animation-cubic);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: wrap
+      }
+
+      .winning-stars-g span {
+        min-width: 25%;
+        height: .5rem;
+        display: inline-block;
+        background-image: url(./phool-d2206e47.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center
+      }
+
+      .wrapper.svelte-vam5jo {
+        width: 100%;
+        height: 100%
+      }
+
+      .vibing-star.svelte-vam5jo {
+        transform-origin: center
+      }
+
+      .wrapper.svelte-5pmez3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 6rem
+      }
+
+      .btn-easter-egg.svelte-5pmez3 {
+        position: absolute;
+        top: 150px;
+        right: 5%;
+        z-index: 100;
+        font-family: Leckerli One, cursive;
+        font-family: Sacramento, cursive;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        background: none;
+        border: none;
+        color: #7b899dbd;
+        opacity: 0;
+        transition: all 1s ease;
+        cursor: auto
+      }
+
+      .btn-easter-egg.svelte-5pmez3:hover {
+        background-image: linear-gradient(to left, #e61f26, #f39020, #ff7c88, #18378f, #6d3a8d, #b70b79);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent
+      }
+
+      .visually-hidden.svelte-5og5m1 {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        padding: 0 !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        clip: rect(0, 0, 0, 0) !important;
+        -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+        white-space: nowrap !important;
+        border: 0 !important;
+        pointer-events: all
+      }
+
+      .accessible-flower-dashboard {
+        color: #fff !important
+      }
+
+      .accessible-flower-dashboard .description-para {
+        margin-bottom: 2rem
+      }
+
+      .accessible-flower-dashboard .country-name {
+        font-size: 2rem;
+        margin-top: 2rem
+      }
+
+      .accessible-flower-dashboard p {
+        margin: 0
+      }
+
+      .accessible-flower-dashboard p.wins {
+        margin-bottom: 2.5rem
+      }
+
+      .accessible-flower-dashboard td,
+      .accessible-flower-dashboard th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px
+      }
+
+      #g-songviz1-box.svelte-13p8um.svelte-13p8um,
+      #g-songviz1-box.svelte-13p8um .g-artboard.svelte-13p8um {
+        margin: 0 auto
+      }
+
+      #g-songviz1-box.svelte-13p8um p.svelte-13p8um {
+        margin: 0
+      }
+
+      #g-songviz1-box.svelte-13p8um .g-aiAbs.svelte-13p8um {
+        position: absolute
+      }
+
+      #g-songviz1-box.svelte-13p8um .g-aiImg.svelte-13p8um {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-songviz1-box.svelte-13p8um .g-aiPointText p.svelte-13p8um {
+        white-space: nowrap
+      }
+
+      #g-songviz1-xs.svelte-13p8um.svelte-13p8um {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz1-xs.svelte-13p8um p.svelte-13p8um {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 14px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz1-xs.svelte-13p8um .g-pstyle0.svelte-13p8um {
+        font-weight: 500;
+        letter-spacing: 0em
+      }
+
+      #g-songviz1-xs.svelte-13p8um .g-pstyle1.svelte-13p8um {
+        height: 17px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz1-xs.svelte-13p8um .g-pstyle2.svelte-13p8um {
+        font-weight: 500;
+        height: 17px;
+        letter-spacing: 0em
+      }
+
+      #g-songviz1-xs.svelte-13p8um .g-pstyle3.svelte-13p8um {
+        height: 17px;
+        letter-spacing: 0em
+      }
+
+      #g-songviz1-md.svelte-13p8um.svelte-13p8um {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz1-md.svelte-13p8um p.svelte-13p8um {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 16px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz1-md.svelte-13p8um .g-pstyle0.svelte-13p8um {
+        font-weight: 500;
+        letter-spacing: 0em
+      }
+
+      #g-songviz1-md.svelte-13p8um .g-pstyle1.svelte-13p8um {
+        height: 19px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz1-md.svelte-13p8um .g-pstyle2.svelte-13p8um {
+        font-weight: 500;
+        height: 19px;
+        letter-spacing: 0em
+      }
+
+      #g-songviz1-md.svelte-13p8um .g-pstyle3.svelte-13p8um {
+        height: 19px;
+        letter-spacing: 0em
+      }
+
+      #g-songviz2-box.svelte-16rm5go.svelte-16rm5go,
+      #g-songviz2-box.svelte-16rm5go .g-artboard.svelte-16rm5go {
+        margin: 0 auto
+      }
+
+      #g-songviz2-box.svelte-16rm5go p.svelte-16rm5go {
+        margin: 0
+      }
+
+      #g-songviz2-box.svelte-16rm5go .g-aiAbs.svelte-16rm5go {
+        position: absolute
+      }
+
+      #g-songviz2-box.svelte-16rm5go .g-aiImg.svelte-16rm5go {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-songviz2-box.svelte-16rm5go .g-aiPointText p.svelte-16rm5go {
+        white-space: nowrap
+      }
+
+      #g-songviz2-xs.svelte-16rm5go.svelte-16rm5go {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz2-xs.svelte-16rm5go p.svelte-16rm5go {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 18px;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 14px;
+        text-align: left;
+        color: #fafafa;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        height: auto;
+        position: static
+      }
+
+      #g-songviz2-xs.svelte-16rm5go .g-pstyle0.svelte-16rm5go {
+        font-weight: 400;
+        line-height: 17px;
+        height: 17px;
+        letter-spacing: .025em;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz2-xs.svelte-16rm5go .g-pstyle1.svelte-16rm5go {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center
+      }
+
+      #g-songviz2-md.svelte-16rm5go.svelte-16rm5go {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz2-md.svelte-16rm5go p.svelte-16rm5go {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 18px;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fafafa;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        height: auto;
+        position: static
+      }
+
+      #g-songviz2-md.svelte-16rm5go .g-pstyle0.svelte-16rm5go {
+        font-weight: 400;
+        line-height: 19px;
+        height: 19px;
+        letter-spacing: .025em;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz2-md.svelte-16rm5go .g-pstyle1.svelte-16rm5go {
+        font-weight: 500;
+        text-align: right
+      }
+
+      #g-songviz3-box.svelte-1iwexy6.svelte-1iwexy6,
+      #g-songviz3-box.svelte-1iwexy6 .g-artboard.svelte-1iwexy6 {
+        margin: 0 auto
+      }
+
+      #g-songviz3-box.svelte-1iwexy6 p.svelte-1iwexy6 {
+        margin: 0
+      }
+
+      #g-songviz3-box.svelte-1iwexy6 .g-aiAbs.svelte-1iwexy6 {
+        position: absolute
+      }
+
+      #g-songviz3-box.svelte-1iwexy6 .g-aiImg.svelte-1iwexy6 {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-songviz3-box.svelte-1iwexy6 .g-aiPointText p.svelte-1iwexy6 {
+        white-space: nowrap
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6.svelte-1iwexy6 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6 p.svelte-1iwexy6 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 14px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6 .g-pstyle0.svelte-1iwexy6 {
+        line-height: 14px;
+        height: 14px;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: center;
+        color: #7b899d
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6 .g-pstyle1.svelte-1iwexy6 {
+        font-weight: 500;
+        height: 17px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6 .g-pstyle2.svelte-1iwexy6 {
+        line-height: 16px;
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6 .g-pstyle3.svelte-1iwexy6 {
+        height: 17px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz3-xs.svelte-1iwexy6 .g-pstyle4.svelte-1iwexy6 {
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz3-md.svelte-1iwexy6.svelte-1iwexy6 {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz3-md.svelte-1iwexy6 p.svelte-1iwexy6 {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 16px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz3-md.svelte-1iwexy6 .g-pstyle0.svelte-1iwexy6 {
+        line-height: 17px;
+        height: 17px;
+        letter-spacing: 0em;
+        font-size: 14px;
+        text-align: center;
+        color: #7b899d
+      }
+
+      #g-songviz3-md.svelte-1iwexy6 .g-pstyle1.svelte-1iwexy6 {
+        font-weight: 500;
+        height: 19px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz3-md.svelte-1iwexy6 .g-pstyle2.svelte-1iwexy6 {
+        line-height: 16px;
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz3-md.svelte-1iwexy6 .g-pstyle3.svelte-1iwexy6 {
+        height: 19px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz3-md.svelte-1iwexy6 .g-pstyle4.svelte-1iwexy6 {
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz4-box.svelte-1kpunyw.svelte-1kpunyw,
+      #g-songviz4-box.svelte-1kpunyw .g-artboard.svelte-1kpunyw {
+        margin: 0 auto
+      }
+
+      #g-songviz4-box.svelte-1kpunyw p.svelte-1kpunyw {
+        margin: 0
+      }
+
+      #g-songviz4-box.svelte-1kpunyw .g-aiAbs.svelte-1kpunyw {
+        position: absolute
+      }
+
+      #g-songviz4-box.svelte-1kpunyw .g-aiImg.svelte-1kpunyw {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-songviz4-box.svelte-1kpunyw .g-aiPointText p.svelte-1kpunyw {
+        white-space: nowrap
+      }
+
+      #g-songviz4-xs.svelte-1kpunyw.svelte-1kpunyw {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz4-xs.svelte-1kpunyw p.svelte-1kpunyw {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 14px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz4-xs.svelte-1kpunyw .g-pstyle0.svelte-1kpunyw {
+        height: 17px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz4-xs.svelte-1kpunyw .g-pstyle1.svelte-1kpunyw {
+        font-weight: 700;
+        height: 17px;
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz4-xs.svelte-1kpunyw .g-pstyle2.svelte-1kpunyw {
+        height: 17px;
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz4-xs.svelte-1kpunyw .g-cstyle0.svelte-1kpunyw {
+        font-weight: 500
+      }
+
+      #g-songviz4-md.svelte-1kpunyw.svelte-1kpunyw {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz4-md.svelte-1kpunyw p.svelte-1kpunyw {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 16px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz4-md.svelte-1kpunyw .g-pstyle0.svelte-1kpunyw {
+        height: 19px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz4-md.svelte-1kpunyw .g-pstyle1.svelte-1kpunyw {
+        height: 19px;
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz4-md.svelte-1kpunyw .g-pstyle2.svelte-1kpunyw {
+        font-weight: 700;
+        height: 19px;
+        letter-spacing: 0em;
+        color: #fff
+      }
+
+      #g-songviz4-md.svelte-1kpunyw .g-cstyle0.svelte-1kpunyw {
+        font-weight: 500
+      }
+
+      #g-songviz5-box.svelte-1qq89mc.svelte-1qq89mc,
+      #g-songviz5-box.svelte-1qq89mc .g-artboard.svelte-1qq89mc {
+        margin: 0 auto
+      }
+
+      #g-songviz5-box.svelte-1qq89mc p.svelte-1qq89mc {
+        margin: 0
+      }
+
+      #g-songviz5-box.svelte-1qq89mc .g-aiAbs.svelte-1qq89mc {
+        position: absolute
+      }
+
+      #g-songviz5-box.svelte-1qq89mc .g-aiImg.svelte-1qq89mc {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-songviz5-box.svelte-1qq89mc .g-aiPointText p.svelte-1qq89mc {
+        white-space: nowrap
+      }
+
+      #g-songviz5-xs.svelte-1qq89mc.svelte-1qq89mc {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz5-xs.svelte-1qq89mc p.svelte-1qq89mc {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 17px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 14px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz5-xs.svelte-1qq89mc .g-pstyle0.svelte-1qq89mc {
+        height: 17px;
+        letter-spacing: 0em
+      }
+
+      #g-songviz5-xs.svelte-1qq89mc .g-pstyle1.svelte-1qq89mc {
+        line-height: 14px;
+        height: 14px;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: center;
+        color: #7b899d
+      }
+
+      #g-songviz5-xs.svelte-1qq89mc .g-pstyle2.svelte-1qq89mc {
+        height: 17px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      #g-songviz5-md.svelte-1qq89mc.svelte-1qq89mc {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-songviz5-md.svelte-1qq89mc p.svelte-1qq89mc {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 19px;
+        height: auto;
+        opacity: 1;
+        letter-spacing: .025em;
+        font-size: 16px;
+        text-align: left;
+        text-transform: none;
+        color: #fafafa;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        position: static
+      }
+
+      #g-songviz5-md.svelte-1qq89mc .g-pstyle0.svelte-1qq89mc {
+        line-height: 17px;
+        height: 17px;
+        letter-spacing: 0em;
+        font-size: 14px;
+        text-align: center;
+        color: #7b899d
+      }
+
+      #g-songviz5-md.svelte-1qq89mc .g-pstyle1.svelte-1qq89mc {
+        font-weight: 500;
+        height: 19px;
+        letter-spacing: 0em;
+        color: #000
+      }
+
+      #g-songviz5-md.svelte-1qq89mc .g-pstyle2.svelte-1qq89mc {
+        height: 19px;
+        text-align: right;
+        text-transform: uppercase
+      }
+
+      .songviz div.article-block.body-text,
+      .songviz div.article-block.graphic {
+        margin-bottom: 0 !important
+      }
+
+      .songviz .g-artboard {
+        overflow: visible !important
+      }
+
+      @media (max-width: 698.99px) {
+        .songviz .wrapper {
+          max-width: 330px;
+          margin: auto
+        }
+      }
+
+      .songviz .country-list {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 1.25rem;
+        grid-column-gap: 1.15rem;
+        border-radius: .5rem;
+        padding: 1.25rem;
+        padding-top: 0
+      }
+
+      @media (max-width: 689.99px) {
+        .songviz .country-list {
+          grid-template-columns: 1fr 1fr;
+          grid-row-gap: .75rem
+        }
+      }
+
+      .songviz .country-list .country {
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+        color: var(--theme-colour-text-primary);
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        line-height: 1.14
+      }
+
+      @media (max-width: 689.99px) {
+        .songviz .country-list .country {
+          font-size: .875rem
+        }
+      }
+
+      .songviz .country-list .country:last-child {
+        grid-column: span 2
+      }
+
+      .songviz .country-list .country span {
+        margin-right: .5rem;
+        border: .5px solid var(--theme-colour-grey);
+        border-radius: 2px;
+        display: inline-block;
+        height: 1.125rem;
+        width: 1.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center
+      }
+
+      .wrapper.svelte-19omiil.svelte-19omiil {
+        width: 180px;
+        height: 180px
+      }
+
+      svg.svelte-19omiil.svelte-19omiil {
+        overflow: visible
+      }
+
+      svg.svelte-19omiil text.svelte-19omiil {
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-size: .875rem;
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif);
+        fill: var(--theme-colour-white) !important;
+        text-anchor: middle
+      }
+
+      circle.circle-marks.svelte-19omiil.svelte-19omiil {
+        stroke-dasharray: 4 5;
+        stroke-width: .4;
+        stroke: var(--theme-colour-grey)
+      }
+
+      .wrapper.svelte-19omiil {
+        width: 180px;
+        height: 180px
+      }
+
+      svg.svelte-19omiil {
+        overflow: visible
+      }
+
+      .wrapper.svelte-tbria2 {
+        width: 180px;
+        height: 180px
+      }
+
+      svg.svelte-tbria2 {
+        overflow: visible
+      }
+
+      #g-spotifyLegend-box.svelte-kzntig.svelte-kzntig,
+      #g-spotifyLegend-box.svelte-kzntig .g-artboard.svelte-kzntig {
+        margin: 0 auto
+      }
+
+      #g-spotifyLegend-box.svelte-kzntig p.svelte-kzntig {
+        margin: 0
+      }
+
+      #g-spotifyLegend-box.svelte-kzntig .g-aiAbs.svelte-kzntig {
+        position: absolute
+      }
+
+      #g-spotifyLegend-box.svelte-kzntig .g-aiImg.svelte-kzntig {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100% !important;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      #g-spotifyLegend-box.svelte-kzntig .g-aiPointText p.svelte-kzntig {
+        white-space: nowrap
+      }
+
+      #g-spotifyLegend-xs.svelte-kzntig.svelte-kzntig {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-spotifyLegend-xs.svelte-kzntig p.svelte-kzntig {
+        font-family: Knowledge, Source Sans Pro, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 19px;
+        opacity: 1;
+        letter-spacing: 0em;
+        font-size: 16px;
+        text-align: left;
+        color: #fafafa;
+        text-transform: none;
+        padding-bottom: 0;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        height: auto;
+        position: static
+      }
+
+      #g-spotifyLegend-xs.svelte-kzntig .g-pstyle0.svelte-kzntig {
+        line-height: 17px;
+        height: 17px;
+        letter-spacing: .025em;
+        font-size: 14px
+      }
+
+      #g-spotifyLegend-xs.svelte-kzntig .g-pstyle1.svelte-kzntig {
+        text-align: center
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig.svelte-kzntig {
+        position: relative;
+        overflow: hidden
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig p.svelte-kzntig {
+        font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        line-height: 14px;
+        opacity: 1;
+        padding-bottom: 0;
+        letter-spacing: 0em;
+        font-size: 12px;
+        text-align: left;
+        color: #000;
+        text-transform: none;
+        padding-top: 0;
+        mix-blend-mode: normal;
+        font-style: normal;
+        height: auto;
+        position: static
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig .g-pstyle0.svelte-kzntig {
+        font-weight: 700;
+        line-height: 26px;
+        font-size: 24px
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig .g-pstyle1.svelte-kzntig {
+        line-height: 18px;
+        padding-bottom: 9px;
+        font-size: 16px
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig .g-pstyle2.svelte-kzntig {
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: .01em;
+        font-size: 14px;
+        text-transform: uppercase
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig .g-pstyle3.svelte-kzntig {
+        line-height: 18px;
+        padding-bottom: 9px;
+        font-size: 14px
+      }
+
+      #g-spotifyLegend-xl.svelte-kzntig .g-pstyle4.svelte-kzntig {
+        padding-bottom: 4px
+      }
+
+      .wrapper_flower-dashboard-explanation {
+        margin: 2rem auto 4rem !important
+      }
+
+      .wrapper_flower-dashboard-explanation div.article-block.body-text ul {
+        padding-left: 0
+      }
+
+      .wrapper_flower-dashboard-explanation div.article-block.body-text ul li {
+        line-height: 1.5;
+        list-style: none;
+        margin-bottom: 1.8rem
+      }
+
+      .wrapper_flower-dashboard-explanation div.article-block.body-text ul li:last-of-type {
+        margin-bottom: 3rem
+      }
+
+      #spotifyLegend {
+        max-width: 330px
+      }
+
+      .feature {
+        padding: .3rem .7rem;
+        border-radius: 1rem;
+        font-weight: 500;
+        font-family: var(--theme-font-family-sans-serif);
+        margin-right: .3rem;
+        font-size: 1rem
+      }
+
+      .danceability {
+        background-color: #e61f26
+      }
+
+      .energy {
+        background-color: #f39020
+      }
+
+      .loudness {
+        background-color: #ff7c88
+      }
+
+      .acousticness {
+        background-color: #18378f
+      }
+
+      .valence {
+        background-color: #6d3a8d
+      }
+
+      .tempo {
+        background-color: #b70b79
+      }
+
+      .winning-flower {
+        padding: 1px 4px;
+        border-radius: 20px;
+        border: 1.5px solid #f7e019;
+        font-family: var(--theme-font-family-sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif)
+      }
+
+      @-webkit-keyframes svelte-tm17tu-upAndDown {
+          {
+          top: 0px
+        }
+
+          {
+          top: 5px
+        }
+
+          {
+          top: 10px
+        }
+
+          {
+          top: 15px
+        }
+
+          {
+          top: 20px
+        }
+      }
+
+      @keyframes svelte-tm17tu-upAndDown {
+          {
+          top: 0px
+        }
+
+          {
+          top: 5px
+        }
+
+          {
+          top: 10px
+        }
+
+          {
+          top: 15px
+        }
+
+          {
+          top: 20px
+        }
+      }
+
+      .interaction-arrow.svelte-10ieynv {
+        fill: var(--theme-colour-grey)
+      }
+    </style>
+    <defs>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="2" result="coloredBlur"></feGaussianBlur>
+        <feMerge>
+          <feMergeNode in="coloredBlur"></feMergeNode>
+          <feMergeNode in="SourceGraphic"></feMergeNode>
+        </feMerge>
+      </filter>
+      <linearGradient id="linear-gradient-danceability" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="60%" stop-color="#e61f26"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-energy" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="60%" stop-color="#f39020"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-loudness" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="60%" stop-color="#ff7c88"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-acousticness" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="60%" stop-color="#18378f"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-valence" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="60%" stop-color="#6d3a8d"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-tempo" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="60%" stop-color="#b70b79"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-inverted-danceability" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="60%" stop-color="#e61f26"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-inverted-energy" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="60%" stop-color="#f39020"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-inverted-loudness" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="60%" stop-color="#ff7c88"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-inverted-acousticness" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="60%" stop-color="#18378f"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-inverted-valence" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="60%" stop-color="#6d3a8d"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-inverted-tempo" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="60%" stop-color="#b70b79"></stop>
+        <stop offset="100%" stop-color="#000"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-nofeatures" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="10%" stop-color="#000"></stop>
+        <stop offset="100%" stop-color="#7b899d"></stop>
+      </linearGradient>
+      <linearGradient id="linear-gradient-winner" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="70%" stop-color="#f7e019"></stop>
+      </linearGradient>
+      <radialGradient id="radial-gradient-play-btn" cx="50%" cy="50%" r="60%">
+        <stop offset="50%" stop-color="#1abb53"></stop>
+        <stop offset="100%" stop-color="#033f15" stop-opacity="0.9"></stop>
+      </radialGradient>
+    </defs>
+    <g slot="flowers-interaction-legend" aria-hidden="true">
+      <g transform="translate(725.5, 370)">
+        <circle cx="0" cy="0" r="300" fill="#fff" stroke="#fff" style="stroke-opacity: 0; fill-opacity: 0;"></circle>
+        <path tabindex="-1" class="interaction-petal-path svelte-137k51c" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+          rotate(0)
+          scale(0.25)
+          translate(
+          9.1443186330665, 
+          28.57238941245469
+          )
+          " style="fill-opacity: 0.01; stroke-opacity: 1; stroke-width: 20;"></path>
+        <g transform="rotate(90)"><text class="interaction-feature-label svelte-137k51c" transform="
+          rotate(-90)
+          translate(
+          87.5, 
+          0)
+          " text-anchor="middle" dominant-baseline="central" fill="#fff"
+            style="transform-origin: 87.5px 0px; opacity: 1;">danceability</text></g>
+        <path tabindex="-1" class="interaction-petal-path svelte-137k51c" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+          rotate(60)
+          scale(0.25)
+          translate(
+          9.1443186330665, 
+          28.57238941245469
+          )
+          " style="fill-opacity: 0.01; stroke-opacity: 1; stroke-width: 20;"></path>
+        <g transform="rotate(90)"><text class="interaction-feature-label svelte-137k51c" transform="
+          rotate(-90)
+          translate(
+          49.750000000000014, 
+          86.16952767655164)
+          " text-anchor="middle" dominant-baseline="central" fill="#fff"
+            style="transform-origin: 49.75px 86.1695px; opacity: 1;">energy</text></g>
+        <path tabindex="-1" class="interaction-petal-path svelte-137k51c" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+          rotate(120)
+          scale(0.25)
+          translate(
+          9.1443186330665, 
+          28.57238941245469
+          )
+          " style="fill-opacity: 0.01; stroke-opacity: 1; stroke-width: 20;"></path>
+        <g transform="rotate(90)"><text class="interaction-feature-label svelte-137k51c" transform="
+          rotate(-90)
+          translate(
+          -51.74999999999998, 
+          89.6336292916894)
+          " text-anchor="middle" dominant-baseline="central" fill="#fff"
+            style="transform-origin: -51.75px 89.6336px; opacity: 1;">loudness</text></g>
+        <path tabindex="-1" class="interaction-petal-path svelte-137k51c" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+          rotate(180)
+          scale(0.25)
+          translate(
+          9.1443186330665, 
+          28.57238941245469
+          )
+          " style="fill-opacity: 0.01; stroke-opacity: 1; stroke-width: 20;"></path>
+        <g transform="rotate(90)"><text class="interaction-feature-label svelte-137k51c" transform="
+          rotate(-90)
+          translate(
+          -87.5, 
+          1.0715659492539341e-14)
+          " text-anchor="middle" dominant-baseline="central" fill="#fff"
+            style="transform-origin: -87.5px 1.07157e-14px; opacity: 1;">acousticness</text></g>
+        <path tabindex="-1" class="interaction-petal-path svelte-137k51c" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+          rotate(240)
+          scale(0.25)
+          translate(
+          9.1443186330665, 
+          28.57238941245469
+          )
+          " style="fill-opacity: 0.01; stroke-opacity: 1; stroke-width: 20;"></path>
+        <g transform="rotate(90)"><text class="interaction-feature-label svelte-137k51c" transform="
+          rotate(-90)
+          translate(
+          -50.75000000000004, 
+          -87.90157848412049)
+          " text-anchor="middle" dominant-baseline="central" fill="#fff"
+            style="transform-origin: -50.75px -87.9016px; opacity: 1;">valence</text></g>
+        <path tabindex="-1" class="interaction-petal-path svelte-137k51c" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+          rotate(300)
+          scale(0.25)
+          translate(
+          9.1443186330665, 
+          28.57238941245469
+          )
+          " style="fill-opacity: 0.01; stroke-opacity: 1; stroke-width: 20;"></path>
+        <g transform="rotate(90)"><text class="interaction-feature-label svelte-137k51c" transform="
+          rotate(-90)
+          translate(
+          48.750000000000014, 
+          -84.43747686898276)
+          " text-anchor="middle" dominant-baseline="central" fill="#fff"
+            style="transform-origin: 48.75px -84.4375px; opacity: 1;">tempo</text></g>
+      </g>
+      <g transform="translate(625.5, 510)">
+        <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)"></circle>
+        <path transform="translate(-7.5, -7.5) scale(0.65)"
+          d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z">
+        </path><text dx="18px" dy="0.35em" class="label svelte-137k51c">Click to listen</text>
+      </g>
+      <g transform="translate(758.5, 510)">
+        <path d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-winner)" stroke-width="22" transform="
+              rotate(0)
+              scale(0.05)
+              translate(
+                  9.1443186330665, 
+                  28.57238941245469
+                  )
+              "></path>
+        <path d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-winner)" stroke-width="22" transform="
+              rotate(60)
+              scale(0.05)
+              translate(
+                  9.1443186330665, 
+                  28.57238941245469
+                  )
+              "></path>
+        <path d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-winner)" stroke-width="22" transform="
+              rotate(120)
+              scale(0.05)
+              translate(
+                  9.1443186330665, 
+                  28.57238941245469
+                  )
+              "></path>
+        <path d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-winner)" stroke-width="22" transform="
+              rotate(180)
+              scale(0.05)
+              translate(
+                  9.1443186330665, 
+                  28.57238941245469
+                  )
+              "></path>
+        <path d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-winner)" stroke-width="22" transform="
+              rotate(240)
+              scale(0.05)
+              translate(
+                  9.1443186330665, 
+                  28.57238941245469
+                  )
+              "></path>
+        <path d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-winner)" stroke-width="22" transform="
+              rotate(300)
+              scale(0.05)
+              translate(
+                  9.1443186330665, 
+                  28.57238941245469
+                  )
+              "></path><text dx="18px" dy="0.35em" class="label svelte-137k51c">Winner</text>
+      </g>
+      <g transform="translate(715.5, 360) scale(0.06)">
+        <g class="interaction-arrow svelte-137k51c">
+          <g>
+            <g>
+              <g>
+                <path
+                  d="M277.72,161.287c-4.962-11.288-16.219-25.197-42.221-13.767l-22.914,10.073l-21.834-49.668 c-13.15-29.914-45.796-32.126-62.368-16.31c-11.998,11.451-17.455,29.705-9.563,47.657l77.437,177.259 c-18.861-14.285-54.884-14.124-71.008,2.481l0.421-0.637c-17.126,17.637-14.258,42.636,11.729,64.478L276.079,492l198.672-87.338 l1.081-17.311c2.812-45.041-5.197-90.1-23.358-131.413l-15.038-34.208c-0.78-1.773-1.633-3.506-2.556-5.193 c-10.488-19.174-33.962-27.078-54.004-18.363l-14.929,6.492l-16.872-38.38c-7.384-16.797-27.068-24.438-43.812-16.932 L277.72,161.287z"
+                  style="fill: var(--theme-colour-white);"></path>
+                <path
+                  d="M461.63,251.914l-15.038-34.207c-0.89-2.026-1.879-4.035-2.938-5.968c-6.272-11.469-16.565-20.103-28.981-24.313 c-12.377-4.196-25.794-3.636-37.784,1.578l-5.795,2.52l-7.405-16.845c-0.001-0.002-0.002-0.005-0.003-0.007l-5.456-12.41 c-4.662-10.604-13.188-18.74-24.007-22.907c-10.766-4.146-22.478-3.845-32.987,0.846l-19.228,8.33 c-3.557-5.06-7.877-8.921-12.914-11.528c-10.521-5.445-23.178-4.987-37.621,1.363l-13.759,6.048l-17.81-40.514 c-7.25-16.493-20.706-27.81-36.916-31.05c-15.239-3.046-30.755,1.265-41.51,11.53c-16.139,15.402-20.776,38.528-11.822,58.895 l67.466,154.435c-5.649-1.143-11.602-1.666-17.643-1.519c-15.691,0.387-29.8,5.377-39.247,13.79 c-0.62,0.402-1.203,0.878-1.737,1.428c-9.494,9.777-14.174,21.604-13.537,34.201c0.797,15.743,9.79,31.268,26.006,44.898 c0.082,0.069,0.165,0.137,0.25,0.203l138.681,109.147c1.794,1.413,3.979,2.142,6.186,2.142c1.362,0,2.732-0.278,4.023-0.846 l198.672-87.337c3.425-1.505,5.723-4.797,5.956-8.531l1.081-17.312C488.713,341.548,480.351,294.499,461.63,251.914z M380.613,262.873c1.647,3.747,5.313,5.978,9.16,5.978c1.344,0,2.71-0.272,4.019-0.848c5.056-2.222,7.353-8.123,5.13-13.179 l-19.779-44.992l5.722-2.488c15.467-6.727,33.2-0.713,41.244,13.994c0.783,1.431,1.514,2.916,2.173,4.416l15.039,34.208 c17.441,39.676,25.233,83.511,22.532,126.766l-0.702,11.231L277.55,480.431L143.715,375.097 c-11.612-9.796-18.28-20.623-18.78-30.498c-0.324-6.402,1.87-12.364,6.526-17.748c0.336-0.267,0.658-0.558,0.964-0.873 c11.971-12.329,41.824-13.181,57.414-1.748l34.447,33.084c1.939,1.862,4.434,2.788,6.926,2.788c2.627,0,5.25-1.029,7.214-3.073 c3.826-3.983,3.698-10.314-0.285-14.14l-33.516-32.191l-76.648-175.452c-6.717-15.28-0.627-28.821,7.313-36.398 c5.953-5.682,15.066-8.129,23.782-6.386c9.87,1.973,17.87,8.893,22.527,19.486l58.06,132.072c1.647,3.747,5.313,5.978,9.16,5.978 c1.344,0,2.71-0.272,4.019-0.848c5.056-2.223,7.353-8.123,5.13-13.179l-32.201-73.249l13.76-6.049 c8.636-3.795,15.493-4.438,20.379-1.909c3.458,1.79,6.373,5.338,8.663,10.546l34.24,77.888c1.647,3.747,5.313,5.978,9.16,5.978 c1.344,0,2.71-0.272,4.019-0.848c5.056-2.223,7.353-8.123,5.13-13.179l-30.194-68.685l18.32-7.937 c0.039-0.017,0.077-0.033,0.115-0.051c5.625-2.521,11.904-2.685,17.681-0.46c5.809,2.237,10.385,6.602,12.886,12.292 L380.613,262.873z">
+                </path>
+                <g>
+                  <path
+                    d="M420.718,407.562c-3.85,0-7.518-2.235-9.163-5.986c-2.218-5.058,0.083-10.956,5.141-13.174l9.865-4.327 c5.059-2.219,10.957,0.083,13.174,5.141c2.218,5.058-0.083,10.956-5.141,13.174l-9.865,4.327 C423.423,407.291,422.059,407.562,420.718,407.562z">
+                  </path>
+                </g>
+                <g>
+                  <path
+                    d="M285.439,467.119c-3.85,0-7.518-2.235-9.163-5.986c-2.218-5.058,0.083-10.956,5.141-13.174l105.353-46.208 c5.06-2.218,10.957,0.084,13.174,5.141c2.218,5.058-0.083,10.956-5.141,13.174L289.45,466.275 C288.144,466.848,286.78,467.119,285.439,467.119z">
+                  </path>
+                </g>
+              </g>
+            </g>
+            <g>
+              <path
+                d="M136.8,53.177c-4.644,0-8.807-3.253-9.783-7.98l-6.85-33.174c-1.117-5.409,2.362-10.699,7.771-11.815 c5.407-1.114,10.699,2.363,11.815,7.771l6.85,33.174c1.117,5.409-2.362,10.699-7.771,11.816 C138.151,53.109,137.47,53.177,136.8,53.177z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M32.524,51.649c-1.797,0-3.616-0.484-5.256-1.5l-6.907-4.277c-4.695-2.908-6.145-9.071-3.236-13.767 c2.908-4.696,9.071-6.145,13.767-3.236l6.907,4.277c4.695,2.908,6.145,9.071,3.236,13.767 C39.143,49.968,35.871,51.649,32.524,51.649z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M87.272,87.922c-1.886,0-3.792-0.532-5.486-1.646L60.454,72.245c-4.614-3.035-5.895-9.236-2.86-13.85 s9.235-5.895,13.85-2.86l21.333,14.031c4.614,3.035,5.895,9.236,2.86,13.85C93.715,86.337,90.525,87.922,87.272,87.922z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M43.644,154.365c-4.644,0-8.807-3.253-9.783-7.98c-1.117-5.409,2.362-10.699,7.771-11.815l33.174-6.85 c5.411-1.115,10.699,2.363,11.816,7.771c1.117,5.409-2.362,10.699-7.771,11.816l-33.174,6.85 C44.995,154.297,44.314,154.365,43.644,154.365z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M87.657,233.639c-1.886,0-3.792-0.532-5.486-1.646c-4.614-3.035-5.895-9.236-2.86-13.85l18.614-28.301 c3.034-4.614,9.235-5.896,13.85-2.86c4.614,3.035,5.895,9.236,2.86,13.85l-18.614,28.301 C94.1,232.054,90.91,233.639,87.657,233.639z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M231.138,113.159c-4.644,0-8.807-3.253-9.783-7.979c-1.117-5.409,2.362-10.699,7.771-11.816l22.116-4.567 c5.41-1.117,10.699,2.362,11.816,7.771s-2.362,10.699-7.771,11.816l-22.116,4.567 C232.488,113.091,231.808,113.159,231.138,113.159z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M293.34,100.315c-4.644,0-8.807-3.253-9.783-7.979c-1.117-5.409,2.362-10.699,7.771-11.816l6.912-1.427 c5.412-1.116,10.699,2.363,11.816,7.771c1.117,5.409-2.362,10.699-7.771,11.816l-6.912,1.427 C294.691,100.247,294.01,100.315,293.34,100.315z">
+              </path>
+            </g>
+            <g>
+              <path
+                d="M196.393,63.628c-1.886,0-3.792-0.532-5.486-1.646c-4.614-3.035-5.895-9.236-2.86-13.85l18.614-28.301 c3.034-4.614,9.235-5.896,13.85-2.86c4.614,3.035,5.895,9.236,2.86,13.85l-18.614,28.301 C202.837,62.043,199.646,63.628,196.393,63.628z">
+              </path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g class="song-flowers svelte-1xkchjh">
+      <g key="Hasta La Vista" data-year="2003" data-song="Hasta La Vista" transform="translate(
+              209.87196526866796, 
+              381.3727002707004
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(0)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(60)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(120)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(180)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(240)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(300)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Wild Dances" data-year="2004" data-song="Wild Dances" transform="translate(
+              520.9562937570163, 
+              660.8373287863778
+              )scale(2)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(0)
+                          scale(0.1968058968058968)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(60)
+                          scale(0.275962477427264)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(120)
+                          scale(0.2664572748267898)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(180)
+                          scale(0.05260440819829069)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(240)
+                          scale(0.20597298438159564)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(300)
+                          scale(0.23464425712894882)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Razom Nas Bahato" data-year="2005" data-song="Razom Nas Bahato" transform="translate(
+              289.9227117483055, 
+              470.770004413794
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.25061425061425063)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.2795681058131744)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.25867898383371823)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.10553133798471993)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.2848037146475306)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.2503260229048705)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Show Me Your Love" data-year="2006" data-song="Show Me Your Love" transform="translate(
+              316.2125759749486, 
+              325.7698719737941
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(0)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(60)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(120)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(180)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(240)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path-grey svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-nofeatures)" stroke="url(#linear-gradient-nofeatures)"
+            transform="rotate(300)scale(0.2)" style="fill-opacity: 0.7; stroke-opacity: 1; stroke-width: 10;"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Dancing Lasha Tumbai" data-year="2007" data-song="Dancing Lasha Tumbai" transform="translate(
+              389.1517145200884, 
+              538.2504090429713
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.2248157248157248)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.28798123871363196)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.25270207852193993)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.0015616771122583205)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.29493457154917685)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.1809177320591325)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Shady Lady" data-year="2008" data-song="Shady Lady" transform="translate(
+              396.2633224545863, 
+              415.1671761168877
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.15737100737100737)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.2807699819418112)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.25382909930715936)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.00022519652525128695)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.10498100464330942)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.1500864697291896)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Be my Valentine! (Anti-crisis Girl)" data-year="2009" data-song="Be my Valentine! (Anti-crisis Girl)"
+        transform="translate(
+              495.4923252263692, 
+              482.6475807460649
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.18132678132678132)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.27716435355590074)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.26820323325635104)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.0020213853024033056)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.2578936260025327)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.14398170684840256)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Sweet People" data-year="2010" data-song="Sweet People" transform="translate(
+              616.8104681801303, 
+              137.239059734852
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.19127764127764127)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.1221223329617533)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.2415981524249422)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.21713154993439077)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.026783452933727307)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.13460454510517283)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Angel" data-year="2011" data-song="Angel" transform="translate(
+              670.7169665518946, 
+              760.695933243006
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.11867321867321867)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.22728649421747346)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.2470392609699769)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.04201902224100485)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.12809202195018995)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.24619853449821935)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Be My Guest" data-year="2012" data-song="Be My Guest" transform="translate(
+              761.0639724243333, 
+              681.718604028316
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.16216216216216217)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.2636432471087367)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.2603879907621247)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.0005485044563466748)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.1214436471084846)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.15015180241346626)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Gravity" data-year="2013" data-song="Gravity" transform="translate(
+              826.2638888913551, 
+              165.90326935080952
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.07665847665847665)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.23389681292497588)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.26618013856812933)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.1575509489748104)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.13347403967918955)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.24180010760677412)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Tick - Tock" data-year="2014" data-song="Tick - Tock" transform="translate(
+              876.6501443656966, 
+              713.9651054810563
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.21633906633906633)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.2699530967840799)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.2643233256351039)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.0032765096373386284)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.22085268045588857)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.14432950731469854)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="1944" data-year="2016" data-song="1944" transform="translate(
+              482.6648291735228, 
+              257.25967269574693
+              )scale(2)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(0)
+                          scale(0.2557739557739558)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(60)
+                          scale(0.15186876714551414)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(120)
+                          scale(0.2529976905311778)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(180)
+                          scale(0.18023391888328008)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(240)
+                          scale(0.1382228788518362)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(300)
+                          scale(0.13476403371678924)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Time" data-year="2017" data-song="Time" transform="translate(
+              1022.8328301371766, 
+              293.4452535588031
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.1673218673218673)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.27115497291271673)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.2567852193995381)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.000751138987529004)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.08915154073448713)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.10006084906868899)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Under The Ladder" data-year="2018" data-song="Under The Ladder" transform="translate(
+              1061.1986860730638, 
+              407.1468854657672
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.16879606879606876)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.22398133486372226)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.24341801385681291)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.0007239194236388403)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.13853946813001267)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.17307396684686535)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Shum" data-year="2021" data-song="Shum" transform="translate(
+              1146.7556616472882, 
+              491.28964469430423
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.15184275184275184)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.22127711357428945)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.252027713625866)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.015101897949620822)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.14740396791895313)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.12788296482283312)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Stefania" data-year="2022" data-song="Stefania" transform="translate(
+              984.9813425836849, 
+              570.2141002927275
+              )scale(2)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(0)
+                          scale(0.2642506142506142)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(60)
+                          scale(0.24531463614702548)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(120)
+                          scale(0.253487297921478)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(180)
+                          scale(0.04383365983368241)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(240)
+                          scale(0.09200084423807514)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-winner)" transform="
+                          rotate(300)
+                          scale(0.10588890881606929)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        "
+            style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10; filter: url(&quot;#glow&quot;);">
+          </path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+      <g key="Heart Of Steel" data-year="2023" data-song="Heart Of Steel" transform="translate(
+              1176.8469408966066, 
+              375.12375076179245
+              )scale(1)" class="svelte-1xkchjh">
+        <g class="svelte-1xkchjh" style="">
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-danceability)" stroke="url(#linear-gradient-danceability)" transform="
+                          rotate(0)
+                          scale(0.11019656019656018)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-energy)" stroke="url(#linear-gradient-energy)" transform="
+                          rotate(60)
+                          scale(0.1662912806891558)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-loudness)" stroke="url(#linear-gradient-loudness)" transform="
+                          rotate(120)
+                          scale(0.2206651270207852)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-acousticness)" stroke="url(#linear-gradient-acousticness)" transform="
+                          rotate(180)
+                          scale(0.0013136766412590519)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-valence)" stroke="url(#linear-gradient-valence)" transform="
+                          rotate(240)
+                          scale(0.05211059518784297)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <path class="viz-petal-path svelte-1xkchjh" d="M0 0 
+      C72 120 
+        72 240 
+        0 240 
+      C-72 240 
+        -72 120 
+        0 0
+      " fill="url(#linear-gradient-tempo)" stroke="url(#linear-gradient-tempo)" transform="
+                          rotate(300)
+                          scale(0.14276152289206018)
+                          translate(
+                            9.1443186330665, 
+                            28.57238941245469
+                            )
+                        " style="fill-opacity: 1; stroke-opacity: 1; stroke-width: 10;"></path>
+          <circle cx="0" cy="0" r="12" fill="url(#radial-gradient-play-btn)" class="svelte-1xkchjh"></circle>
+          <path transform="translate(-7.5, -7.5) scale(0.65)"
+            d="M8.286 3.407A1.5 1.5 0 0 0 6 4.684v14.632a1.5 1.5 0 0 0 2.286 1.277l11.888-7.316a1.5 1.5 0 0 0 0-2.555L8.286 3.407z"
+            class="svelte-1xkchjh"></path>
+        </g>
+        <circle class="flower-surrounding-circle svelte-1xkchjh" fill="#fff" stroke="#fff" r="70"
+          style="stroke-opacity: 0; fill-opacity: 0; pointer-events: all; cursor: pointer;"></circle>
+      </g>
+    </g>
+  </svg>
+</div>

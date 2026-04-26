@@ -1,0 +1,10 @@
+{
+    "svgFile": "chocolate.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "chocolate.png",
+    "source": "https://ieeexplore.ieee.org/abstract/document/9906974",
+    "title": "African Chocolate Production",
+    "description": "Chocolate",
+    "snippets": [],
+    "code": ""
+}

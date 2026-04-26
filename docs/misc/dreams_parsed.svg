@@ -1,0 +1,11 @@
+<g data-description="grid">
+    </g>
+
+<g id="bluepetals">
+    <g class="bluepatal bluepatal-{id}" data-size="12">
+        <g id="bluepetal-{id}">
+            <path class="cls-1"></path>
+                <path class="cls-2" data-size="6"></path>
+            </g>
+        </g>
+    </g>

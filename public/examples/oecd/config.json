@@ -1,0 +1,10 @@
+{
+    "svgFile": "oecd.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "oecd.png",
+    "source": "https://www.oecdbetterlifeindex.org/#/11111111111",
+    "title": "OECD Better Life Index",
+    "description": "Flowers",
+    "snippets": [],
+    "code": ""
+}

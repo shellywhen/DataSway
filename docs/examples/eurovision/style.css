@@ -1,0 +1,72 @@
+.svelte-1xkchjh {
+    overflow: visible;
+    --theme-colour-background: #000;
+    --theme-colour-text-primary: var(--theme-colour-white);
+    --theme-colour-text-secondary: rgb(255 255 255 / 60%);
+    --theme-colour-accent: #ef3c2a;
+    --theme-colour-brand-logo: #ffffff;
+    --theme-colour-brand-rules: rgb(255 255 255 / 25%);
+    --theme-colour-brand-shadow: rgb(255 255 255 / 10%);
+    --theme-colour-grey: #7b899d;
+    --theme-colour-white: #fafafa;
+    --theme-colour-yellow: #f7d349;
+    --theme-colour-orange: #CE7023;
+    --theme-colour-red: #F40681;
+    --theme-colour-blue: #0A68C4;
+    --theme-font-size-base: 1.375rem;
+    --theme-font-family-serif: freight-book, serif;
+    --theme-font-family-sans-serif: Knowledge, sans-serif;
+    --theme-font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --theme-font-family-hed: var(--theme-font-family-sans-serif);
+    --theme-font-family-subhed: var(--theme-font-family-sans-serif);
+    --theme-font-family-body: var(--theme-font-family-sans-serif);
+    --theme-font-family-note: var(--theme-font-family-sans-serif);
+    --theme-animation-cubic: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  circle.selected-song-circle.svelte-1xkchjh.svelte-1xkchjh {
+    stroke-dasharray: 4 5;
+    stroke-width: 1;
+    stroke: var(--theme-colour-grey);
+    fill: none;
+    fill-opacity: 1;
+    pointer-events: none
+  }
+
+  svg {
+    transform-box: fill-box;
+    transform-origin: center
+  }
+
+  .feature {
+    padding: .3rem .7rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-family: var(--theme-font-family-sans-serif);
+    margin-right: .3rem;
+    font-size: 1rem
+  }
+
+  .danceability {
+    background-color: #e61f26
+  }
+
+  .energy {
+    background-color: #f39020
+  }
+
+  .loudness {
+    background-color: #ff7c88
+  }
+
+  .acousticness {
+    background-color: #18378f
+  }
+
+  .valence {
+    background-color: #6d3a8d
+  }
+
+  .tempo {
+    background-color: #b70b79
+  }

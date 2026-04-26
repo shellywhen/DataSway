@@ -1,0 +1,10 @@
+{
+    "svgFile": "forest.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "forest.png",
+    "source": "https://ieeexplore.ieee.org/abstract/document/9906974",
+    "title": "African Forest Distribution",
+    "description": "Leaves",
+    "snippets": [],
+    "code": ""
+}

@@ -1,0 +1,10 @@
+{
+    "svgFile": "book.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "book.png",
+    "source": "https://github.com/projectpolymer/bookreading",
+    "title": "What am I reading?",
+    "description": "Book",
+    "snippets": [],
+    "code": ""
+}

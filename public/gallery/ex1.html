@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex1. CD Sales</title>
+    <script src="./assets/anime.min.js"></script>
+    <script src="./assets/seedrandom.min.js"></script>
+    <script src="./assets/chance.min.js"></script>
+    <script src="./assets/helper.js"></script>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        }
+
+        .svg-wrapper {
+            padding: 2vh 10vw;
+            background: white;
+        }
+
+        .modern-button {
+            background-color: #38916B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .modern-button:hover {
+            background-color: #73e361;
+            transform: translateY(-2px);
+        }
+
+        .modern-button:active {
+            background-color: #38916B;
+            transform: translateY(0);
+        }
+    </style>
+    <style>
+        .cls-1,
+        .cls-10,
+        .cls-12,
+        .cls-13,
+        .cls-16,
+        .cls-17,
+        .cls-18,
+        .cls-2,
+        .cls-20,
+        .cls-22,
+        .cls-25,
+        .cls-27,
+        .cls-28,
+        .cls-31,
+        .cls-5,
+        .cls-6,
+        .cls-8 {
+            fill: none;
+        }
+
+        .cls-1,
+        .cls-10,
+        .cls-11,
+        .cls-12,
+        .cls-13,
+        .cls-14,
+        .cls-16,
+        .cls-17,
+        .cls-18,
+        .cls-19,
+        .cls-2,
+        .cls-20,
+        .cls-21,
+        .cls-22,
+        .cls-23,
+        .cls-25,
+        .cls-27,
+        .cls-28,
+        .cls-29,
+        .cls-3,
+        .cls-31,
+        .cls-32,
+        .cls-5,
+        .cls-6,
+        .cls-7,
+        .cls-8 {
+            stroke: #040000;
+        }
+
+        .cls-1,
+        .cls-11,
+        .cls-21,
+        .cls-3 {
+            stroke-miterlimit: 11.08;
+        }
+
+        .cls-1 {
+            stroke-width: 2px;
+        }
+
+        .cls-10,
+        .cls-13,
+        .cls-16,
+        .cls-18,
+        .cls-2,
+        .cls-20,
+        .cls-22,
+        .cls-25,
+        .cls-28,
+        .cls-31,
+        .cls-6,
+        .cls-8 {
+            stroke-linecap: round;
+        }
+
+        .cls-2 {
+            stroke-miterlimit: 13.3;
+            stroke-width: 1.6px;
+        }
+
+        .cls-14,
+        .cls-19,
+        .cls-3 {
+            fill: #18499e;
+        }
+
+        .cls-11,
+        .cls-21,
+        .cls-3 {
+            stroke-width: 1.33px;
+        }
+
+        .cls-4 {
+            isolation: isolate;
+            font-size: 3.85px;
+            fill: #040000;
+            font-family: ArialMT, Arial;
+        }
+
+        .cls-5,
+        .cls-7 {
+            stroke-miterlimit: 12.83;
+        }
+
+        .cls-5 {
+            stroke-width: 2.31px;
+        }
+
+        .cls-6 {
+            stroke-miterlimit: 14.85;
+            stroke-width: 1.78px;
+        }
+
+        .cls-21,
+        .cls-29,
+        .cls-32,
+        .cls-7 {
+            fill: #e7211a;
+        }
+
+        .cls-7 {
+            stroke-width: 1.54px;
+        }
+
+        .cls-8 {
+            stroke-miterlimit: 11.02;
+            stroke-width: 1.32px;
+        }
+
+        .cls-9 {
+            letter-spacing: -0.02em;
+        }
+
+        .cls-10 {
+            stroke-miterlimit: 11.77;
+            stroke-width: 1.41px;
+        }
+
+        .cls-11,
+        .cls-23 {
+            fill: #187c3a;
+        }
+
+        .cls-12,
+        .cls-14,
+        .cls-32 {
+            stroke-miterlimit: 11.67;
+        }
+
+        .cls-12 {
+            stroke-width: 2.1px;
+        }
+
+        .cls-13 {
+            stroke-miterlimit: 12.86;
+            stroke-width: 1.54px;
+        }
+
+        .cls-14,
+        .cls-32 {
+            stroke-width: 1.4px;
+        }
+
+        .cls-15 {
+            letter-spacing: -0.06em;
+        }
+
+        .cls-16 {
+            stroke-miterlimit: 10.43;
+            stroke-width: 1.25px;
+        }
+
+        .cls-17,
+        .cls-19,
+        .cls-23 {
+            stroke-miterlimit: 12.25;
+        }
+
+        .cls-17 {
+            stroke-width: 2.21px;
+        }
+
+        .cls-18 {
+            stroke-miterlimit: 13.77;
+            stroke-width: 1.65px;
+        }
+
+        .cls-19,
+        .cls-23 {
+            stroke-width: 1.47px;
+        }
+
+        .cls-20 {
+            stroke-miterlimit: 10.78;
+            stroke-width: 1.29px;
+        }
+
+        .cls-22 {
+            stroke-miterlimit: 11.98;
+            stroke-width: 1.44px;
+        }
+
+        .cls-24 {
+            letter-spacing: -0.11em;
+        }
+
+        .cls-25 {
+            stroke-miterlimit: 11.23;
+            stroke-width: 1.35px;
+        }
+
+        .cls-26 {
+            letter-spacing: -0.04em;
+        }
+
+        .cls-27,
+        .cls-29 {
+            stroke-miterlimit: 10.5;
+        }
+
+        .cls-27 {
+            stroke-width: 1.89px;
+        }
+
+        .cls-28 {
+            stroke-miterlimit: 12.01;
+            stroke-width: 1.44px;
+        }
+
+        .cls-29 {
+            stroke-width: 1.26px;
+        }
+
+        .cls-30 {
+            letter-spacing: 0em;
+        }
+
+        .cls-31 {
+            stroke-miterlimit: 13.16;
+            stroke-width: 1.58px;
+        }
+
+        .cls-33 {
+            letter-spacing: -0.09em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Ex1. CD Sales</h2>
+
+    <div class="svg-wrapper">
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.69 117.58" height="40vh" width="auto" id="cd-vis">
+            <g class="cd-disk" id="cd_1" transform="translate(144.67, 13.34)">
+                <circle class="cls-1 realm" cx="0" cy="0" r="11.97" />
+                <path class="cls-2 shadow" d="M-8.05,1.46A8.78,8.78,0,0,1,0.73,-7.34" />
+                <circle class="cls-3 hole" cx="0" cy="0" r="3.33" />
+                <text class="cls-4" transform="translate(-11.63, 19.67)">Californication</text>
+            </g>
+
+            <g class="cd-disk" id="cd_2" transform="translate(144.46, 54.78)">
+                <circle class="cls-5 realm" cx="0" cy="0" r="13.86" />
+                <path class="cls-6 shadow" d="M-9.14,1.33a9.8,9.8,0,0,1,9.8-9.8" />
+                <circle class="cls-7 hole" cx="0" cy="0" r="3.85" />
+                <text class="cls-4" transform="translate(-12.46, 20.11)">The Scientist</text>
+            </g>
+
+            <g class="cd-disk" id="cd_3" transform="translate(145.01, 95.08)">
+                <circle class="cls-1 realm" cx="0" cy="0" r="11.97" />
+                <path class="cls-8 shadow" d="M-7.29,-0.08a7.27,7.27,0,0,1,7.28-7.24" />
+                <circle class="cls-3 hole" cx="0" cy="0" r="3.33" />
+                <text class="cls-4" transform="translate(-16.06, 21.25)">Hey<tspan class="cls-9" x="6.85" y="0"></tspan>
+                    <tspan x="7.85" y="0">There Delilah</tspan>
+                </text>
+            </g>
+
+            <g class="cd-disk" id="cd_4" transform="translate(14.55, 12.97)">
+                <circle class="cls-1 realm" cx="0" cy="0" r="11.97" />
+                <path class="cls-10 shadow" d="M-7.47,0.45a7.77,7.77,0,0,1,7.77-7.77" />
+                <circle class="cls-11 hole" cx="0" cy="0" r="3.33" />
+                <text class="cls-4" transform="translate(-14.55, 20.04)">Under the Bridge</text>
+            </g>
+
+            <g class="cd-disk" id="cd_5" transform="translate(60.1, 13.81)">
+                <circle class="cls-12 realm" cx="0" cy="0" r="12.6" />
+                <path class="cls-13 shadow" d="M-8.10,0.78a8.49,8.49,0,0,1,8.49-8.48" />
+                <circle class="cls-14 hole" cx="0" cy="0" r="3.5" />
+                <text class="cls-4" transform="translate(-19.05, 19.20)">Sweet Home<tspan class="cls-15" x="22.04"
+                        y="0"></tspan>
+                    <tspan x="22.9" y="0">Alabama</tspan>
+                </text>
+            </g>
+
+            <g class="cd-disk" id="cd_6" transform="translate(102.61, 13.81)">
+                <circle class="cls-12 realm" cx="0" cy="0" r="12.6" />
+                <path class="cls-16 shadow" d="M-7.30,-0.81a6.89,6.89,0,0,1,6.89-6.88" />
+                <circle class="cls-14 hole" cx="0" cy="0" r="3.5" />
+                <text class="cls-4" transform="translate(-5.14, 19.20)">Numb</text>
+            </g>
+
+            <g class="cd-disk" id="cd_7" transform="translate(16.23, 54.53)">
+                <circle class="cls-17 realm" cx="0" cy="0" r="13.23" />
+                <path class="cls-18 shadow" d="M-8.58,1.00a9.09,9.09,0,0,1,9.08-9.09" />
+                <circle class="cls-19 hole" cx="0" cy="0" r="3.68" />
+                <text class="cls-4" transform="translate(-8.77, 20.36)">Billie Jean</text>
+            </g>
+
+            <g class="cd-disk" id="cd_8" transform="translate(59.26, 52.85)">
+                <circle class="cls-1 realm" cx="0" cy="0" r="11.97" />
+                <path class="cls-20 shadow" d="M-7.26,-0.20a7.12,7.12,0,0,1,7.12-7.12" />
+                <circle class="cls-21 hole" cx="0" cy="0" r="3.33" />
+                <text class="cls-4" transform="translate(-12.63, 22.04)">Feel Good Inc.</text>
+            </g>
+
+            <g class="cd-disk" id="cd_9" transform="translate(103.45, 54.53)">
+                <circle class="cls-17 realm" cx="0" cy="0" r="13.23" />
+                <path class="cls-22 shadow" d="M-8.00,-0.18a7.91,7.91,0,0,1,7.91-7.91" />
+                <circle class="cls-23 hole" cx="0" cy="0" r="3.68" />
+                <text class="cls-4" transform="translate(-9.95, 20.36)">
+                    <tspan class="cls-24">T</tspan>
+                    <tspan x="1.92" y="0">ake on Me</tspan>
+                </text>
+            </g>
+
+            <g class="cd-disk" id="cd_10" transform="translate(15.39, 96.13)">
+                <circle class="cls-12 realm" cx="0" cy="0" r="12.6" />
+                <path class="cls-25 shadow" d="M-7.55,-0.29a7.41,7.41,0,0,1,7.41-7.41" />
+                <circle class="cls-14 hole" cx="0" cy="0" r="3.5" />
+                <text class="cls-4" transform="translate(-10.48, 20.20)">
+                    <tspan class="cls-24">T</tspan>
+                    <tspan x="1.92" y="0">ongue</tspan>
+                    <tspan class="cls-9" x="12.63" y="0"></tspan>
+                    <tspan class="cls-26" x="13.63" y="0">T</tspan>
+                    <tspan x="15.84" y="0">ied</tspan>
+                </text>
+            </g>
+
+            <g class="cd-disk" id="cd_11" transform="translate(58.42, 94.45)">
+                <circle class="cls-27 realm" cx="0" cy="0" r="11.34" />
+                <path class="cls-28 shadow" d="M-7.42,1.00a7.93,7.93,0,0,1,7.93-7.93" />
+                <circle class="cls-29 hole" cx="0" cy="0" r="3.15" />
+                <text class="cls-4" transform="translate(-10.81, 21.88)">M<tspan class="cls-15" x="3.21" y="0">r</tspan>
+                    <tspan class="cls-30" x="4.28" y="0">. Blue Sky</tspan>
+                </text>
+            </g>
+
+            <g class="cd-disk" id="cd_12" transform="translate(102.61, 96.13)">
+                <circle class="cls-12 realm" cx="0" cy="0" r="12.6" />
+                <path class="cls-31 shadow" d="M-8.20,0.98a8.68,8.68,0,0,1,8.69-8.68" />
+                <circle class="cls-32 hole" cx="0" cy="0" r="3.5" />
+                <text class="cls-4" transform="translate(-7.32, 20.20)">Fix<tspan class="cls-9" x="5.13" y="0"></tspan>
+                    <tspan class="cls-33" x="6.13" y="0">Y</tspan>
+                    <tspan x="8.35" y="0">ou</tspan>
+                </text>
+            </g>
+        </svg>
+
+
+    </div>
+
+    <div class="player-wrapper">
+        <button class="modern-button" id="play" onclick="play()">Play</button>
+        <button class="modern-button" id="pause" onclick="pause()">Pause</button>
+        <button class="modern-button" id="replay" onclick="replay()">Replay</button>
+
+    </div>
+
+</body>
+
+<script>
+    const dependancy = {
+        "keyframes": [{
+            "targets": ".shadow",
+            "rotate": "360",
+            "duration": 2000,
+            "easing": "linear"
+        }],
+        "configs": [{
+            "unit": "spatial",
+            "spatial": "sketch",
+            "linear": {
+                "start": null,
+                "end": null,
+                "isReady": false,
+                "order": []
+            },
+            "spread": {
+                "center": null,
+                "isReady": false,
+                "order": []
+            },
+            "sketch": {
+                "points": [{
+                        "x": 138.33,
+                        "y": 11.13
+                    },
+                    {
+                        "x": 137.376,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 134.832,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 132.924,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 124.974,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 121.476,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 112.89,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 109.07400000000001,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 105.57600000000001,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 99.852,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 97.30799999999999,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 95.39999999999999,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 92.22,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 91.26599999999999,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 89.67599999999999,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 88.72200000000001,
+                        "y": 11.13
+                    },
+                    {
+                        "x": 88.08600000000001,
+                        "y": 11.13
+                    },
+                    {
+                        "x": 85.86,
+                        "y": 11.448
+                    },
+                    {
+                        "x": 83.634,
+                        "y": 11.448
+                    },
+                    {
+                        "x": 79.5,
+                        "y": 11.766000000000002
+                    },
+                    {
+                        "x": 76.32,
+                        "y": 11.766000000000002
+                    },
+                    {
+                        "x": 72.504,
+                        "y": 11.766000000000002
+                    },
+                    {
+                        "x": 66.14399999999999,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 63.282000000000004,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 57.239999999999995,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 55.013999999999996,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 53.106,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 51.198,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 50.244,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 49.926,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 48.972,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 48.336,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 45.156,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 42.93,
+                        "y": 12.084
+                    },
+                    {
+                        "x": 40.068,
+                        "y": 12.084
+                    },
+                    {
+                        "x": 34.344,
+                        "y": 11.13
+                    },
+                    {
+                        "x": 32.754,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 29.892,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 28.938,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 28.619999999999997,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 28.619999999999997,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 27.983999999999998,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 27.665999999999997,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 27.03,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 26.076,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 25.758,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 24.486,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 24.168,
+                        "y": 10.812000000000001
+                    },
+                    {
+                        "x": 22.895999999999997,
+                        "y": 11.13
+                    },
+                    {
+                        "x": 22.26,
+                        "y": 11.766000000000002
+                    },
+                    {
+                        "x": 20.988,
+                        "y": 12.084
+                    },
+                    {
+                        "x": 20.034,
+                        "y": 12.402000000000001
+                    },
+                    {
+                        "x": 19.716,
+                        "y": 12.72
+                    },
+                    {
+                        "x": 18.126,
+                        "y": 13.992
+                    },
+                    {
+                        "x": 17.808,
+                        "y": 14.31
+                    },
+                    {
+                        "x": 16.535999999999998,
+                        "y": 15.582
+                    },
+                    {
+                        "x": 16.535999999999998,
+                        "y": 15.900000000000002
+                    },
+                    {
+                        "x": 16.218,
+                        "y": 17.172000000000004
+                    },
+                    {
+                        "x": 15.264000000000001,
+                        "y": 18.126
+                    },
+                    {
+                        "x": 14.946,
+                        "y": 19.716
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 21.306
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 22.578000000000003
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 24.486
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 27.666
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 29.574000000000005
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 30.846
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 32.754
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 34.34400000000001
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 36.57000000000001
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 37.842000000000006
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 38.79600000000001
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 41.658
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 43.566
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 46.746
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 47.382000000000005
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 48.654
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 50.244
+                    },
+                    {
+                        "x": 14.628,
+                        "y": 51.198
+                    },
+                    {
+                        "x": 15.264000000000001,
+                        "y": 52.15200000000001
+                    },
+                    {
+                        "x": 15.264000000000001,
+                        "y": 52.47
+                    },
+                    {
+                        "x": 16.218,
+                        "y": 53.42400000000001
+                    },
+                    {
+                        "x": 17.49,
+                        "y": 54.696
+                    },
+                    {
+                        "x": 18.444000000000003,
+                        "y": 55.332
+                    },
+                    {
+                        "x": 19.716,
+                        "y": 55.650000000000006
+                    },
+                    {
+                        "x": 22.26,
+                        "y": 56.922000000000004
+                    },
+                    {
+                        "x": 24.486,
+                        "y": 57.24
+                    },
+                    {
+                        "x": 29.573999999999998,
+                        "y": 58.830000000000005
+                    },
+                    {
+                        "x": 32.118,
+                        "y": 59.14800000000001
+                    },
+                    {
+                        "x": 34.662,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 41.022,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 44.202000000000005,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 53.42400000000001,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 57.558,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 62.328,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 72.186,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 76.002,
+                        "y": 60.10200000000001
+                    },
+                    {
+                        "x": 82.998,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 86.49600000000001,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 89.04,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 93.17399999999999,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 95.39999999999999,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 97.30799999999999,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 102.078,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 105.25800000000001,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 111.93599999999999,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 115.116,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 119.568,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 124.974,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 126.882,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 130.06199999999998,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 131.016,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 132.28799999999998,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 134.514,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 136.10399999999998,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 140.238,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 141.828,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 143.418,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 145.326,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 146.28,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 146.598,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 59.784000000000006
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 60.42
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 62.328
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 65.508
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 67.41600000000001
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 72.504
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 75.366
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 78.546
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 82.68
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 84.906
+                    },
+                    {
+                        "x": 146.916,
+                        "y": 86.81400000000001
+                    },
+                    {
+                        "x": 145.326,
+                        "y": 91.902
+                    },
+                    {
+                        "x": 145.326,
+                        "y": 92.538
+                    },
+                    {
+                        "x": 144.69,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 144.69,
+                        "y": 96.036
+                    },
+                    {
+                        "x": 144.054,
+                        "y": 96.99000000000001
+                    },
+                    {
+                        "x": 143.736,
+                        "y": 97.944
+                    },
+                    {
+                        "x": 143.418,
+                        "y": 98.58000000000001
+                    },
+                    {
+                        "x": 143.1,
+                        "y": 98.89800000000001
+                    },
+                    {
+                        "x": 142.782,
+                        "y": 98.89800000000001
+                    },
+                    {
+                        "x": 142.464,
+                        "y": 98.89800000000001
+                    },
+                    {
+                        "x": 142.14600000000002,
+                        "y": 98.89800000000001
+                    },
+                    {
+                        "x": 139.602,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 137.058,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 135.786,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 131.652,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 129.108,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 123.384,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 120.522,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 118.614,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 111.3,
+                        "y": 99.534
+                    },
+                    {
+                        "x": 106.212,
+                        "y": 98.58000000000001
+                    },
+                    {
+                        "x": 96.354,
+                        "y": 97.626
+                    },
+                    {
+                        "x": 91.26599999999999,
+                        "y": 96.99000000000001
+                    },
+                    {
+                        "x": 86.49600000000001,
+                        "y": 96.354
+                    },
+                    {
+                        "x": 79.5,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 75.684,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 72.186,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 70.278,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 68.688,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 63.918000000000006,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 60.42,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 56.604,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 47.382,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 41.976,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 34.025999999999996,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 30.21,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 26.394000000000002,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 20.988,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 19.08,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 16.218,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 14.946,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 14.309999999999999,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 12.72,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 12.084,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 11.766,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 11.447999999999999,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 11.13,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 10.494,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 10.494,
+                        "y": 95.4
+                    },
+                    {
+                        "x": 10.176,
+                        "y": 95.4
+                    }
+                ],
+                "isReady": false,
+                "order": []
+            },
+            "randomSeed": 0,
+            "delay": 0,
+            "offset": 1500,
+            "duration": 1000,
+            "data": {
+                "order": "asc",
+                "rank": false
+            }
+        }],
+        "svg": {
+            "width": 500.0000305175781,
+            "height": 367.91668701171875,
+            "viewBox": "0 0 159.69 117.58",
+            "left": 102.55208587646484,
+            "top": 9.019097328186035
+        }
+    }
+
+
+    const timeline = getTimeline(dependancy, document.querySelector('#cd-vis'));
+    const play = () => {
+        timeline.play();
+    }
+
+    const pause = () => {
+        timeline.pause();
+    }
+
+    const replay = () => {
+        timeline.restart();
+    }
+</script>
+
+
+
+</html>

@@ -1,0 +1,713 @@
+<svg width="1435" height="725" viewBox="0 0 1435 725" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1435" height="725" fill="white" />
+    <g clip-path="url(#clip0_1_922)">
+        <rect width="1435" height="429" fill="white" />
+        <ellipse className="mountain" data-semantics="dynasty" cx="53.5" cy="429" rx="53.5" ry="36"
+            fill="url(#paint0_linear_1_922)" />
+        <ellipse className="mountain" cx="141.5" cy="429" rx="34.5" ry="49" fill="url(#paint1_linear_1_922)" />
+        <ellipse className="mountain" cx="141.5" cy="429" rx="34.5" ry="36" fill="url(#paint2_linear_1_922)" />
+        <ellipse className="mountain" cx="212" cy="429" rx="36" ry="9" fill="url(#paint3_linear_1_922)" />
+        <ellipse className="mountain" cx="282.5" cy="429" rx="34.5" ry="9" fill="url(#paint4_linear_1_922)" />
+        <ellipse className="mountain" cx="352.5" cy="429" rx="35.5" ry="9" fill="url(#paint5_linear_1_922)" />
+        <ellipse className="mountain" cx="422.5" cy="429" rx="34.5" ry="23" fill="url(#paint6_linear_1_922)" />
+        <ellipse className="mountain" cx="492.5" cy="429" rx="35.5" ry="9" fill="url(#paint7_linear_1_922)" />
+        <ellipse className="mountain" cx="562.5" cy="429" rx="34.5" ry="36" fill="url(#paint8_linear_1_922)" />
+        <ellipse className="mountain" cx="562.5" cy="429" rx="34.5" ry="23" fill="url(#paint9_linear_1_922)" />
+        <ellipse className="mountain" cx="631.5" cy="429" rx="34.5" ry="429" fill="url(#paint10_linear_1_922)" />
+        <ellipse className="mountain" cx="631.5" cy="429" rx="34.5" ry="61" fill="url(#paint11_linear_1_922)" />
+        <ellipse className="mountain" cx="631.5" cy="429" rx="34.5" ry="43" fill="url(#paint12_linear_1_922)" />
+        <ellipse className="mountain" cx="700.5" cy="429" rx="34.5" ry="136" fill="url(#paint13_linear_1_922)" />
+        <ellipse className="mountain" cx="700.5" cy="429" rx="34.5" ry="86.8889" fill="url(#paint14_linear_1_922)" />
+        <ellipse className="mountain" cx="769.5" cy="429" rx="34.5" ry="76" fill="url(#paint15_linear_1_922)" />
+        <ellipse className="mountain" cx="839" cy="429" rx="35" ry="27" fill="url(#paint16_linear_1_922)" />
+        <ellipse className="mountain" cx="839" cy="429" rx="35" ry="18" fill="url(#paint17_linear_1_922)" />
+        <ellipse className="mountain" cx="839" cy="429" rx="35" ry="9" fill="url(#paint18_linear_1_922)" />
+        <ellipse className="mountain" cx="908.5" cy="429" rx="34.5" ry="49" fill="url(#paint19_linear_1_922)" />
+        <ellipse className="mountain" cx="908.5" cy="429" rx="34.5" ry="32" fill="url(#paint20_linear_1_922)" />
+        <ellipse className="mountain" cx="908.5" cy="429" rx="34.5" ry="16.0373" fill="url(#paint21_linear_1_922)" />
+        <ellipse className="mountain" cx="977.5" cy="429" rx="34.5" ry="217" fill="url(#paint22_linear_1_922)" />
+        <ellipse className="mountain" cx="977.5" cy="429" rx="34.5" ry="49" fill="url(#paint23_linear_1_922)" />
+        <ellipse className="mountain" cx="977.5" cy="429" rx="34.5" ry="36" fill="url(#paint24_linear_1_922)" />
+        <ellipse className="mountain" cx="1046.5" cy="429" rx="34.5" ry="162" fill="url(#paint25_linear_1_922)" />
+        <ellipse className="mountain" cx="1046.5" cy="429" rx="34.5" ry="70" fill="url(#paint26_linear_1_922)" />
+        <ellipse className="mountain" cx="1115.5" cy="429" rx="34.5" ry="87" fill="url(#paint27_linear_1_922)" />
+        <ellipse className="mountain" cx="1186" cy="429" rx="36" ry="9" fill="url(#paint28_linear_1_922)" />
+        <ellipse className="mountain" cx="1258" cy="429" rx="36" ry="9" fill="url(#paint29_linear_1_922)" />
+        <ellipse className="mountain" cx="1328.5" cy="429" rx="34.5" ry="49" fill="url(#paint30_linear_1_922)" />
+        <ellipse className="mountain" cx="1328.5" cy="429" rx="34.5" ry="9" fill="url(#paint31_linear_1_922)" />
+        <ellipse className="mountain" cx="1399" cy="429" rx="36" ry="9" fill="url(#paint32_linear_1_922)" />
+    </g>
+    <g clip-path="url(#clip1_1_922)">
+        <rect width="1435" height="286" transform="translate(0 439)" fill="white" />
+        <mask className="shadow" data-semantics="quantity" className="shadow" data-semantics="quantity" id="mask0_1_922"
+            style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="410" width="107" height="58">
+            <ellipse cx="53.5" cy="439" rx="53.5" ry="29" fill="url(#paint33_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask0_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M107 467L-2.38419e-07 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M107 460L-2.38419e-07 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M107 453L-2.38419e-07 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M107 446L-2.38419e-07 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M107 439L-2.38419e-07 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask1_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="107" y="403" width="69" height="72">
+            <ellipse cx="141.5" cy="439" rx="34.5" ry="36" fill="url(#paint34_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask1_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M176 474L107 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M176 467L107 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M176 460L107 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M176 453L107 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M176 446L107 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M176 439L107 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask2_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="176" y="430" width="72" height="18">
+            <ellipse cx="212" cy="439" rx="36" ry="9" fill="url(#paint35_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask2_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M248 446L176 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M248 439L176 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask3_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="248" y="430" width="69" height="18">
+            <ellipse cx="282.5" cy="439" rx="34.5" ry="9" fill="url(#paint36_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask3_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M317 446L248 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M317 439L248 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask4_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="317" y="430" width="71" height="18">
+            <ellipse cx="352.5" cy="439" rx="35.5" ry="9" fill="url(#paint37_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask4_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M388 446L317 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M388 439L317 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask5_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="388" y="416" width="69" height="46">
+            <ellipse cx="422.5" cy="439" rx="34.5" ry="23" fill="url(#paint38_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask5_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M457 460L388 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M457 453L388 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M457 446L388 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M457 439L388 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask6_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="457" y="430" width="71" height="18">
+            <ellipse cx="492.5" cy="439" rx="35.5" ry="9" fill="url(#paint39_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask6_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M528 446L457 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M528 439L457 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask7_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="528" y="412" width="69" height="54">
+            <ellipse cx="562.5" cy="439" rx="34.5" ry="27" fill="url(#paint40_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask7_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M597 467L528 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M597 460L528 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M597 453L528 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M597 446L528 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M597 439L528 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask8_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="597" y="153" width="69" height="572">
+            <ellipse cx="631.5" cy="439" rx="34.5" ry="286" fill="url(#paint41_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask8_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M666 719L597 719" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 712L597 712" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 705L597 705" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 698L597 698" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 691L597 691" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 684L597 684" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 677L597 677" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 670L597 670" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 663L597 663" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 656L597 656" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 649L597 649" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 642L597 642" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 635L597 635" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 628L597 628" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 621L597 621" stroke="#E3E3E3"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 614L597 614" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 607L597 607" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 600L597 600" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 593L597 593" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 586L597 586" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 579L597 579" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 572L597 572" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 565L597 565" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 558L597 558" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 551L597 551" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 544L597 544" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 537L597 537" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 530L597 530" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 523L597 523" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 516L597 516" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 509L597 509" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 502L597 502" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 495L597 495" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 488L597 488" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 481L597 481" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 474L597 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 467L597 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 460L597 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 453L597 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 446L597 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M666 439L597 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask9_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="666" y="363" width="69" height="152">
+            <ellipse cx="700.5" cy="439" rx="34.5" ry="76" fill="url(#paint42_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask9_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M735 516L666 516" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 509L666 509" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 502L666 502" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 495L666 495" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 488L666 488" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 481L666 481" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 474L666 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 467L666 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 460L666 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 453L666 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 446L666 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M735 439L666 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask10_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="735" y="390" width="69" height="98">
+            <ellipse cx="769.5" cy="439" rx="34.5" ry="49" fill="url(#paint43_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask10_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M804 488L735 488" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 481L735 481" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 474L735 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 467L735 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 460L735 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 453L735 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 446L735 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M804 439L735 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask11_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="804" y="412" width="70" height="54">
+            <ellipse cx="839" cy="439" rx="35" ry="27" fill="url(#paint44_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask11_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M874 467L804 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M874 460L804 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M874 453L804 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M874 446L804 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M874 439L804 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask12_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="874" y="390" width="69" height="98">
+            <ellipse cx="908.5" cy="439" rx="34.5" ry="49" fill="url(#paint45_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask12_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M943 488L874 488" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 481L874 481" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 474L874 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 467L874 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 460L874 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 453L874 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 446L874 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M943 439L874 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask13_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="943" y="293" width="69" height="292">
+            <ellipse cx="977.5" cy="439" rx="34.5" ry="146" fill="url(#paint46_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask13_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1012 579L943 579" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 572L943 572" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 565L943 565" stroke="#ACACAC"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 558L943 558" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 551L943 551" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 544L943 544" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 537L943 537" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 530L943 530" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 523L943 523" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 516L943 516" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 509L943 509" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 502L943 502" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 495L943 495" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 488L943 488" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 481L943 481" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 474L943 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 467L943 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 460L943 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 453L943 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 446L943 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1012 439L943 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask14_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="1012" y="376" width="69" height="126">
+            <ellipse cx="1046.5" cy="439" rx="34.5" ry="63" fill="url(#paint47_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask14_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1081 502L1012 502" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 495L1012 495" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 488L1012 488" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 481L1012 481" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 474L1012 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 467L1012 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 460L1012 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 453L1012 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 446L1012 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1081 439L1012 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask15_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="1081" y="403" width="69" height="72">
+            <ellipse cx="1115.5" cy="439" rx="34.5" ry="36" fill="url(#paint48_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask15_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1150 474L1081 474" stroke="#4E4E4E"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1150 467L1081 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1150 460L1081 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1150 453L1081 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1150 446L1081 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1150 439L1081 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask16_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="1150" y="430" width="72" height="18">
+            <ellipse cx="1186" cy="439" rx="36" ry="9" fill="url(#paint49_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask16_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1222 446L1150 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1222 439L1150 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask17_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="1222" y="430" width="72" height="18">
+            <ellipse cx="1258" cy="439" rx="36" ry="9" fill="url(#paint50_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask17_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1294 446L1222 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1294 439L1222 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask18_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="1294" y="410" width="69" height="58">
+            <ellipse cx="1328.5" cy="439" rx="34.5" ry="29" fill="url(#paint51_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask18_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1363 467L1294 467" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1363 460L1294 460" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1363 453L1294 453" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1363 446L1294 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1363 439L1294 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+        <mask className="shadow" data-semantics="quantity" id="mask19_1_922" style="mask-type:alpha"
+            maskUnits="userSpaceOnUse" x="1363" y="430" width="72" height="18">
+            <ellipse cx="1399" cy="439" rx="36" ry="9" fill="url(#paint52_linear_1_922)" />
+        </mask>
+        <g mask="url(#mask19_1_922)">
+            <path className="shadow clip" data-semantics="none" d="M1435 446L1363 446" stroke="#757575"
+                stroke-width="2" />
+            <path className="shadow clip" data-semantics="none" d="M1435 439L1363 439" stroke="#757575"
+                stroke-width="2" />
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear_1_922" x1="53.5" y1="393" x2="53.5" y2="465" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_1_922" x1="141.5" y1="380" x2="141.5" y2="478" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.542309" stop-color="#E5E5E5" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_1_922" x1="141.5" y1="393" x2="141.5" y2="465" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint3_linear_1_922" x1="212" y1="420" x2="212" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint4_linear_1_922" x1="282.5" y1="420" x2="282.5" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#626262" />
+            <stop offset="0.512841" stop-color="#A0A0A0" />
+        </linearGradient>
+        <linearGradient id="paint5_linear_1_922" x1="352.5" y1="420" x2="352.5" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EDEDED" />
+        </linearGradient>
+        <linearGradient id="paint6_linear_1_922" x1="422.5" y1="406" x2="422.5" y2="452" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint7_linear_1_922" x1="492.5" y1="420" x2="492.5" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EDEDED" />
+        </linearGradient>
+        <linearGradient id="paint8_linear_1_922" x1="562.5" y1="393" x2="562.5" y2="465" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint9_linear_1_922" x1="562.5" y1="406" x2="562.5" y2="452" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint10_linear_1_922" x1="631.5" y1="0" x2="631.5" y2="858" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint11_linear_1_922" x1="631.5" y1="368" x2="631.5" y2="490"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint12_linear_1_922" x1="631.5" y1="386" x2="631.5" y2="472"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#939393" />
+            <stop offset="0.512841" stop-color="#B9B9B9" />
+        </linearGradient>
+        <linearGradient id="paint13_linear_1_922" x1="700.5" y1="293" x2="700.5" y2="565"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint14_linear_1_922" x1="700.5" y1="342.111" x2="700.5" y2="515.889"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint15_linear_1_922" x1="769.5" y1="353" x2="769.5" y2="505"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint16_linear_1_922" x1="839" y1="402" x2="839" y2="456" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint17_linear_1_922" x1="839" y1="411" x2="839" y2="447" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#939393" />
+            <stop offset="0.542309" stop-color="#B9B9B9" />
+        </linearGradient>
+        <linearGradient id="paint18_linear_1_922" x1="839" y1="420" x2="839" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#626262" />
+            <stop offset="0.512841" stop-color="#A0A0A0" />
+        </linearGradient>
+        <linearGradient id="paint19_linear_1_922" x1="908.5" y1="380" x2="908.5" y2="478"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint20_linear_1_922" x1="908.5" y1="397" x2="908.5" y2="461"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint21_linear_1_922" x1="908.5" y1="412.963" x2="908.5" y2="445.037"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#939393" />
+            <stop offset="0.512841" stop-color="#B9B9B9" />
+        </linearGradient>
+        <linearGradient id="paint22_linear_1_922" x1="977.5" y1="212" x2="977.5" y2="646"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint23_linear_1_922" x1="977.5" y1="380" x2="977.5" y2="478"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint24_linear_1_922" x1="977.5" y1="393" x2="977.5" y2="465"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#939393" />
+            <stop offset="0.512841" stop-color="#B9B9B9" />
+        </linearGradient>
+        <linearGradient id="paint25_linear_1_922" x1="1046.5" y1="267" x2="1046.5" y2="591"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint26_linear_1_922" x1="1046.5" y1="359" x2="1046.5" y2="499"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint27_linear_1_922" x1="1115.5" y1="342" x2="1115.5" y2="516"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint28_linear_1_922" x1="1186" y1="420" x2="1186" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint29_linear_1_922" x1="1258" y1="420" x2="1258" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint30_linear_1_922" x1="1328.5" y1="380" x2="1328.5" y2="478"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint31_linear_1_922" x1="1328.5" y1="420" x2="1328.5" y2="438"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#626262" />
+            <stop offset="0.512841" stop-color="#A0A0A0" />
+        </linearGradient>
+        <linearGradient id="paint32_linear_1_922" x1="1399" y1="420" x2="1399" y2="438" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint33_linear_1_922" x1="53.5" y1="410" x2="53.5" y2="468" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint34_linear_1_922" x1="141.5" y1="403" x2="141.5" y2="475"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint35_linear_1_922" x1="212" y1="430" x2="212" y2="448" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint36_linear_1_922" x1="282.5" y1="430" x2="282.5" y2="448"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#626262" />
+            <stop offset="0.512841" stop-color="#A0A0A0" />
+        </linearGradient>
+        <linearGradient id="paint37_linear_1_922" x1="352.5" y1="430" x2="352.5" y2="448"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EDEDED" />
+        </linearGradient>
+        <linearGradient id="paint38_linear_1_922" x1="422.5" y1="416" x2="422.5" y2="462"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint39_linear_1_922" x1="492.5" y1="430" x2="492.5" y2="448"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EDEDED" />
+        </linearGradient>
+        <linearGradient id="paint40_linear_1_922" x1="562.5" y1="412" x2="562.5" y2="466"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint41_linear_1_922" x1="631.5" y1="153" x2="631.5" y2="725"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint42_linear_1_922" x1="700.5" y1="363" x2="700.5" y2="515"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint43_linear_1_922" x1="769.5" y1="390" x2="769.5" y2="488"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint44_linear_1_922" x1="839" y1="412" x2="839" y2="466" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint45_linear_1_922" x1="908.5" y1="390" x2="908.5" y2="488"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint46_linear_1_922" x1="977.5" y1="293" x2="977.5" y2="585"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint47_linear_1_922" x1="1046.5" y1="376" x2="1046.5" y2="502"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint48_linear_1_922" x1="1115.5" y1="403" x2="1115.5" y2="475"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint49_linear_1_922" x1="1186" y1="430" x2="1186" y2="448" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint50_linear_1_922" x1="1258" y1="430" x2="1258" y2="448" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <linearGradient id="paint51_linear_1_922" x1="1328.5" y1="410" x2="1328.5" y2="468"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#BBBBBB" />
+            <stop offset="0.542309" stop-color="#D5D5D5" />
+        </linearGradient>
+        <linearGradient id="paint52_linear_1_922" x1="1399" y1="430" x2="1399" y2="448" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0E0E0" />
+            <stop offset="0.512841" stop-color="#EEEEEE" />
+        </linearGradient>
+        <clipPath id="clip0_1_922">
+            <rect width="1435" height="429" fill="white" />
+        </clipPath>
+        <clipPath id="clip1_1_922">
+            <rect width="1435" height="286" fill="white" transform="translate(0 439)" />
+        </clipPath>
+    </defs>
+</svg>

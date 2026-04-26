@@ -1,0 +1,105 @@
+.dream-vis {
+    background-image: linear-gradient(rgb(229, 242, 239), rgb(211, 215, 237));
+}
+#blupetals .cls-1 {
+    stroke: #6ea4a8;
+    stroke-miterlimit: 10;
+    stroke-width: .3px
+}
+
+#blupetals .cls-2 {
+    fill: #607cbd
+}
+
+
+.grid0 {
+    fill: #ededed;
+    stroke: #fff;
+    stroke-miterlimit: 10
+}
+
+.grid1,
+.grid2 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-miterlimit: 10
+}
+
+.grid2 {
+    stroke-dasharray: 1.995, 3.9901
+}
+
+.grid3 {
+    fill: #3f4696;
+    -webkit-transition: all .4s;
+    transition: all .4s
+}
+
+.grid4 {
+    fill: none;
+    stroke: #3f4696;
+    stroke-miterlimit: 10
+}
+
+#bluepetal-0 {
+    transform: rotate(-90deg);
+    transform-origin: 0 24px;
+}
+
+
+#bluepetal-1 {
+    transform: rotate(-60deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-2 {
+    transform: rotate(-30deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-3 {
+    transform: rotate(0deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-4 {
+    transform: rotate(30deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-5 {
+    transform: rotate(60deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-6 {
+    transform: rotate(90deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-7 {
+    transform: rotate(120deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-8 {
+    transform: rotate(150deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-9 {
+    transform: rotate(180deg);
+    transform-origin: 0 24px;
+}
+
+
+#bluepetal-10 {
+    transform: rotate(210deg);
+    transform-origin: 0 24px;
+}
+
+#bluepetal-11 {
+    transform: rotate(240deg);
+    transform-origin: 0 24px;
+}

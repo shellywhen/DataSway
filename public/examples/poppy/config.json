@@ -1,0 +1,10 @@
+{
+    "svgFile": "poppy.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "poppy.png",
+    "source": "https://poppyfield.org/",
+    "title": "Poppy Field",
+    "description": "Popies",
+    "snippets": [],
+    "code": ""
+}

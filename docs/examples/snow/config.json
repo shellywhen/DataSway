@@ -1,0 +1,10 @@
+{
+    "svgFile": "snow.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "snow.png",
+    "source": "https://twitter-interactive.vercel.app/winter-is-here/",
+    "title": "Winter is Here",
+    "description": "Snowflakes",
+    "snippets": [],
+    "code": ""
+}

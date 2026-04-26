@@ -1,0 +1,10 @@
+{
+    "svgFile": "pokemon.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "pokemon.png",
+    "source": "https://ieeexplore.ieee.org/abstract/document/9906974",
+    "title": "Pokemon",
+    "description": "Pokemon balls",
+    "snippets": [],
+    "code": ""
+}

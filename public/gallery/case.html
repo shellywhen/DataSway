@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Case: OECD Better Life Index</title>
+    <script src="./assets/anime.min.js"></script>
+    <script src="./assets/seedrandom.min.js"></script>
+    <script src="./assets/chance.min.js"></script>
+    <script src="./assets/helper.js"></script>
+    <script src="./assets/d3.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        }
+
+        .content-wrapper {
+            margin: 5vh 0;
+            background: linear-gradient(180deg, rgba(22, 221, 246, 0.2), transparent);
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .svg-wrapper {
+            padding: 2vh 0;
+            flex: 1;
+        }
+
+        #metric-weight-panel {
+            text-align: left;
+            height: fit-content;
+            width: 12em;
+            background-color: rgba(255, 255, 255, 0.834);
+            padding: 1em;
+            border-radius: 5px;
+            opacity: 0;
+        }
+
+        .metric-weight-container {
+            text-align: left;
+            display: flex;
+            gap: 0.5em;
+            font-size: 12px;
+
+        }
+
+        .placeholder {
+            padding: 0 4em;
+        }
+
+        .placeholder p {
+            max-width: 800px;
+            text-align: left;
+            width: fit-content;
+            margin: 1em auto;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 30px;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+            pointer-events: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            background: #727272;
+            cursor: no-drop;
+            border-radius: 50%;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .modern-button {
+            background-color: #38916B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: no-drop;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .modern-button:hover {
+            background-color: #73e361;
+            transform: translateY(-2px);
+        }
+
+        .modern-button:active {
+            background-color: #38916B;
+            transform: translateY(0);
+        }
+    </style>
+    <style>
+        .leftaxis {
+            color: #999999;
+            font-weight: 600;
+        }
+
+        .leftaxis .domain {
+            display: none;
+        }
+
+        .countries text.label,
+        .countries text.labelBg {
+            fill: #333;
+            font-size: 10.5px;
+            text-anchor: end;
+            transform: translate(2.9px, 40px) rotate(-90deg);
+        }
+
+        .labelBg {
+            stroke-width: 4px;
+            stroke: #fff;
+            fill: #fff;
+        }
+
+        .petels path {
+            stroke: #1b1b1b;
+            stroke-width: 0.2px;
+        }
+
+        .plotab {
+            display: none;
+        }
+
+        .abMode .plotab {
+            display: block;
+        }
+
+        .abMode .flower {
+            display: none;
+        }
+
+        .countries .flowerbg {
+            pointer-events: none;
+        }
+
+        .countries .nodeA,
+        .countries .nodeB {
+            opacity: 0.9;
+        }
+
+
+        /* .countries.hover .flowerbg {
+    display: block;
+} */
+
+        .countries.hover .nodeA,
+        .countries.hover .nodeB {
+            opacity: 1;
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+
+        .countries.hover .bar {
+            fill: #333 !important;
+        }
+
+        .svg-wrapper {
+            position: relative;
+            flex: 1;
+        }
+
+        .switched {
+            display: inline-block;
+            position: absolute;
+            bottom: 0px;
+            right: 1em;
+            font-size: 12px;
+            color: #999;
+            z-index: 100;
+        }
+
+        .switched .sort-by-key,
+        .switched .sort-by-Main,
+        .switched .flowering,
+        .switched .budding {
+            cursor: pointer;
+        }
+
+        .switched .sort-by-key:hover,
+        .switched .sort-by-Main:hover,
+        .switched .flowering:hover,
+        .switched .budding:hover {
+            text-decoration: underline;
+        }
+
+        .switched .active,
+        .switched.flowering .flowering,
+        .switched.budding .budding {
+            color: #1D5278;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Case: OECD Better Life Index</h2>
+    <p>Source code adpated from <a href="https://observablehq.com/@a10k/flower-chart-visual"
+            target="_blank">@a10k/flower-chart-visual</a>.</p>
+
+    <div class="placeholder">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales nibh et iaculis vulputate. Integer id
+            dictum massa. Ut egestas sit amet tellus in consectetur. Mauris faucibus est id erat porttitor, nec
+            venenatis libero facilisis. Integer tincidunt facilisis dui, et viverra elit facilisis quis. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Nam sed nibh at metus tincidunt fermentum
+            lobortis eu felis. Nunc vel purus vel massa scelerisque tincidunt sit amet sit amet massa. Ut sem mi,
+            faucibus et semper ac, cursus at nibh. Pellentesque finibus felis vel porta suscipit. Vestibulum tincidunt
+            cursus ex ac malesuada. Sed luctus pretium nibh feugiat pretium. Aenean augue mi, suscipit venenatis tempor
+            quis, ultrices imperdiet enim. Praesent elementum sapien nisi. Nam tincidunt arcu risus, a malesuada massa
+            tincidunt sed.
+        </p>
+        <p>
+            Etiam ac dictum dolor, at tristique ex. Aenean feugiat libero eget iaculis dapibus. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer eget odio metus. Pellentesque
+            malesuada urna ut elit elementum, ac fermentum lorem ullamcorper. Fusce bibendum, sapien eu dictum
+            dignissim, ligula lorem tristique neque, ac aliquam nisl nisl tristique erat. Nunc tempor quam risus, sed
+            rhoncus mi eleifend sed. Vestibulum imperdiet tincidunt magna, eu porttitor eros maximus eget. Mauris
+            venenatis, nisi at dictum viverra, lectus lacus fermentum dolor, id vulputate nisl lacus eu arcu. Vestibulum
+            nec purus tincidunt, cursus elit non, viverra ipsum. Praesent condimentum pulvinar accumsan. Vestibulum
+            felis leo, viverra nec lectus sit amet, venenatis bibendum arcu. Quisque at orci vitae risus gravida congue
+            vel nec dolor.
+        </p>
+        <p>
+            Aliquam a euismod sem. Suspendisse porta faucibus nunc, id sagittis dui suscipit a. Suspendisse non mollis
+            justo. Nulla facilisi. Donec egestas ante vitae fermentum mollis. Pellentesque ut metus id leo volutpat
+            dictum. Aliquam sollicitudin et justo eu bibendum. Nulla pulvinar cursus consequat. Morbi at viverra nunc.
+            Proin placerat magna sed imperdiet vestibulum. Aenean vitae nibh at mi tempor dictum. Aliquam semper tortor
+            erat, ac mattis felis luctus at. Quisque tincidunt lacinia auctor. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Aliquam facilisis porttitor augue, sit amet vehicula ex dapibus quis. Interdum et malesuada
+            fames ac ante ipsum primis in faucibus.
+
+        </p>
+        <p>
+            Fusce a libero orci. Nunc at iaculis metus. Vivamus vel orci in velit vestibulum elementum. Donec elementum
+            ex mollis feugiat vehicula. Praesent aliquam congue sapien a accumsan. Proin elementum nunc erat, in iaculis
+            ipsum rutrum quis. Nunc convallis molestie molestie. Vivamus elit leo, consectetur in arcu id, blandit
+            pulvinar neque.
+        </p>
+
+        <p>
+            Proin sit amet finibus purus, eu gravida leo. Proin eu nibh sed velit imperdiet vestibulum. Nullam eget
+            sollicitudin purus, non pellentesque velit. Donec iaculis risus id ipsum bibendum malesuada sed in enim.
+            Fusce eget leo eu nunc vehicula venenatis imperdiet eu nulla. Suspendisse feugiat dignissim blandit. Proin
+            feugiat tristique posuere. Nullam auctor mi in scelerisque sodales. Aliquam erat volutpat.
+        </p>
+
+    </div>
+    <div class="content-wrapper">
+        <div class="svg-wrapper">
+            <svg class="OECD-Canvas">
+            </svg>
+            <div class="switched flowering">
+                <span><b>Sort</b> </span>
+                <span class="sort-by-key active" onclick="updateSortKey('key')">Alphabetically</span>
+                <span> | </span>
+                <span class="sort-by-Main" onclick="updateSortKey('Main')">Rank</span>
+                &nbsp;
+                &nbsp;
+                <span><b>Filter</b></span><span>&nbsp;<select name="metric" id="filter-metric" style="width:8em;">
+                    </select></span>
+            </div>
+
+        </div>
+        <div id="metric-weight-panel">
+
+        </div>
+    </div>
+
+    <div class="placeholder">
+        <p>
+            Vestibulum at tortor odio. Nulla semper ipsum id congue ultrices. Suspendisse eleifend, justo quis
+            condimentum congue, nibh justo consectetur erat, vitae eleifend nisi ex at nulla. Nunc maximus quam et
+            venenatis malesuada. Integer et mollis ante, ac bibendum nisi. Integer nibh dui, convallis id placerat quis,
+            facilisis sed felis. Etiam scelerisque, elit in bibendum viverra, sem nisi placerat arcu, nec elementum diam
+            est ac ante. Aliquam convallis rutrum nisl sed accumsan. Sed vel faucibus justo, eget mattis velit. Nunc
+            blandit sagittis lorem, vulputate gravida ligula. Integer eget lorem mi. Suspendisse tempor vehicula purus,
+            ac accumsan lorem pharetra quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan
+            gravida ante, vitae posuere nisl hendrerit sed. Aenean lectus elit, porta id ex ac, luctus cursus sapien.
+            Duis rhoncus vel sem sed porta.
+        </p>
+
+        <p>
+            Donec ut ex eu ex consectetur tincidunt et vitae dolor. Donec metus ante, iaculis at auctor sed, gravida id
+            tellus. Nulla facilisi. Aenean imperdiet nibh ut vestibulum luctus. Nulla gravida eget turpis sed malesuada.
+            Mauris vestibulum, lacus eget fermentum aliquam, leo est rhoncus tellus, in volutpat est neque quis urna.
+            Donec laoreet consectetur lorem, non luctus ante efficitur id. Cras lorem neque, lacinia eget sodales sed,
+            convallis in ex. In enim diam, porttitor eu ex sed, dictum dignissim urna. Etiam pharetra orci est, ut
+            tempus ante bibendum ac. Maecenas faucibus sapien eget eros sodales, sit amet vestibulum felis maximus.
+            Quisque dolor odio, blandit sit amet pharetra nec, iaculis a neque. Pellentesque volutpat facilisis quam sit
+            amet tristique. Proin consectetur, sem et finibus mollis, risus elit ornare ipsum, quis tincidunt odio
+            turpis vitae purus. Curabitur tellus ipsum, pellentesque feugiat ligula et, viverra pulvinar risus.
+        </p>
+
+        <p>
+            Vivamus massa magna, aliquet fermentum posuere sed, sagittis ac dolor. Curabitur eget diam imperdiet,
+            hendrerit mi eleifend, faucibus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit
+            neque, tempus non fermentum et, tincidunt quis lacus. Donec congue orci eu porttitor gravida. Etiam
+            ultricies eros velit, vel elementum turpis luctus quis. Donec hendrerit, turpis nec ultrices euismod, nisi
+            ex dictum orci, eget rutrum nisi urna quis lacus. Proin tincidunt nisi sed sem imperdiet bibendum. Proin
+            eget pulvinar sapien, a efficitur odio. Donec ut turpis et ex pretium efficitur vitae vel libero. Phasellus
+            sed viverra justo.
+        </p>
+
+
+        <p>
+            Duis vitae gravida tellus. Nam ut ipsum sagittis, sollicitudin quam ut, commodo felis. Phasellus leo tortor,
+            malesuada quis molestie sit amet, blandit suscipit nunc. Quisque fermentum urna odio. Praesent bibendum
+            purus euismod pulvinar faucibus. Praesent tincidunt lectus id orci feugiat, id luctus purus facilisis. Nunc
+            quis nisl viverra, congue justo sed, dapibus velit. Aliquam vitae volutpat nunc, eget fermentum dolor.
+            Phasellus eget vestibulum arcu, quis interdum massa. Phasellus metus dolor, imperdiet id consectetur at,
+            eleifend vel nunc. Phasellus dolor elit, commodo at elit at, fermentum scelerisque risus. Ut egestas feugiat
+            elit et faucibus. Nunc facilisis rutrum nunc, placerat vulputate lectus viverra sed.
+        </p>
+
+        <p>
+            Maecenas eget neque quis nisl placerat mattis vel vitae purus. Quisque imperdiet bibendum facilisis.
+            Pellentesque consectetur consequat tellus at gravida. Aenean quis metus dui. Vivamus ac porta lacus. Proin
+            nunc massa, congue porttitor neque in, accumsan malesuada orci. Aenean vel orci vitae lorem scelerisque
+            suscipit non eget nisi.
+        </p>
+    </div>
+
+
+</body>
+
+
+
+
+<script>
+    // set up canvas
+    const svg = d3.select('.OECD-Canvas')
+    const svgEle = svg.node()
+    const svgWidth = d3.select('.svg-wrapper').node().getBoundingClientRect().width
+    const idealHeight = 450 / 875 * svgWidth
+    const svgHeight = Math.min(window.innerHeight * 0.6, idealHeight)
+    svg.attr('width', svgWidth).attr('height', svgHeight)
+
+    // load and preprocess data
+    let sortKey = "key"
+    const rawCsvStr = `Name,Main,A,B,Attribute,Weight
+Finland,1,0.903774270256217,1,Life Satisfaction,1.00
+Iceland,1,0.929805970291769,1,Community,1.00
+Iceland,1,1,0.999529350271207,Environment,1.00
+Norway,0.996226415,0.997995991983968,0.902538688015881,Safety,1.00
+Iceland,0.99059219475,0.9951062157280098,0.9188809108115312,Jobs,1.00
+Norway,0.986532161,0.932469029955396,0.948518513774137,Life Satisfaction,1.00
+Denmark,0.973627203,0.913791910856258,0.942504889148936,Life Satisfaction,1.00
+Norway,0.9598844655000001,0.9657647394451225,0.9543912981083824,Environment,1.00
+Canada,0.9586466165,0.884493670886076,0.9385156695758755,Health,1.00
+Iceland,0.9569890685,0.9853276225904235,0.8618136371757861,Safety,1.00
+Slovenia,0.9560655140000001,0.9718099775765274,0.869947134363056,Safety,1.00
+Switzerland,0.955099465,0.903187080474576,0.917830889408802,Life Satisfaction,1.00
+Netherlands,0.954162199423372,0.9218162638623455,0.8819799132669145,Work-Life Balance,1.00
+New Zealand,0.953098309,0.8793109824390866,0.93477789987532,Health,1.00
+Iceland,0.952815191,0.883113774037592,0.931298280133336,Life Satisfaction,1.00
+Switzerland,0.9481693105,0.9383387405267536,0.890424927181975,Safety,1.00
+Australia,0.9413022715,0.8631025337587965,0.9270540563386235,Health,1.00
+Italy,0.938961073,0.9220537569357895,0.8259178038577125,Work-Life Balance,1.00
+Netherlands,0.93447326,0.880858492085228,0.90142511097679,Life Satisfaction,1.00
+Finland,0.9333474235,0.9677637724599646,0.848235783820099,Safety,1.00
+Denmark,0.9319414930000001,0.963224663735777,0.8408346688498796,Safety,1.00
+Switzerland,0.929025844,0.9467910328631337,0.8517294164383145,Jobs,1.00
+Israel,0.9269910015,0.8678493692018345,0.894013757105725,Health,1.00
+Spain,0.919610618,0.9086571219413055,0.874517494783759,Safety,1.00
+Netherlands,0.918422726,0.9567205024599774,0.8261207549100655,Safety,1.00
+Luxembourg,0.9106633905,0.910663390633141,0.910663390633141,Income,1.00
+Austria,0.907680842,0.907574935653543,0.85813549387486,Safety,1.00
+Canada,0.9071858165,0.9519612353260609,0.8248575136388725,Safety,1.00
+Ireland,0.9066774719999999,0.8326535787493929,0.8920326070877624,Health,1.00
+Canada,0.905615379,0.833903008150666,0.891711787744158,Life Satisfaction,1.00
+Sweden,0.905243392,0.9095060188767106,0.9036319892964175,Environment,1.00
+United States,0.9020212830000001,0.902021283183333,0.902021283183333,Income,1.00
+Denmark,0.8983689725,0.8346915867080025,0.8872474444512035,Work-Life Balance,1.00
+Switzerland,0.8958801295,0.8352581306396736,0.8644127343040084,Health,1.00
+New Zealand,0.893983103,0.81341001982099,0.888335843876646,Life Satisfaction,1.00
+Finland,0.893451892,0.9020284186662144,0.8888562083629206,Environment,1.00
+United States,0.893038724,0.8226104689250016,0.890872973943915,Health,1.00
+Finland,0.8918832553333335,0.8078442582231644,0.9388390310566437,Education,1.00
+Australia,0.8909876695,0.8838024613191016,0.8920517412387801,Civic Engagement,1.00
+Sweden,0.890943661,0.839097531116594,0.860895892872934,Life Satisfaction,1.00
+New Zealand,0.889568102,0.839339649109969,0.90340247430485,Community,1.00
+Australia,0.8866129705000001,0.894200360927796,0.885602646699413,Environment,1.00
+United Kingdom,0.886251195,0.8895890812586825,0.839480393370136,Safety,1.00
+Spain,0.879184426,0.8431147284571889,0.82313944954866,Work-Life Balance,1.00
+Australia,0.876240085,0.801622366361543,0.866824594830856,Life Satisfaction,1.00
+Denmark,0.875956157,0.879442246860967,0.843617557490102,Community,1.00
+France,0.8719250860000001,0.82695090836785,0.8364558049707765,Work-Life Balance,1.00
+Norway,0.8688514665,0.8152617231250401,0.8380872128653241,Health,1.00
+Luxembourg,0.8621337920000001,0.877946298314999,0.8148348188739255,Safety,1.00
+Finland,0.860835265,0.821244449084692,0.874185157370561,Community,1.00
+Ireland,0.860493381,0.803732093123264,0.890532562148197,Community,1.00
+Ireland,0.8604138545,0.8944157262091206,0.799505054821672,Safety,1.00
+Iceland,0.857936433,0.8188621330910165,0.814802096320872,Health,1.00
+Lithuania,0.8566302944639734,0.8374945888749575,0.797463659869865,Work-Life Balance,1.00
+Australia,0.856260825,0.8235386778447973,0.8515203737197456,Education,1.00
+Norway,0.854545189,0.792968026724452,0.8523298664513825,Work-Life Balance,1.00
+Sweden,0.85377636,0.9263102713828866,0.7556858731175595,Safety,1.00
+United States,0.8527523243333333,0.8527523240348139,0.8527523240348139,Housing,1.00
+New Zealand,0.849879203,0.880148511673838,0.832333927779907,Environment,1.00
+Sweden,0.8481882255,0.801158576530504,0.813132647239069,Health,1.00
+Israel,0.84796368,0.82337814257074,0.795873065940781,Life Satisfaction,1.00
+Spain,0.8437294040000001,0.7795429090678555,0.826239935757909,Health,1.00
+Luxembourg,0.843160415,0.866216912819083,0.8138093298939597,Jobs,1.00
+Belgium,0.842299234,0.788964946974724,0.821032559596513,Work-Life Balance,1.00
+Germany,0.841214177,0.78172760924366,0.83553858381707,Work-Life Balance,1.00
+Netherlands,0.8412007210000001,0.8000121510534435,0.8055699372371675,Health,1.00
+Sweden,0.8407539065,0.7958308818951361,0.820627109036557,Work-Life Balance,1.00
+Japan,0.8383927445,0.8881203977875796,0.7702576954507545,Safety,1.00
+Switzerland,0.8373536484896464,0.8211482530267055,0.7811259153086381,Work-Life Balance,1.00
+United States,0.8365767662500001,0.8844236083561615,0.7792971849235175,Jobs,1.00
+Australia,0.836322267,0.87924760666681,0.781431252188725,Community,1.00
+Netherlands,0.8331600287500001,0.8592135213768854,0.7757744726295113,Jobs,1.00
+Germany,0.8325390720000001,0.861500910530434,0.7856292011828975,Safety,1.00
+Norway,0.832264222,0.8463128922231336,0.8043406589646828,Jobs,1.00
+Portugal,0.8316907904999999,0.906874025602274,0.7499937359249895,Safety,1.00
+Russian Federation,0.8315069615534335,0.815835998195932,0.7765863401976095,Work-Life Balance,1.00
+Czech Republic,0.8311725315,0.8963503318591599,0.751213843810959,Safety,1.00
+Denmark,0.8310793535,0.8460136005010147,0.7990363548541914,Jobs,1.00
+Austria,0.830633493,0.793376732148954,0.792335444451058,Life Satisfaction,1.00
+Canada,0.8298231775,0.8442922316154505,0.824476477223812,Environment,1.00
+Italy,0.828432889,0.7799417806048055,0.7976347710318885,Health,1.00
+Denmark,0.8274424380000001,0.840929477716666,0.8182963339397955,Environment,1.00
+Norway,0.8258670613333333,0.8258670610788413,0.8258670610788413,Housing,1.00
+Germany,0.82494185325,0.8342703399603915,0.7690957518462986,Jobs,1.00
+Norway,0.823814268,0.830998040908841,0.802314558715597,Community,1.00
+Greece,0.821431934,0.7659125969442739,0.8032031233490415,Health,1.00
+Belgium,0.819643025,0.767494875425287,0.799029500644534,Health,1.00
+France,0.815000331,0.8480666488102555,0.7741216507525235,Safety,1.00
+United Kingdom,0.814643735,0.797192370742284,0.819963557038819,Community,1.00
+Sweden,0.8123025312499998,0.8220061062855855,0.7889170233107605,Jobs,1.00
+Austria,0.8106183600000001,0.8378901960393841,0.7679485242037782,Jobs,1.00
+Japan,0.80930927525,0.8473801409358384,0.7478207472976652,Jobs,1.00
+Australia,0.80355679875,0.8356133096648405,0.7614945658312613,Jobs,1.00
+Luxembourg,0.802934214,0.743163711671351,0.7861229686608485,Health,1.00
+Canada,0.802926606,0.8264389502857322,0.7736557684873907,Jobs,1.00
+Hungary,0.802215959815476,0.7735116071703135,0.766740586457582,Work-Life Balance,1.00
+Belgium,0.8018089644999999,0.8812584701547295,0.721471545202108,Safety,1.00
+Luxembourg,0.8004528804141531,0.7648837852471424,0.7724212289953141,Work-Life Balance,1.00
+United Kingdom,0.7979222324999999,0.8284223314680871,0.7556016821178727,Jobs,1.00
+Finland,0.7968344270000001,0.7535152891936395,0.7831436820201,Work-Life Balance,1.00
+New Zealand,0.7960277325,0.817556796719616,0.7518036876718357,Jobs,1.00
+Estonia,0.7938667426666667,0.7262754011471637,0.8346098916695404,Education,1.00
+Austria,0.7920965204999999,0.7338443819868554,0.7805783901439105,Health,1.00
+Denmark,0.7916589049999999,0.7442405691814583,0.8099205483520736,Education,1.00
+Ireland,0.7909199230367254,0.738099201141569,0.7773455506576945,Work-Life Balance,1.00
+Canada,0.7904533236666667,0.7424921852286053,0.8115474009490686,Education,1.00
+Australia,0.7889383817400087,0.7889383817837686,0.7889383817837686,Housing,1.00
+Finland,0.788337122,0.7202642589970625,0.786994674668752,Health,1.00
+Estonia,0.788024187,0.787194119067878,0.732442894286687,Work-Life Balance,1.00
+Denmark,0.7868979245000001,0.732436444707424,0.7741990870860715,Health,1.00
+Slovak Republic,0.7863858876496266,0.749600245456965,0.762674448574203,Work-Life Balance,1.00
+Slovenia,0.7856880729999999,0.7293718026695187,0.8173882186303723,Education,1.00
+Colombia,0.7844196807880145,0.7232434500538876,0.796767561970373,Health,1.00
+Israel,0.7840057235,0.837093745816101,0.7453444904413216,Safety,1.00
+Canada,0.7822771319999999,0.7822771319946167,0.7822771319946167,Housing,1.00
+Poland,0.7812740225,0.826781276521019,0.7421102561127946,Safety,1.00
+Germany,0.781005138,0.732320252957243,0.758762840247359,Life Satisfaction,1.00
+Korea,0.7791638350000001,0.787066947902606,0.7691988396572795,Civic Engagement,1.00
+Netherlands,0.778070115,0.7609193272966065,0.7890780652028565,Civic Engagement,1.00
+Japan,0.7764098086666666,0.770809666710385,0.7566745544214766,Education,1.00
+Switzerland,0.775411547,0.782089645387836,0.769152014499218,Community,1.00
+Ireland,0.774791913,0.743865814978375,0.736526646376442,Life Satisfaction,1.00
+United Kingdom,0.7719645715000001,0.7103849242408236,0.7665122250163775,Health,1.00
+France,0.7703706945,0.7013772954924875,0.769341307242028,Health,1.00
+Sweden,0.76999187,0.69986296656475,0.8147799494485944,Education,1.00
+Spain,0.769292394,0.759748596125348,0.781376535254117,Community,1.00
+Korea,0.769238274,0.823856235870318,0.7272786304096395,Safety,1.00
+Poland,0.7644157816666667,0.7152813332669733,0.7894052874375678,Education,1.00
+Germany,0.7634309726666667,0.7588791178854933,0.742206527351485,Education,1.00
+Czech Republic,0.7613365425309325,0.7119597866042545,0.7587535598468805,Work-Life Balance,1.00
+Ireland,0.7602656729999999,0.763294931115847,0.7713465360323251,Environment,1.00
+Canada,0.758332193,0.724146682580185,0.795361810406171,Community,1.00
+Belgium,0.757656762,0.72864103351068,0.719242831286101,Life Satisfaction,1.00
+Korea,0.7574150073333333,0.6604605656232622,0.6604605656232622,Housing,1.00
+Korea,0.7558528043333332,0.7620095619444163,0.7236142667050359,Education,1.00
+New Zealand,0.7556170495000001,0.8723286550355911,0.6706927786449736,Safety,1.00
+Finland,0.7546203515,0.778062093236721,0.7452439146989243,Jobs,1.00
+Czech Republic,0.7531266523333334,0.7182784691086693,0.7642172462901797,Education,1.00
+Estonia,0.7520371615,0.8378024469180021,0.7166818524234565,Safety,1.00
+Luxembourg,0.751787664,0.739504761791333,0.697751991931956,Life Satisfaction,1.00
+United States,0.7510229820000001,0.8228421096784535,0.743035872859373,Safety,1.00
+Belgium,0.7508822643333333,0.7056686806576447,0.771415752714065,Education,1.00
+Slovak Republic,0.7441701380000001,0.811932197183967,0.7014543310539395,Safety,1.00
+United States,0.743651883,0.698717480512746,0.722418367900739,Life Satisfaction,1.00
+Netherlands,0.7430043203333333,0.7226999155221927,0.7394112493104054,Education,1.00
+Slovenia,0.7407677644999999,0.7460196951833675,0.6884815130502605,Work-Life Balance,1.00
+Ireland,0.7396807426666667,0.7157060834144287,0.7398999556353877,Education,1.00
+Belgium,0.7395918936666668,0.7395918935730371,0.7395918935730371,Housing,1.00
+Norway,0.7390203073333333,0.6869405388877,0.7696376397989431,Education,1.00
+Australia,0.7387870325,0.8678200634848955,0.6492903628952795,Safety,1.00
+Belgium,0.7374181285,0.752019979858169,0.7173896746495856,Civic Engagement,1.00
+Switzerland,0.7369441950000001,0.7359376654207153,0.7155362388734013,Education,1.00
+Korea,0.73685354075,0.8103858423203845,0.666726779930188,Jobs,1.00
+Luxembourg,0.736736925,0.780765466894877,0.704932071602671,Community,1.00
+Germany,0.7360956055000001,0.679362756492889,0.72934849221276,Health,1.00
+Estonia,0.7352930455,0.7507907988794225,0.7363957096552225,Environment,1.00
+Lithuania,0.7347618846666667,0.6746155998332787,0.7716157507971074,Education,1.00
+Netherlands,0.73356777,0.7335677701647866,0.7335677701647866,Housing,1.00
+Israel,0.732745076,0.766077060239489,0.6981800584742825,Jobs,1.00
+Slovenia,0.732699369,0.6838850616005581,0.720303881997422,Health,1.00
+Switzerland,0.732003493,0.7308013987244291,0.736340408187284,Environment,1.00
+Canada,0.7302471305,0.6874464383713995,0.7313083790071155,Work-Life Balance,1.00
+Ireland,0.7294558859999999,0.7294558860781087,0.7294558860781087,Housing,1.00
+Belgium,0.72623620675,0.7584759612487241,0.722338735408459,Jobs,1.00
+New Zealand,0.7259596875000001,0.684406835496291,0.7672154259186219,Civic Engagement,1.00
+United Kingdom,0.7243768585,0.7404828404159669,0.7082717840886665,Civic Engagement,1.00
+United Kingdom,0.718861431,0.710187445169156,0.665551203311855,Life Satisfaction,1.00
+Portugal,0.7184552584999999,0.733947359885345,0.716635224907051,Environment,1.00
+Ireland,0.71727595025,0.7490655444911853,0.7081130386160881,Jobs,1.00
+Netherlands,0.716079506,0.7317735742558805,0.7064716668953239,Environment,1.00
+Turkey,0.7153920135,0.686413009023478,0.697565562857928,Health,1.00
+Latvia,0.7149997703333333,0.631450723232303,0.777528752778513,Education,1.00
+Greece,0.7124880785000001,0.796468585942474,0.6657402545440325,Safety,1.00
+Czech Republic,0.711349349,0.7671062068623813,0.6653782140930997,Jobs,1.00
+Greece,0.706380896972149,0.6780566612427785,0.6963578851392095,Work-Life Balance,1.00
+Portugal,0.702078853670316,0.658130069233254,0.6976659180327295,Work-Life Balance,1.00
+Italy,0.701619803,0.762715164028049,0.681034477071253,Safety,1.00
+Turkey,0.699073219,0.7681266715241986,0.6769232793306484,Safety,1.00
+United States,0.6959811203333333,0.6573369544745343,0.7170465851604018,Education,1.00
+Denmark,0.6958090095,0.691489705783505,0.6935283628056335,Civic Engagement,1.00
+United States,0.6957714605,0.6859295098050925,0.7098107040353641,Civic Engagement,1.00
+Germany,0.6952615065000001,0.6940356678278325,0.703727852175847,Environment,1.00
+New Zealand,0.6934361570000002,0.6504244801311391,0.718850886617662,Education,1.00
+Luxembourg,0.693248312,0.684190357152998,0.6932483120780195,Civic Engagement,1.00
+Sweden,0.6931898516666667,0.6931898516190821,0.6931898516190821,Housing,1.00
+Austria,0.692418672,0.694211687198406,0.714149561772145,Community,1.00
+Switzerland,0.6922374637057336,0.6922374635477655,0.6922374635477655,Income,1.00
+Estonia,0.69074317625,0.7305474023449054,0.6738944678855123,Jobs,1.00
+Mexico,0.689376961,0.6904119352603045,0.6931411041524935,Civic Engagement,1.00
+Iceland,0.6881047283333334,0.6256514861174423,0.7325226140026001,Education,1.00
+Latvia,0.685368241,0.701707454303527,0.6381481520462955,Work-Life Balance,1.00
+United Kingdom,0.6846887803333334,0.6516674526761853,0.7012159433319539,Education,1.00
+Czech Republic,0.683356729,0.653198000859687,0.65389781358834,Life Satisfaction,1.00
+Austria,0.6832359745000001,0.638357892852209,0.6939989923943886,Work-Life Balance,1.00
+Estonia,0.6821158876666668,0.6821158877015318,0.6821158877015318,Housing,1.00
+Sweden,0.681846784,0.6768324018593854,0.680277050764306,Civic Engagement,1.00
+Slovenia,0.681770407,0.681770406748087,0.681770406748087,Housing,1.00
+Slovenia,0.68139218625,0.7235777548381596,0.669192305056647,Jobs,1.00
+Germany,0.6810927360000001,0.681092735936685,0.681092735936685,Housing,1.00
+Canada,0.6792711735,0.681359534765818,0.679756595501019,Civic Engagement,1.00
+Poland,0.67910391,0.643582479377529,0.682042078496389,Work-Life Balance,1.00
+Estonia,0.678787247,0.679539797199705,0.70418528123524,Community,1.00
+Italy,0.678711241,0.694099204306144,0.69135390140951,Community,1.00
+Slovenia,0.678509819,0.688078995049751,0.696648194731867,Community,1.00
+United States,0.677684604,0.6809032316946371,0.6901198427010785,Environment,1.00
+Russian Federation,0.6760078253333334,0.6451524071287104,0.6912058324675033,Education,1.00
+France,0.6755306244999999,0.7204351705610139,0.6672015806179905,Jobs,1.00
+Hungary,0.6745098425,0.764786247805784,0.644695392815559,Safety,1.00
+Slovak Republic,0.6745060325000001,0.6292898501722279,0.680871072039898,Health,1.00
+Sweden,0.673264949,0.670765232223023,0.706614732446575,Community,1.00
+Spain,0.6702363306666667,0.6702363307230857,0.6702363307230857,Housing,1.00
+Luxembourg,0.6685321163333334,0.668532116289748,0.668532116289748,Housing,1.00
+United Kingdom,0.665190226,0.6547931851318065,0.689900496495056,Environment,1.00
+France,0.6642040543333333,0.6642040544205616,0.6642040544205616,Housing,1.00
+Russian Federation,0.6629412908338472,0.7054156751677076,0.6465434791419052,Jobs,1.00
+Austria,0.6621549116666666,0.6682404040155716,0.6427095952524556,Education,1.00
+Latvia,0.659377513,0.7550152962624874,0.668707595041143,Safety,1.00
+Austria,0.6583677765,0.6687602829404194,0.65496494452456,Environment,1.00
+Brazil,0.6579129559073496,0.633050899291191,0.6563376261806371,Work-Life Balance,1.00
+Brazil,0.657635197191413,0.6029504380127215,0.6837419417848315,Health,1.00
+Brazil,0.656803236,0.64672762593584,0.6630524279972174,Civic Engagement,1.00
+Italy,0.6561840535,0.679700071257858,0.6345052189523095,Civic Engagement,1.00
+Czech Republic,0.654673356,0.6014084655861035,0.669633989138015,Health,1.00
+Netherlands,0.654056968,0.707418328922005,0.636769237524086,Community,1.00
+Israel,0.6529776865,0.649023939191486,0.6570048974179795,Civic Engagement,1.00
+Belgium,0.651251469,0.696150585608513,0.643246820734437,Community,1.00
+Switzerland,0.650367955,0.6503679550605207,0.6503679550605207,Housing,1.00
+Poland,0.6500232705,0.7070808135718973,0.6328262846078765,Jobs,1.00
+Lithuania,0.6482551602618425,0.6650452138601498,0.6601033985095485,Jobs,1.00
+Japan,0.6460348035000001,0.662841294461342,0.6429686081110375,Environment,1.00
+Hungary,0.64428580925,0.7052603941621375,0.620796622842093,Jobs,1.00
+Chile,0.643771773,0.6180659749371316,0.629878912110902,Health,1.00
+Luxembourg,0.6429559844999999,0.6611481115012305,0.6407685742909786,Environment,1.00
+Norway,0.6426191935000001,0.6317102924981974,0.6503316049237635,Civic Engagement,1.00
+United Kingdom,0.640855632,0.5568407648455671,0.699883824072911,Work-Life Balance,1.00
+Slovak Republic,0.640526943,0.654426407873664,0.665329644544717,Community,1.00
+Slovenia,0.6390478319999999,0.647585864747103,0.6395981472874159,Environment,1.00
+Iceland,0.636789221,0.6446362310091776,0.6253430903369555,Civic Engagement,1.00
+Portugal,0.6349969646666667,0.6349969648522206,0.6349969648522206,Housing,1.00
+Mexico,0.631636112,0.590007607616069,0.6465839690623615,Health,1.00
+United States,0.630280727,0.573874036461281,0.726772150947976,Community,1.00
+Latvia,0.6282306135,0.6375843020987579,0.6388560644223565,Environment,1.00
+Czech Republic,0.628216698,0.617283653871733,0.679967667425758,Community,1.00
+Lithuania,0.625957595,0.697093186834965,0.656502561766821,Safety,1.00
+Denmark,0.618911676,0.6189116761865637,0.6189116761865637,Housing,1.00
+New Zealand,0.618695169468333,0.6186951694226477,0.6186951694226477,Housing,1.00
+Brazil,0.618527932,0.62508059146051,0.65623354026613,Community,1.00
+Austria,0.618183077,0.61818307698105,0.61818307698105,Housing,1.00
+Finland,0.6170151756666666,0.617015175603539,0.617015175603539,Housing,1.00
+Poland,0.617002031,0.564094165381121,0.6388363517254495,Health,1.00
+Germany,0.616853129,0.641223646639268,0.638505788861017,Community,1.00
+France,0.616346949,0.611113123288571,0.665898456361824,Community,1.00
+France,0.6091116806666667,0.5872440513307476,0.623027468333737,Education,1.00
+Slovak Republic,0.608789215,0.6057782975200354,0.6181514977930145,Civic Engagement,1.00
+Mexico,0.607433419,0.56391163528895,0.597852778260565,Life Satisfaction,1.00
+France,0.607123668,0.604034385318969,0.560918719996664,Life Satisfaction,1.00
+Greece,0.6070378613333334,0.587273517266309,0.6184820521306194,Education,1.00
+Chile,0.602982714,0.579950248076943,0.575543246302279,Life Satisfaction,1.00
+United States,0.6029759525,0.541644758716535,0.652151786198895,Work-Life Balance,1.00
+Latvia,0.6015309879999999,0.6214542546391535,0.6245226661035916,Jobs,1.00
+Estonia,0.601400649,0.5674151514595065,0.632708765795015,Civic Engagement,1.00
+Japan,0.598231638,0.5982316380584293,0.5982316380584293,Housing,1.00
+United Kingdom,0.5962546049999999,0.596254605127267,0.596254605127267,Income,1.00
+Turkey,0.593905032,0.5886511943035635,0.5922619623487135,Civic Engagement,1.00
+Hungary,0.593006443,0.5543759641596755,0.608287018448469,Health,1.00
+France,0.5922123115,0.5881495801681704,0.612923583741539,Environment,1.00
+Belgium,0.5922089895,0.6263695387719745,0.574818375767186,Environment,1.00
+Colombia,0.5917075475,0.62063874069619,0.590034853921027,Environment,1.00
+Iceland,0.5902328663334886,0.5902328663334886,0.5902328663334886,Income,1.00
+New Zealand,0.588925072,0.4915687971367465,0.6804749260416916,Work-Life Balance,1.00
+Hungary,0.5873391193333334,0.5821561215791613,0.5869873194772209,Education,1.00
+Mexico,0.58624511875,0.6980730913003279,0.536994795696803,Jobs,1.00
+Chile,0.585992175415784,0.6793128980606613,0.5479318732042757,Jobs,1.00
+Lithuania,0.583682923,0.5792354300934826,0.604511588806147,Environment,1.00
+Brazil,0.582664582,0.499499329254814,0.612121963859825,Life Satisfaction,1.00
+Portugal,0.580551334,0.5520857547389105,0.5733923627987575,Health,1.00
+France,0.5779294425,0.5670582722855886,0.586811969427854,Civic Engagement,1.00
+Portugal,0.57702516375,0.6290436575358337,0.5826314139242783,Jobs,1.00
+Japan,0.571522365,0.412329054142414,0.767789224156206,Community,1.00
+Slovak Republic,0.5703309286666667,0.5437159058022276,0.5943840338279357,Education,1.00
+Australia,0.5694553984999999,0.56945539823855,0.56945539823855,Income,1.00
+Russian Federation,0.565781208,0.569462604841816,0.617661339141505,Community,1.00
+Estonia,0.5631531869999999,0.506186471122757,0.6010994061833015,Health,1.00
+Australia,0.562566413,0.4755412546989405,0.6509494053402525,Work-Life Balance,1.00
+Israel,0.5619891516666666,0.5333337773324733,0.5882774381827954,Education,1.00
+Hungary,0.558573062,0.5585730618553341,0.5585730618553341,Housing,1.00
+Slovak Republic,0.557395313,0.6345119819821206,0.5424544305972727,Jobs,1.00
+Spain,0.5544605503333334,0.5265843619207566,0.5791387300178453,Education,1.00
+Brazil,0.5543501055,0.6115693328362339,0.5281481815296725,Environment,1.00
+Colombia,0.552476938686501,0.6495889456397826,0.5135018320019504,Jobs,1.00
+Colombia,0.548714683,0.598631435475522,0.566122895373216,Community,1.00
+South Africa,0.5482349245,0.50070714317738,0.55686880930723,Work-Life Balance,1.00
+United Kingdom,0.5465520753333334,0.546552075447774,0.546552075447774,Housing,1.00
+Spain,0.545394208,0.494345904346704,0.551138125465213,Life Satisfaction,1.00
+Chile,0.544344764,0.5443447638562007,0.5443447638562007,Housing,1.00
+Canada,0.5388988965,0.5388988962757,0.5388988962757,Income,1.00
+Chile,0.5376354695000001,0.6096685417371954,0.6081037494140055,Safety,1.00
+Germany,0.5336310360000001,0.570382592906444,0.49789592904219704,Civic Engagement,1.00
+Czech Republic,0.5315029585,0.5465626753930445,0.5295105144643395,Environment,1.00
+Spain,0.530015736,0.529116129209412,0.5580421100016291,Environment,1.00
+Colombia,0.528108821,0.475798650332074,0.534341256969408,Life Satisfaction,1.00
+Lithuania,0.5268446873333333,0.5268446871686864,0.5268446871686864,Housing,1.00
+Japan,0.5268336315,0.468589526848545,0.5409015025041737,Health,1.00
+Italy,0.524992055,0.6226641594347253,0.5102600970082682,Jobs,1.00
+Finland,0.5207864234999999,0.5381175936828575,0.5079379708244496,Civic Engagement,1.00
+Iceland,0.5180862973333333,0.518086297536577,0.518086297536577,Housing,1.00
+Italy,0.5102433793333333,0.5102433793731757,0.5102433793731757,Housing,1.00
+Iceland,0.505386854031191,0.40013111524205647,0.6187831398603736,Work-Life Balance,1.00
+Belgium,0.504549519,0.5045495190396365,0.5045495190396365,Income,1.00
+Israel,0.502082339181858,0.5020823391787177,0.5020823391787177,Housing,1.00
+Luxembourg,0.49997978433333334,0.5005795097443917,0.503826094770746,Education,1.00
+Slovak Republic,0.498545177,0.514500666096101,0.445779112429216,Life Satisfaction,1.00
+Czech Republic,0.49654075866666664,0.4965407583905634,0.4965407583905634,Housing,1.00
+Austria,0.496115671,0.49611567122835154,0.49611567122835154,Income,1.00
+Chile,0.495862659862093,0.47425671144948,0.544070329405488,Work-Life Balance,1.00
+Turkey,0.49520800973363477,0.662336715163556,0.40972559279249926,Jobs,1.00
+South Africa,0.493719972,0.537162460829944,0.532235585149441,Community,1.00
+Slovak Republic,0.4891202865,0.48974981843454,0.50238867689457,Environment,1.00
+Poland,0.486381961,0.504816868753169,0.47850264993749153,Civic Engagement,1.00
+Portugal,0.485754192,0.554016520855933,0.504526798868654,Community,1.00
+Italy,0.48491910833333335,0.467417298571226,0.5078763084711073,Education,1.00
+Israel,0.481839192,0.524772445586399,0.524260394125678,Community,1.00
+Poland,0.481318296,0.437298785839476,0.485621404366142,Life Satisfaction,1.00
+Russian Federation,0.4800586555,0.59940557389076,0.5832997279258575,Safety,1.00
+Austria,0.47837352450000004,0.48237250324584946,0.47107690313781403,Civic Engagement,1.00
+Lithuania,0.478356552,0.511997861732225,0.529320791981757,Community,1.00
+Greece,0.476530949,0.47653094883847835,0.47653094883847835,Housing,1.00
+Germany,0.47248749,0.472487490068875,0.472487490068875,Income,1.00
+Norway,0.4717296505,0.4717296506247885,0.4717296506247885,Income,1.00
+South Africa,0.47003663150262553,0.4405163424749785,0.49693706510110947,Civic Engagement,1.00
+Spain,0.46925775049999996,0.4762586655709245,0.4641998222623555,Civic Engagement,1.00
+Turkey,0.46849806833333335,0.46849806830855023,0.46849806830855023,Housing,1.00
+Korea,0.468045113,0.4316740981805115,0.473101265822785,Health,1.00
+Colombia,0.4669126483333333,0.46691264849991837,0.46691264849991837,Housing,1.00
+Spain,0.465735028,0.5725298031199085,0.44843819687600195,Jobs,1.00
+Poland,0.46461079466666666,0.4646107946609023,0.4646107946609023,Housing,1.00
+Israel,0.460110106593018,0.3742207936290305,0.5654099260434184,Work-Life Balance,1.00
+Japan,0.458984879946019,0.409605993734777,0.545960378492527,Work-Life Balance,1.00
+Sweden,0.45656055987198796,0.4565605598083545,0.4565605598083545,Income,1.00
+Portugal,0.455200232,0.43340989111625633,0.48283951352979965,Education,1.00
+Latvia,0.454793065,0.42326081443756447,0.494851651486655,Health,1.00
+Brazil,0.4544358318057955,0.4544358316681309,0.4544358316681309,Housing,1.00
+Russian Federation,0.4521798826666667,0.452179882780678,0.452179882780678,Housing,1.00
+Chile,0.448802807,0.452770797388327,0.45223251718175134,Education,1.00
+Slovak Republic,0.4463131866666667,0.4463131867262337,0.4463131867262337,Housing,1.00
+France,0.4431228685,0.443122868852335,0.443122868852335,Income,1.00
+Italy,0.438994328,0.473065592669788,0.375566235356064,Life Satisfaction,1.00
+Japan,0.43882683899999997,0.43882683879830453,0.43882683879830453,Income,1.00
+Latvia,0.431317853,0.40653367817397,0.459296587315116,Civic Engagement,1.00
+New Zealand,0.4278371078849645,0.427837107750758,0.427837107750758,Income,1.00
+Hungary,0.4266370355,0.4351910184996505,0.44024468111121606,Environment,1.00
+Poland,0.423982047,0.44229168463597446,0.42383090203374146,Environment,1.00
+Chile,0.423900524,0.4458083590277935,0.4317213444986055,Environment,1.00
+Slovenia,0.4238058895,0.4445045804949025,0.415861538044522,Civic Engagement,1.00
+Lithuania,0.421664625,0.396880289843478,0.413424127251308,Life Satisfaction,1.00
+Slovenia,0.421026348,0.420232937508844,0.390795783699417,Life Satisfaction,1.00
+Lithuania,0.420894589,0.382620823735762,0.4793907567464765,Health,1.00
+Latvia,0.415818531,0.38695547031186,0.410874446521493,Life Satisfaction,1.00
+Korea,0.414822679576433,0.3711225477205925,0.4768535336797855,Work-Life Balance,1.00
+Greece,0.41347981749999996,0.4109056670862265,0.41944168147293504,Civic Engagement,1.00
+Brazil,0.4113079712651315,0.5251502575213234,0.4084782614798046,Jobs,1.00
+Japan,0.4096468,0.345448827742662,0.438019143028422,Life Satisfaction,1.00
+Latvia,0.403690591,0.302822225729274,0.582241568108257,Community,1.00
+Poland,0.402617662,0.365230765077384,0.540620893783782,Community,1.00
+Spain,0.401172805,0.4011728047390965,0.4011728047390965,Income,1.00
+Hungary,0.395933386,0.377521066191278,0.515105064225753,Community,1.00
+Korea,0.39585375,0.298865803556908,0.465529289494254,Life Satisfaction,1.00
+Mexico,0.39517877999999995,0.406685956908093,0.415985773522053,Environment,1.00
+Lithuania,0.37913885150000004,0.3880530814199085,0.3810575373235542,Civic Engagement,1.00
+Turkey,0.378908124,0.430529507320423,0.44275533185526,Community,1.00
+Italy,0.3777128415,0.41631453486319503,0.3703116033236865,Environment,1.00
+Russian Federation,0.37345501,0.38392443846706,0.34213134662042,Life Satisfaction,1.00
+Italy,0.372598156,0.37259815587816447,0.37259815587816447,Income,1.00
+Greece,0.3725461845,0.40454919018958146,0.37272825253826003,Environment,1.00
+Latvia,0.3699967823333334,0.36999678232145067,0.36999678232145067,Housing,1.00
+Finland,0.3658223995,0.365822399250491,0.365822399250491,Income,1.00
+Russian Federation,0.3627147025,0.3401608165507915,0.4143931869571645,Health,1.00
+Estonia,0.349129504,0.353954022893333,0.323375106908416,Life Satisfaction,1.00
+Hungary,0.3400709545,0.3518074773356645,0.331045219242652,Civic Engagement,1.00
+Switzerland,0.339850109,0.376712581875695,0.3187024839758687,Civic Engagement,1.00
+Czech Republic,0.3373983625,0.351085759939479,0.3288856347733355,Civic Engagement,1.00
+Chile,0.329642021,0.420169177512979,0.370747616665034,Community,1.00
+Netherlands,0.32600557049999995,0.3260055708423295,0.3260055708423295,Income,1.00
+Israel,0.321026424767266,0.321026424767266,0.321026424767266,Income,1.00
+Ireland,0.31179610599999996,0.3138667706187915,0.3137878936037225,Civic Engagement,1.00
+Turkey,0.3106169155,0.3019185091852225,0.3852520906517155,Work-Life Balance,1.00
+South Africa,0.3103577817531305,0.33855478130217,0.361389743581074,Health,1.00
+Mexico,0.309643387,0.3096433870310955,0.3096433870310955,Housing,1.00
+Ireland,0.3087290095,0.308729009528146,0.308729009528146,Income,1.00
+Hungary,0.308024171,0.306078489996583,0.291665554794736,Life Satisfaction,1.00
+Korea,0.30710925450000004,0.3071092546984015,0.3071092546984015,Income,1.00
+Denmark,0.302020002,0.30202000198646806,0.30202000198646806,Income,1.00
+Turkey,0.29675884366666666,0.3332334180309003,0.2793532217906603,Education,1.00
+Israel,0.272784051,0.298866711170242,0.2805674866868485,Environment,1.00
+Turkey,0.2709931295,0.291223475333942,0.2866606257151575,Environment,1.00
+South Africa,0.2647092425,0.314453956816908,0.2507518479816455,Environment,1.00
+Turkey,0.260991461,0.238898115024374,0.268646753543235,Life Satisfaction,1.00
+Portugal,0.2588859695,0.2588859693439775,0.2588859693439775,Income,1.00
+South Africa,0.258389172098446,0.25868635018385666,0.2862290151262435,Education,1.00
+South Africa,0.2528457169256033,0.25284571694683394,0.25284571694683394,Housing,1.00
+South Africa,0.24982680999999998,0.3842231972991815,0.4662590437399075,Safety,1.00
+Portugal,0.24977844450000003,0.27349260654986096,0.23716246693965448,Civic Engagement,1.00
+Russian Federation,0.249350775,0.3013560452278695,0.249350774869825,Environment,1.00
+Korea,0.2397500195,0.2497892645757915,0.2538816465562825,Environment,1.00
+Portugal,0.237044303,0.212630481784833,0.247537829901528,Life Satisfaction,1.00
+Russian Federation,0.234984312,0.1883359631907985,0.273045066397739,Civic Engagement,1.00
+Slovenia,0.232018974,0.23201897385999998,0.23201897385999998,Income,1.00
+Poland,0.2227668935,0.22276689338463102,0.22276689338463102,Income,1.00
+Mexico,0.2193181665,0.29469928104579446,0.5410808995900815,Safety,1.00
+Greece,0.218062365,0.198261655918744,0.227207026299385,Life Satisfaction,1.00
+Czech Republic,0.2072666876136245,0.2072666875939485,0.2072666875939485,Income,1.00
+Colombia,0.1956598595,0.20335849354949248,0.1974487699250855,Civic Engagement,1.00
+Japan,0.1905216275,0.2047593581733915,0.18723792584944648,Civic Engagement,1.00
+Greece,0.18470816625,0.395958027603171,0.14173437177351006,Jobs,1.00
+Estonia,0.184115038,0.184115037992639,0.184115037992639,Income,1.00
+Brazil,0.1768730086666667,0.1589969353655113,0.22951195284319933,Education,1.00
+Lithuania,0.17623994483809424,0.17623994494059525,0.17623994494059525,Income,1.00
+Turkey,0.15758063288844498,0.15758063288844498,0.15758063288844498,Income,1.00
+Slovak Republic,0.15656207216645085,0.15656207220818785,0.15656207220818785,Income,1.00
+Greece,0.1478670245,0.1478670246374195,0.1478670246374195,Income,1.00
+Mexico,0.142991277,0.152533495554682,0.310043065487135,Community,1.00
+Colombia,0.14139468700000002,0.14136945473713167,0.1831259460991533,Education,1.00
+Hungary,0.1260184969046325,0.12601849692812295,0.12601849692812295,Income,1.00
+Russian Federation,0.12393581832376444,0.12393581832376444,0.12393581832376444,Income,1.00
+Colombia,0.122344396,0.19009503315672868,0.5562366002984755,Safety,1.00
+Mexico,0.11219724199999999,0.1325718739897439,0.13658792087333516,Education,1.00
+Mexico,0.1067426769788428,0.07094195363864671,0.2943369135209759,Work-Life Balance,1.00
+Chile,0.101545677910685,0.10154567806491349,0.10154567806491349,Income,1.00
+Chile,0.0992748185,0.099274818704676,0.1122719086587224,Civic Engagement,1.00
+Colombia,0.0934723895,0.0777395656798983,0.231353515405182,Work-Life Balance,1.00
+Latvia,0.069497286,0.0694972859053775,0.0694972859053775,Income,1.00
+Greece,0.065044064,0.144718450081577,0.190326673047484,Community,1.00
+Mexico,0.06068456803224565,0.06068456803224565,0.06068456803224565,Income,1.00
+Colombia,0.0393070720251529,0.0393070720251529,0.0393070720251529,Income,1.00
+Brazil,0.03273239256186655,0.03273239256186655,0.03273239256186655,Income,1.00
+South Africa,0.0297848152814479,0.0297848152814479,0.0297848152814479,Income,1.00
+Brazil,0,0.1252328536593835,0.4579158316633265,Safety,1.00
+Korea,0,0,0.225141832802632,Community,1.00
+South Africa,0,0.21803854896234082,0.02946509387763235,Jobs,1.00
+South Africa,0,0.014498079344606,0,Life Satisfaction,1.00
+`
+    const COLOR_RANGE = [
+        "#38A348",
+        "#FBD955",
+        "#E01750",
+        "#1C83A9",
+        "#32C77F",
+        "#999999",
+        "#FF736C",
+        "#16DDF6",
+        "#1D5278",
+        "#333333",
+        "#B21847"
+    ]
+    const data = d3.csvParse(rawCsvStr, d3.autoType)
+    const getWeights = function (data) {
+        const res = d3.rollup(data, d => 1, d => d.Attribute)
+        const val = {}
+        return Object.fromEntries(res)
+    }
+    const weights = getWeights(data)
+    const colors = d3
+        .scaleOrdinal()
+        .range(COLOR_RANGE)
+        .domain(Object.keys(weights))
+
+    const getAggregatedData = function (data, weights) {
+        const balancedWeights = balanceweights(weights);
+        let agg = data.reduce((l, d) => {
+            if (l.filter(k => k.key === d.Name).length === 0) {
+                l.push({
+                    key: d.Name,
+                    values: [d]
+                })
+            } else {
+                l.filter(k => k.key === d.Name)[0].values.push(d)
+            }
+            return l
+        }, [])
+
+        agg = agg.map(a => {
+            return {
+                ...a,
+                Main: a.values.reduce((c, d) => {
+                    c += parseFloat(d['Main'])
+                    return c
+                }, 0),
+                A: a.values.reduce((c, d) => {
+                    c += parseFloat(d['A'])
+                    return c
+                }, 0),
+                B: a.values.reduce((c, d) => {
+                    c += parseFloat(d['B'])
+                    return c
+                }, 0)
+            }
+        })
+        agg = agg.sort(function (a, b) {
+            return d3.ascending(a[sortKey], b[sortKey]);
+        });
+        return agg;
+    }
+
+    const aggregated_data = getAggregatedData(data, weights)
+
+
+    const growAniConfig = {
+        "keyframes": [{
+                "targets": ".flower-wrapper",
+                "translateY": [
+                    svgHeight,
+                    0
+                ],
+                "easing": "easeInOutSine"
+            },
+            {
+                "targets": ".petels path",
+                "rotate": (el, index) => {
+                    const rotation = (index % 11 * 360) / 11 - 165;
+                    return index % 11 < 6 ? [rotation, -165] : [rotation, 195];
+                },
+                "easing": "easeInOutQuad"
+            },
+            {
+                "targets": ".labelBg",
+                "opacity": [
+                    0,
+                    1
+                ],
+                "easing": "easeInOutQuad"
+            },
+            {
+                "targets": ".label",
+                "opacity": [
+                    0,
+                    1
+                ],
+                "easing": "easeInOutQuad"
+            }
+        ],
+        "configs": [{
+                "unit": "spatial",
+                "spatial": "linear",
+                "linear": {
+                    "start": {
+                        "x": 31.607999999999997,
+                        "y": 316.08
+                    },
+                    "end": {
+                        "x": 611.088,
+                        "y": 314.324
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "spread": {
+                    "center": null,
+                    "isReady": false,
+                    "order": []
+                },
+                "sketch": {
+                    "points": [{
+                        "x": 611.088,
+                        "y": 314.324
+                    }],
+                    "isReady": false,
+                    "order": []
+                },
+                "randomSeed": 0,
+                "delay": 0,
+                "offset": 0,
+                "duration": 1800,
+                "data": {
+                    "order": "asc",
+                    "rank": false
+                }
+            },
+            {
+                "unit": "random",
+                "spatial": "linear",
+                "linear": {
+                    "start": {
+                        "x": 31.607999999999997,
+                        "y": 316.08
+                    },
+                    "end": {
+                        "x": 611.088,
+                        "y": 314.324
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "spread": {
+                    "center": {
+                        "x": 479.38800000000003,
+                        "y": 128.188
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "sketch": {
+                    "points": [{
+                            "x": 479.38800000000003,
+                            "y": 128.188
+                        },
+                        {
+                            "x": 479.38800000000003,
+                            "y": 128.188
+                        }
+                    ],
+                    "isReady": false,
+                    "order": []
+                },
+                "randomSeed": 0,
+                "delay": 1800,
+                "offset": 0,
+                "duration": 1000,
+                "data": {
+                    "order": "asc",
+                    "rank": false
+                }
+            }, {
+                "unit": "spatial",
+                "spatial": "spread",
+                "linear": {
+                    "start": {
+                        "x": 31.607999999999997,
+                        "y": 316.08
+                    },
+                    "end": {
+                        "x": 611.088,
+                        "y": 314.324
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "spread": {
+                    "center": {
+                        "x": 479.38800000000003,
+                        "y": 128.188
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "sketch": {
+                    "points": [{
+                            "x": 479.38800000000003,
+                            "y": 128.188
+                        },
+                        {
+                            "x": 479.38800000000003,
+                            "y": 128.188
+                        }
+                    ],
+                    "isReady": false,
+                    "order": []
+                },
+                "randomSeed": 0,
+                "delay": 2000,
+                "offset": 800,
+                "duration": 1000,
+                "data": {
+                    "order": "asc",
+                    "rank": false
+                }
+            },
+            {
+                "unit": "spatial",
+                "spatial": "spread",
+                "linear": {
+                    "start": {
+                        "x": 31.607999999999997,
+                        "y": 316.08
+                    },
+                    "end": {
+                        "x": 611.088,
+                        "y": 314.324
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "spread": {
+                    "center": {
+                        "x": 479.38800000000003,
+                        "y": 128.188
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "sketch": {
+                    "points": [{
+                            "x": 479.38800000000003,
+                            "y": 128.188
+                        },
+                        {
+                            "x": 479.38800000000003,
+                            "y": 128.188
+                        }
+                    ],
+                    "isReady": false,
+                    "order": []
+                },
+                "randomSeed": 0,
+                "delay": 2000,
+                "offset": 800,
+                "duration": 1000,
+                "data": {
+                    "order": "asc",
+                    "rank": false
+                }
+            }
+        ],
+        "svg": {
+            "width": 500.0000305175781,
+            "height": 256.2586975097656,
+            "viewBox": "0 0 878 450",
+            "left": 121.14583587646484,
+            "top": 8.42881965637207
+        }
+    }
+
+
+    const plot = function (svgEle) {
+
+        const width = svgWidth - margin.left - margin.right
+        const height = svgHeight - margin.top - margin.bottom
+
+        const y = getY(aggregated_data, height)
+        const x = getX(aggregated_data, width)
+        const paddingInPixel = x.bandwidth() * x.padding()
+
+
+        initCanvas(svg)
+
+        const root = svg.append("g")
+            .classed(".root", true)
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+            .classed('abMode', abMode);
+        root.append('g')
+            .classed('leftaxis', true)
+
+        const countries = root
+            .selectAll(".countries")
+            .data(aggregated_data, d => d[sortKey]);
+
+        const countryEnter = countries
+            .enter()
+            .append("g")
+            .attr("class", "countries")
+            .attr("data-name", d => d[sortKey])
+            .attr("transform", function (d) {
+                const xd = x(d[sortKey]) + x.bandwidth() / 2;
+                const yd = y(d["Main"]);
+                return "translate(" + xd + "," + yd + ")";
+            })
+            .append('g')
+            .classed('flower-wrapper', true)
+            .attr("transform", `translate(0,${svgHeight})`);
+
+        countryEnter
+            .append('rect')
+            .attr("class", "hoverhelper")
+            .attr("x", -x.bandwidth() / 2 - paddingInPixel)
+            .attr("y", function (d) {
+                return -y(d["Main"]);
+            })
+            .attr("width", x.bandwidth() + paddingInPixel * 2)
+            .attr("height", function (d) {
+                return height;
+            })
+            .attr("fill", "rgba(0,0,0,0)");
+
+        countryEnter
+            .append('rect')
+            .classed('bar', true)
+            .attr("width", 1)
+            .attr("height", function (d) {
+                return height - y(d["Main"]);
+            })
+            .style('fill', "url(#grad)");
+        countryEnter
+            .append('g')
+            .classed('flower', true)
+            .call((tmp) => flowerBloomer(tmp, weights, colors));
+        countryEnter
+            .append('g')
+            .attr("class", "plotab")
+            .call((tmp) => plotAB(tmp, height, y));
+        countryEnter
+            .append('text')
+            .classed('labelBg', true)
+            .attr("letter-spacing", 1)
+            .text(function (d) {
+                return d.key;
+            });
+        countryEnter
+            .append('text')
+            .classed('label', true)
+            .attr("letter-spacing", 1)
+            .text(function (d) {
+                return d.key;
+            });
+
+        countryEnter.on("click", function (event, d) {
+            d3.select(this).classed('hover', false);
+            svg.selectAll(".countries").classed('hover', a => a.key == d.key)
+                .select('.flowerbg')
+                .style('visibility', 'hidden')
+
+            d3.select(this).select('.flowerbg').style('visibility', 'visible')
+            d3.select(this).each(function () {
+                this.parentNode.appendChild(this);
+            });
+        });
+
+
+        countries
+            .attr("transform", function (d) {
+                const xd = x(d.key) + x.bandwidth() / 2;
+                const yd = y(d["Main"]);
+                return "translate(" + xd + "," + yd + ")";
+            });
+        countries.select('.bar').attr("height", function (d) {
+            return height - y(d["Main"]);
+        });
+
+        countries.select('.flower').call((tmp) => flowerBloomer(tmp, weights, colors));
+        countries.select('.plotab').call((tmp) => plotAB(tmp, height, y));
+
+
+        countries.exit().remove();
+
+
+        svg.select(".leftaxis").call(d3.axisLeft(y).ticks(4));
+        const attribs = Object.keys(weights);
+        const controlPanel = d3.select('#metric-weight-panel')
+                .style('opacity', 0)
+        controlPanel.selectAll('div')
+            .data(attribs)
+            .enter()
+            .append('div')
+            .attr('class', 'metric-weight-container')
+            .html(d => `
+                <span style="background-color:${colors(d)}; width:1em; height:1em; border-radius:0.5em;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <label for="${d}">${d}</label>
+                <input type="range" style="width:6em" id="${d}" name="${d}" min="0" max="5" step="0.5" value="${weights[d]}" onchange="alert('Not Implemented')">
+            `)
+        controlPanel.transition().delay(3000).duration(1500).style('opacity', 1)
+
+        const growTimeline = getTimeline(growAniConfig, svgEle, false)
+        growTimeline.play()
+
+    }
+
+    const initCanvas = function (svg) {
+        const insertedCode = `
+    <defs>
+    <linearGradient id="grad" x1="0%" x2="0%" y1="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#38A348;stop-opacity:1"></stop>
+        <stop offset="100%" style="stop-color:#7EE267;stop-opacity:0"></stop>
+    </linearGradient>
+    <radialGradient id="radgrad" cx="50%" cy="50%" fx="50%" fy="50%" r="100%">
+        <stop offset="30%" style="stop-color:#fff;stop-opacity:0.8"></stop>
+        <stop offset="80%" style="stop-color:#fff;stop-opacity:0.2"></stop>
+    </radialGradient>
+    </defs>
+  `
+        svg.html(insertedCode)
+    }
+
+    const getY = (aggregated_data, height) => {
+        return d3
+            .scaleLinear()
+            .range([height, 0])
+            .domain([
+                0,
+                d3.max(aggregated_data, function (d) {
+                    return Math.max(d["Main"], d["A"], d["B"]);
+                })
+            ])
+    }
+
+    const getX = (aggregated_data, width) => {
+        aggregated_data.sort(function (a, b) {
+            return d3.ascending(a[sortKey], b[sortKey]);
+        });
+        return d3
+            .scaleBand()
+            .range([0, width])
+            .padding(0.4)
+            .domain(
+                aggregated_data.map(function (d) {
+                    return d[sortKey];
+                })
+            )
+
+    }
+
+    const calculated_height = function (height) {
+        return height - margin.top - margin.bottom
+    }
+
+    const calculated_width = function (width) {
+        return width - margin.left - margin.right;
+    }
+
+    function flowerBloomer(flower, weights, colors) {
+        const petelLength = d3.scaleLinear().range([0, 30]);
+        const attribs = Object.keys(weights);
+        const pie = d3
+            .pie()
+            .sort(null)
+            .padAngle(0.09)
+            .value(d => d)(Object.values(weights));
+
+        if (flower.selectAll('*').empty()) {
+
+            const c = flower
+                .append('circle')
+                .attr('class', 'flowerbg')
+                .attr('r', 40)
+                .style('fill', "url(#radgrad)")
+                .style('visibility', 'hidden')
+
+            const filterPanel = d3.select('#filter-metric')
+
+            filterPanel.selectAll('option')
+                .data(['All', ...attribs])
+                .enter()
+                .append('option')
+                .attr('value', d => d)
+                .attr('label', d => d)
+
+            filterPanel.on('change', function () {
+                onFilterItem(this.value)
+            })
+
+            flower
+                .selectAll('.petels')
+                .data(function (d) {
+                    return attribs.map(a => {
+                        return {
+                            name: a,
+                            value: d.values.filter(v => v.Attribute == a)[0]["Main"]
+                        };
+                    });
+                })
+                .enter()
+                .append('g')
+                .attr('class', 'petels')
+                .attr('data-attribute', d => d.name)
+                .append('path')
+                .attr('d', (p, i) => {
+                    const pied = pie[i];
+                    const val = petelLength(p.value);
+                    const sa = pied.startAngle + pied.padAngle;
+                    const ea = pied.endAngle - pied.padAngle;
+                    const ang = Math.min(sa, ea) + (Math.max(sa, ea) - Math.min(sa, ea)) / 2;
+
+                    return d3
+                        .line()
+                        .curve(d3.curveBundle.beta(1))
+                        .x(k => k[0])
+                        .y(k => k[1])([
+                            [0, 0],
+                            [val * 0.8 * Math.sin(sa), val * 0.8 * Math.cos(sa)],
+                            [val * 1.2 * Math.sin(ang), val * 1.2 * Math.cos(ang)],
+                            [val * 0.8 * Math.sin(ea), val * 0.8 * Math.cos(ea)],
+                            [0, 0]
+                        ]);
+                })
+
+                .attr('transform', (p, i) => {
+                    return `translate(0, 0) rotate(${((pie[i].startAngle +
+                pie[i].padAngle) *
+                180) /
+                Math.PI -
+                165})`;
+                });
+        }
+
+        flower
+            .selectAll('.petels path')
+            .attr('fill', p => {
+                return colors(p.name);
+            })
+            .attr('d', (p, i) => {
+                const pied = pie[i];
+                const val = petelLength(p.value);
+                const sa = pied.startAngle + pied.padAngle;
+                const ea = pied.endAngle - pied.padAngle;
+                const ang = Math.min(sa, ea) + (Math.max(sa, ea) - Math.min(sa, ea)) / 2;
+
+                return d3
+                    .line()
+                    .curve(d3.curveBundle.beta(1))
+                    .x(k => k[0])
+                    .y(k => k[1])([
+                        [0, 0],
+                        [val * 0.8 * Math.sin(sa), val * 0.8 * Math.cos(sa)],
+                        [val * 1.2 * Math.sin(ang), val * 1.2 * Math.cos(ang)],
+                        [val * 0.8 * Math.sin(ea), val * 0.8 * Math.cos(ea)],
+                        [0, 0]
+                    ]);
+            })
+    }
+
+    function plotAB(bud, height, y) {
+        if (bud.selectAll('*').empty()) {
+
+            bud
+                .append('circle')
+                .attr('class', 'nodeA')
+                .attr('r', 4)
+                .style('fill', "#253356");
+            bud
+                .append('circle')
+                .attr('class', 'nodeB')
+                .attr('r', 4)
+                .style('fill', "#FF736C");
+            bud
+                .append('circle')
+                .attr('class', 'nodeCenter')
+                .attr('r', 2)
+                .style('fill', "#999");
+        }
+
+        bud.select('.nodeA').attr('cy', function (d) {
+            return height - y(d.Main - d.A);
+        });
+        bud.select('.nodeB').attr('cy', function (d) {
+            return height - y(d.Main - d.B);
+        });
+    }
+
+    let abMode = false
+
+    const margin = {
+        top: 40,
+        right: 10,
+        bottom: 10,
+        left: 40
+    }
+
+
+    function balanceweights(w) {
+        const sum = d3.sum(Object.values(w));
+        const len = Object.keys(w).length;
+        const n = {};
+        Object.keys(w).map(d => {
+            n[d] = w[d] / (sum / len);
+        });
+        return n;
+    }
+
+
+
+
+
+
+    let scrollFlag = false
+    const windowHeight = window.innerHeight;
+    window.addEventListener('scroll', (e) => {
+        if (scrollFlag) return;
+        const rect = svg.node().getBoundingClientRect();
+        if (Math.abs((rect.top + rect.bottom) / 2 - windowHeight / 2) < 20) {
+            console.log('Event 1: Scroll triggered -- Flowers grow up');
+            plot(svg.node(), svgWidth, svgHeight)
+            scrollFlag = true;
+        }
+    });
+
+    const sortAniConfig = {
+        "keyframes": [{
+            "targets": ".flowerbg",
+            "scale": [
+                1,
+                1.5,
+                1
+            ],
+            "opacity": [
+                0,
+                1,
+                0.2,
+                1,
+                0
+            ],
+            "easing": "easeInOutSine"
+        }],
+        "configs": [{
+            "unit": "random",
+            "spatial": "linear",
+            "linear": {
+                "start": null,
+                "end": null,
+                "isReady": false,
+                "order": []
+            },
+            "spread": {
+                "center": null,
+                "isReady": false,
+                "order": []
+            },
+            "sketch": {
+                "points": [],
+                "isReady": false,
+                "order": []
+            },
+            "randomSeed": 79,
+            "delay": 0,
+            "offset": 1500,
+            "duration": 3500,
+            "data": {
+                "order": "asc",
+                "rank": false
+            }
+        }],
+        "svg": {
+            "width": 500.0000305175781,
+            "height": 256.2586975097656,
+            "viewBox": "0 0 878 450",
+            "left": 108.33333587646484,
+            "top": 8.42881965637207
+        }
+    }
+
+    const updateSortKey = (key) => {
+        if (key === sortKey) {
+            return;
+        }
+        console.log('Event 2: Sort -- Flowers shine');
+        d3.select('.switched').select(`.sort-by-${sortKey}`).classed('active', false);
+        d3.select('.switched').select(`.sort-by-${key}`).classed('active', true);
+        const sortAniHandler = getTimeline(sortAniConfig, svgEle);
+        sortKey = key;
+        const width = svgWidth - margin.left - margin.right
+        const height = svgHeight - margin.top - margin.bottom
+        const y = getY(aggregated_data, height)
+        const x = getX(aggregated_data, width)
+        const paddingInPixel = x.bandwidth() * x.padding()
+        const bgs = d3.selectAll('.flowerbg').style('visibility', 'visible')
+        sortAniHandler.play()
+        d3.select(svgEle)
+            .selectAll('.countries')
+            .transition()
+            .delay(500)
+            .duration(4000)
+            .attr("transform", function (d) {
+                const xd = x(d[sortKey]) + x.bandwidth() / 2;
+                const yd = y(d["Main"]);
+                return "translate(" + xd + "," + yd + ")";
+            })
+            .on('end', function () {
+                sortAniHandler.pause()
+                bgs.style('visibility', 'hidden')
+            });
+    }
+
+    const filterAniConfig = {
+        "keyframes": [{
+                "targets": ".petels.active path",
+                "opacity": 1,
+                "scale": [1, 1.6, 1],
+                "rotate": [
+                    0,
+                    -30,
+                    0
+                ],
+                "easing": "easeInOutSine"
+            },
+            {
+                "targets": ".petels.inactive path",
+                "opacity": [
+                    1,
+                    0.25
+                ],
+                "rotate": [
+                    0,
+                    5,
+                    0
+                ],
+                "easing": "easeInOutQuad"
+            }
+        ],
+        "configs": [{
+                "unit": "spatial",
+                "spatial": "linear",
+                "linear": {
+                    "start": {
+                        "x": 31.607999999999997,
+                        "y": 316.08
+                    },
+                    "end": {
+                        "x": 611.088,
+                        "y": 314.324
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "spread": {
+                    "center": null,
+                    "isReady": false,
+                    "order": []
+                },
+                "sketch": {
+                    "points": [{
+                        "x": 611.088,
+                        "y": 314.324
+                    }],
+                    "isReady": false,
+                    "order": []
+                },
+                "randomSeed": 0,
+                "delay": 1000,
+                "offset": 400,
+                "duration": 800,
+                "data": {
+                    "order": "asc",
+                    "rank": false
+                }
+            },
+            {
+                "unit": "spatial",
+                "spatial": "linear",
+                "linear": {
+                    "start": {
+                        "x": 43.900000000000006,
+                        "y": 342.41999999999996
+                    },
+                    "end": {
+                        "x": 607.5759999999999,
+                        "y": 337.152
+                    },
+                    "isReady": false,
+                    "order": []
+                },
+                "spread": {
+                    "center": null,
+                    "isReady": false,
+                    "order": []
+                },
+                "sketch": {
+                    "points": [{
+                        "x": 607.5759999999999,
+                        "y": 337.152
+                    }],
+                    "isReady": false,
+                    "order": []
+                },
+                "randomSeed": 0,
+                "delay": 0,
+                "offset": 800,
+                "duration": 1000,
+                "data": {
+                    "order": "asc",
+                    "rank": false
+                }
+            }
+        ],
+        "svg": {
+            "width": 500.0000305175781,
+            "height": 256.2586975097656,
+            "viewBox": "0 0 878 450",
+            "left": 100.2170181274414,
+            "top": 8.42881965637207
+        }
+    }
+
+    const onFilterItem = (selected) => {
+        if (selected == 'All') {
+            // return to the normal state
+            svg.selectAll('.petels').style('visibility', 'visible').classed('inactive', false).classed('active',
+                true)
+        } else {
+            console.log('Event 3: Filter -- Petals grow & sway')
+            svg.selectAll('.petels').classed('inactive', true).classed('active', false)
+            svg.selectAll(`.petels[data-attribute='${selected}']`).classed('inactive', false).classed('active',
+                true)
+        }
+
+        const filterAniHandler = getTimeline(filterAniConfig, svgEle, false);
+        filterAniHandler.play()
+
+    }
+</script>
+
+
+
+</html>

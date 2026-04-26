@@ -1,0 +1,10 @@
+{
+    "svgFile": "cd.svg",
+    "styleFiles": ["style.css"],
+    "thumbnail": "cd.png",
+    "source": "https://ieeexplore.ieee.org/abstract/document/9906974",
+    "title": "CD Visualization",
+    "description": "CD",
+    "snippets": [],
+    "code": ""
+}

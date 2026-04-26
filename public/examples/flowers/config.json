@@ -1,0 +1,10 @@
+{
+    "svgFile": "flowers.svg",
+    "styleFiles": [""],
+    "thumbnail": "flowers.png",
+    "source": "https://public.tableau.com/app/profile/neil.richards/viz/premierleagueflowers/premierleagueflowers?publish=yes",
+    "title": "Premier League Squads",
+    "description": "Flower",
+    "snippets": [],
+    "code": ""
+}
